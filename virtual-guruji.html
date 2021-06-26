@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual GuruJi</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<!--Animate CSS-->
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./virtual-guruji.css">
+    <!-- <script src="./landingPage.js"></script> -->
+
+    <script type="text/javascript">
+        $(function(){
+    $("#bootnavbar").bootnavbar();
+    });
+    </script>
+    <script>
+        date = new Date();
+        var countDownDate = date.setDate(date.getDate() + 1);
+        // var newDate =countDownDate.format("dddd, MMMM Do YYYY, h:mm:ss a");
+        console.log(countDownDate);
+        var interval = setInterval(function () {
+            var now = new Date().getTime();
+            var timeleft = countDownDate - now;
+            var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+        }, 1000);
+
+    </script>
+</head>
+
+<body>
+    
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: fixed; width: 100%;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses & Pricing
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Knowledge Center
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          </li>          
+    
+        
+        <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">Dropdown</li>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li>
+            <a class="dropdown-item" href="#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#">
+              Submenu &raquo;
+            </a>
+            <ul class="dropdown-menu dropdown-submenu">
+              <li>
+                <a class="dropdown-item" href="#">Submenu item 1</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Submenu item 2</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Submenu item 3 &raquo; </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li>
+                    <a class="dropdown-item" href="#">Multi level 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Multi level 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Submenu item 4</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Submenu item 5</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+    <section class="homepage">
+        <div class="text-center">
+            <p class=" p-4 homepageHeading">
+                <!-- Gurgaon’s best <span class="per-title-highlight">real estate inventory</span> at lowest prices -->
+                Face to Face Personal Attention from India's Best Teachers
+            </p>
+            <p class=" homePageSubHeading">
+                Real Live Learning in <span class="per-title-highlight">small Batches</span>  for Grades 8-12
+                <!-- Top Real Estate Consultants in Gurgaon | <b>Expert guidance</b> to help you buy your dream home with assured valuation and timely possession built by <b>top builders</b> in Gurgaon. -->
+            </p>
+        </div>
+
+        <div class="cardVideo ">
+            <div class="row">
+                <div class="col-sm-8 ">
+                    <div class="row ">
+                        <div class="col-sm-3 mb-3 buttons-cards">
+                            <div class="text-center m-2">
+                                <i class="fas fa-user-friends"></i>&nbsp;102008 + Happy Students
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mb-3 buttons-cards">
+                            <div class="text-center m-2" >
+                                <img src="assets/inventory.png" width="15%" height="12%" alt="">&nbsp; 223964+ Total Classes
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-sm-3 mt-2 mb-3 buttons-cards">
+                            <div class="text-center m-2">
+                                <i class="fas fa-star"></i>&nbsp; 4.8/5 Average Teacher Rating
+                            </div>
+                        </div>
+                        <div class="col-sm-3 mt-2 mb-3 buttons-cards">
+                            <div class="text-center m-2">
+                                <img src="assets/clock.png" width="15%" height="12%" alt="">&nbsp; 20+ years of
+                                experience
+                            </div>
+                        </div>                      
+                    </div>
+
+                    <div class="row consultantCard">
+                        <div class="col-sm-3   m-1" style="width: 19rem;">
+                            <img src="assets/Gaurav-Kapur_1.svg" class="card-img-tops" alt="...">
+                        </div>
+
+                        <div class="col-sm-3 m-1  mt-3 " style="width: 19rem;">
+                            <img src="assets/Harjit-Singh_1.svg" class="card-img-tops" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 video">
+                    <div class="card youtubeVideo">
+                        <iframe src="https://www.youtube.com/embed/uCmoKxoPpm8" frameborder="0" height="250px"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="para">
+                        <p class="text-center fs-4 register" >Register yourself before <span class="per-title-highlight" id="registerDate"> </span> to unlock amazing
+                            discounts on top projects</p>
+                            
+                        <button class="unlockBtn w-100 p-3 rounded mt-0 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">Unlock your dream home</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div class="builders mt-5 text-center">
+           <span class=" fs-1 fw-bold"> Schools we work with</span>
+            <!-- <p class="text-center fs-1" style="margin: 5% 0%;">Builders we work with</p> -->
+            <div class="buildersLargeImg">
+                <img src="assets/teachers.png" alt="" width="1036" height="406">
+            </div>
+            <div class="buildersSmallImg">
+                <img src="assets/schololLogoMobile.png" alt="">
+            </div>
+        </div>
+
+        <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">
+
+            <div class="text-center mt-5 fw-bold" style="font-size: 28px; line-height: 34px; font-weight: 500;" >
+                What they have to say about us
+            </div>
+            <div class="row pt-5 pb-5 d-flex">
+                <div class="card col-sm-4 mb-2">
+                    <iframe src="https://www.youtube.com/embed/F2xEf0QFtys" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-4 mb-2">
+                    <iframe src="https://www.youtube.com/embed/qIJYiSeNIUQ" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-4 mb-2">
+                    <iframe src="https://www.youtube.com/embed/gJLHM0U91OA" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workshop ">
+        <p class="text-center fs-2 black">
+            <b> Virtual Guruji Superstar</b>
+        </p>
+        <p class="text-center fs-5 black">
+            Our out of the box performers
+        </p>
+
+       
+        <div class="board d-flex justify-content-center ml-5" style="margin-left: 15%;">
+           
+            <div class="col-xl-12 pb-5 justify-content-cente">
+                <input class="checkbox-budget boards" value="ICSE" type="radio" name="board" id="board-1" checked>
+                <label class="for-checkbox-budget" for="board-1" onclick="setBoard('ICSE')">
+                    <span data-hover="ICSE">ICSE</span>
+                </label><!--
+                --><input class="checkbox-budget boards" value="CBSE" type="radio" name="board" id="board-2">
+                <label class="for-checkbox-budget" for="board-2"  onclick="setBoard('CBSE')">							
+                    <span data-hover="CBSE">CBSE</span>
+                </label>
+                <input class="checkbox-budget boards" value="Others" type="radio" name="board" id="board-3">
+                <label class="for-checkbox-budget" for="board-3"  onclick="setBoard('Others')">							
+                    <span data-hover="Others">Others</span>
+                </label>            
+            
+            </div>
+           </div>
+
+        <div class="studentsGrade text-center">
+            <div class="col-12 pt-5"  >
+                <p class="mb-4 pb-2 black fw-bold">Select Students's Grade</p>
+            </div>
+            <div class="col-12 pb-5" id="grade"> 
+                <input class="checkbox-tools grades" value="8" type="radio" name="grades" id="grades-1" checked>
+                <label class="for-checkbox-tools" for="grades-1">
+                    8
+                </label><!--
+                --><input class="checkbox-tools grades" value="9" type="radio" name="grades" id="grades-2">
+                <label class="for-checkbox-tools grades" for="grades-2">
+                    9
+                </label><!--
+                --><input class="checkbox-tools grades" value="10" type="radio" name="grades" id="grades-3">
+                <label class="for-checkbox-tools" for="grades-3">
+                    10
+                </label><!--
+                --><input class="checkbox-tools grades" value="11" type="radio" name="grades" id="grades-4">
+                <label class="for-checkbox-tools" for="grades-4">
+                    11
+                </label><!--
+                --><input class="checkbox-tools grades" value="12" type="radio" name="grades" id="grades-5">
+                <label class="for-checkbox-tools" for="grades-5">
+                    12
+                </label><!--
+                -->
+            </div>
+           </div>
+
+           <div class="d-flex justify-content-around">
+            
+                <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888">  
+                   <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; " onclick="setSubject('Science')">
+                        <div>                 
+                            <img src="assets/atom.png" width="100"  alt=""> 
+                        </div> 
+                        <div class="text-center m-2 fw-bold">
+                            Science
+                        </div>
+                    </a>
+                   
+                   </div>
+                                                                  
+                </div>
+
+                <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888">  
+                    <div>
+                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; " onclick="setSubject('Chemistery')">
+                         <div >                 
+                             <img src="assets/chemistry.png" width="100"  alt=""> 
+                         </div> 
+                         <div class="text-center m-2 fw-bold">
+                        Chemistery
+                         </div>
+                     </a>
+                    
+                    </div>
+                                                                   
+                 </div>
+
+                 <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888">  
+                    <div>
+                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; " onclick="setSubject('Physics')">
+                         <div >                 
+                             <img src="assets/balance.png" width="100"  alt=""> 
+                         </div> 
+                         <div class="text-center m-2 fw-bold">
+                           Physics
+                         </div>
+                     </a>
+                    
+                    </div>
+                                                                   
+                 </div>
+    
+                <div class="cards mb-2 p-3" style="box-shadow: 5px 10px 18px #888888">
+                   <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; " onclick="setSubject('Math')">
+                        <div>
+                            <img src="assets/keys.png" width="100" alt="">
+                        </div> 
+                        <div class="text-center m-2 fw-bold">
+                            Math
+                        </div> 
+                    </a>                                     
+                </div>
+                   </div>
+      
+            </div>
+        
+       
+
+             
+        </div> 
+
+        <button class="btns  p-3 rounded mt-5 buttons mt-4" data-bs-toggle="modal" data-bs-target="#exampleModal" ><b>Book A Free Trial!</b></button>
+
+        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight" id="registerDate1"></span> to unlock amazing discounts on top
+            projects</p>      
+
+    </section>
+
+    <section class="afterRegistering">
+        <p class="text-center mt-5 fs-1 black"><b>What will you <span class="per-title-highlight">get</span> after registering ?</b></p>
+
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Best residential projects in Gurgaon with all the details 
+            </div>
+        </div>
+
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Top commercial projects in Gurgaon 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Exclusive easy payment plans 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Loan assistance from top banks 
+            </div>
+        </div>
+        
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Access to exclusive inventory from top developers 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                New upcoming affordable housing projects in Gurgaon 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Pre-booking for the newly launched projects 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Exclusive offers on booking amounts 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Negotiating a good deal with developers 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Post-sales support 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                Weekly updates on popular real estate trends 
+            </div>
+        </div>
+        <div class="mb-2 cards-title" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                A Bulletproof commercial investing toolkit 
+            </div>
+        </div>
+        <div class="mb-2 cards-title extraBonus" style="display: flex;">
+            <div class="tick">
+                <img src="assets/tick.svg" alt="">
+            </div>
+            <div class="tick-text">
+                <span>Extra Bonus-</span> A e-book on insights of Gurgaon real estate market 
+            </div>
+        </div>
+        
+    </section>
+
+
+    <section class="coupons">
+        <p class="text-center fs-1 unlockbonus black" style="line-height: 48px;">
+            <b>Unlock bonuses worth</b> <br>
+            <span class="per-title-highlight fw-bold"> ₹1,00,000</span>
+        </p>
+
+        <div class="coupon ">
+            <div class="row couponDisplay">
+                <div class="col-sm-8 mt-2 largeCoupon couponFirst">
+                    <img src="assets/Large.png" alt="">
+                    <div class="couponFirstText">
+                         
+                         <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1"><u>₹50,000</u></span>
+                         <p class="fs-5 fw-bold black" style="line-height: 1;">Free iPhone 12 on every commercial investment.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹20,000</span>
+                         <p class="fs-5 fw-bold black" style="line-height: 1;">Exclusive 10% of on <br> booking amount.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row couponDisplay">
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹15,000</span>
+                         <p class="fs-5 fw-bold black" style="line-height: 1;">Post sales support for <br> a year.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹10,000</span>
+                         <p class="fs-5 fw-bold black" style="line-height: 1;">Amazon gift vouchers on <br> purchase.</p>
+                    </div>
+                </div>
+                <div class="col-sm-4 mt-2 couponFirst">
+                    <img src="assets/Small.png" alt="">
+                    <div class="couponFirstText">
+                        <u class="underline">Worth</u> <br>
+                         <span class="per-title-highlight fs-1">₹5,000</span>
+                         <p class="fs-5 fw-bold black" style="line-height: 1;">Golden Assets home <br> buyer’s community.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="text-center fs-2 fw-bold mt-5 time-runing-out black">
+            Time Is Running Out. Grab Your Spot Fast!
+        </p>
+
+        <div id="clockdiv" class="clockdiv">
+            <div>
+                <span class="days"></span>
+                <div class="smalltext" id="days">NA</div>
+            </div>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext" id="hours">NA</div>
+            </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext" id="minutes">NA</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext" id="seconds">NA</div>
+            </div>
+        </div>
+
+        <button class="btns  p-3 rounded buttons" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-top: 15% !important;">Kickstart your home search journey now!</button>
+
+
+    </section>
+
+    <section class="whyGolden">
+        <p class="text-center fs-1">Why Golden assets?</p>
+
+        <div class="row GoldenCards">
+            <div class="col-sm-6">
+                <div class=" cards m-4" style="display: flex;"> 
+                    <div>
+                        <img src="assets/architecture.png" alt="" width="80%">
+                    </div>   
+                    <div>
+                        <h5 class="card-title per-title-highlight"><b>50+ top builders</b></h5>
+                        <p>
+                            We help you buy your dream home with assured valuation and timely possession built by top builders in Gurgaon.
+                        </p> 
+                    </div>         
+                                           
+                </div>
+                <div class="cards m-4" style="display: flex;">   
+                    <div>
+                        <img src="assets/clock.png" width="80%" alt="">
+                    </div>      
+                    <div>
+                        <h5 class="card-title per-title-highlight"> <b>20+ years of industry experiences</b></h5> 
+                        <p>
+                            Our consultants are industry experts and can show you more properties and save you thousands when you buy a home.
+                        </p>  
+                    </div>         
+                                         
+                </div>                
+            </div>
+
+            <div class="col-sm-6">
+                <div class="cards m-4" style="display: flex;">
+                    <div>
+                        <img src="assets/inventory.png" width="80%" alt="">
+                    </div>   
+                    <div>
+                        <h5 class="card-title per-title-highlight"> <b>Top inventory</b></h5>
+                        <p>
+                            We work tirelessly with builders to get an inventory that suites your requirements.
+                        </p> 
+                    </div>                                              
+                </div>
+                <div class="cards m-4" style="display: flex;"> 
+                    <div>
+                        <img src="assets/rupee.png" width="80%" alt="">
+                    </div>                   
+                    <div>
+                        <h5 class="card-title per-title-highlight"><b>Exclusive offers and lowest prices</b></h5>
+                        <p>
+                            We offer exclusive discounts and lowest price guarantee and make your dream home a reality.
+                        </p>   
+                    </div>
+                                        
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center fs-5 paragraph per-title-highlight">
+            <p class="cards">
+                From affordable housing, Builder Floors, Plots to Luxury housing we make you doesn’t miss out on any great deal.
+            </p>
+            <p class="cards">
+                With over 20+ years of experience in industry and cordial relations with the builders we ensure assured valuation and timely possession.
+            </p>
+            <p class="cards">
+                We believe that buying or selling property is an occasion to make memories and add value to your lifestyle.
+            </p>
+            <p class="cards">
+                We understand that buying a house is a big decision. That’s why we’ve designed a service which is personalized, hassle-free and transparent, even with our prices
+            </p>
+        </div>
+    </section>
+
+
+    <section class="believeThem">
+        <p class="text-center fw-bold per-title-highlight believeThemHeading" style="line-height: 48px;">
+            You may not believe me, but you can believe them
+        </p>
+        <p class="text-center fs-3" style="color: #333333; font-size: 200px; font-weight: 400; line-height: 35px;">
+            Experiences shared by people who previously bought from us
+        </p>
+        <div class="row pt-5 pb-5 d-flex">
+            <div class="card col-sm-4 mb-2">
+                <iframe src="https://www.youtube.com/embed/F2xEf0QFtys" frameborder="0" height="150%"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card col-sm-4 mb-2">
+                <iframe src="https://www.youtube.com/embed/qIJYiSeNIUQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="card col-sm-4 mb-2">
+                <iframe src="https://www.youtube.com/embed/gJLHM0U91OA" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!-- <div class="aboutUS" style=" margin: 0% 8% 0% 8%;">           
+            <div class="row pt-5 pb-5 d-flex">
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="card col-sm-3 mt-2">
+                    <iframe src="https://www.youtube.com/embed/pWahNIMRxR0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div> -->
+
+        <button class="btns  p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal" >Kickstart your home search journey now!</button>
+    </section>
+
+    <section class="checkboxes">
+        <p class="text-center fs-1 pb-5 fw-bold black">
+            Please check all boxes where your answer is YES!
+        </p>
+
+        <div class="boxes">
+            <div class="row" >
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Finding it difficult to crack best deal with developers</h5>
+                    </div>                   
+                </div> 
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Find accredited builders who can provide a timely possession</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>First time buying a house and don’t know how to go about the process</h5>
+                    </div>                   
+                </div>
+
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>As an investor, you want to invest in top commercial projects</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Not getting a desired inventory as per your needs</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Not able to find a house will all the amenities you need</h5>
+                    </div>                   
+                </div>                 
+            </div> 
+            <div class="row">
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Not able to find a budget friendly home</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Not sure how to negotiate a good deal with builder?</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5>Worrying about all the paper work process while booking a house?</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Worrying about timely possession?</h5>
+                    </div>                   
+                </div>
+                <div class="col-sm-6 mb-3 card-title" style="display:flex;">
+                    <div>
+                        <input type="checkbox" class="check pt-3">
+                    </div>
+                    <div class="checkText">
+                        <h5> Do you think about which commercial projects give maximum returns?</h5>
+                    </div>                   
+                </div>               
+            </div>
+        </div>
+
+        <p class="text-center fs-4 black">
+            If you checked ANY of the boxes above, then you’re invited to register😁
+        </p>
+
+        <button class="btns p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">Kickstart your home search journey now!</button>
+
+        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight" id="registerDate2"></span> to unlock amazing discounts on top
+            projects</p>
+
+    </section>
+
+
+    <section class="meetConsultant">
+        <p class="text-center text-white fs-1 meetOurConsultant">
+            Meet your Consultants
+        </p>
+        <div class="row gauravHarjit" style="margin-left: 25%;">
+
+            <div class="col-sm-12   m-1" style="width: 17rem;">
+                <img src="assets/Gaurav-Kapur_1.svg" class="card-img-top" alt="...">
+    
+            </div>
+    
+            <div class="col-sm-12 m-1  mt-3" style="width: 17rem;">
+                <img src="assets/Harjit-Singh_1.svg" class="card-img-top" alt="...">
+    
+            </div>
+        </div>
+
+        <p class="text-center fs-3 text-white p-5 why">
+            "Why compromise while buying a house when you could have a dream home as per your demands" <br> <br>
+
+            "We have helped 5000+ families to find their dreams homes with top builders"
+        </p>
+
+        <div class="builders mt-1 mb-5">
+            <div class="buildersLargeImg1">
+                <img src="assets/buildersLogo.png" width="100%" alt="">
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="faq">
+        <p class="text-center fs-1 fw-bold mt-3 mb-5 black">
+            Get the offer while it lasts!
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6" style="background-color: white; border-radius: 16px;padding: 16px;">
+                <p class="text-left fs-2 fw-bold black" >
+                    Your dream home with assured valuation and timely possession built by top builders in Gurgaon.
+                </p>
+                <!-- <span class="per-title-highlight fs-2">₹499 </span>  <strike>₹1,199</strike> -->
+                <hr>                
+                <!-- <p>
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; Your dream home with assured valuation and timely possession built by top builders in Gurgaon.
+                </p> -->
+                <p class="fw-bold black">
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; Register now and get discount worth ₹25,000. There was never a better time to grab this deal.
+                </p>
+                <p class="fw-bold black">
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; Enjoy the discounted price from the top builders of Gurgaon.
+                </p>
+                <p class="fw-bold black">
+                    <i class="fas fa-check" style="font-size: 11px;"></i> &nbsp; The launch offer expires on midnight.
+                </p>
+                <!-- <p>
+                    Note: No exceptions would be made beyond the offer expiry date. The prices would go up and no free bonuses
+                </p> -->
+                <button type="submit" class="btns  p-3 rounded mt-3 mb-3 registerNow" data-bs-toggle="modal" data-bs-target="#exampleModal" >Register Now</button>
+            </div>
+            <div class="col-sm-6 ml-5 whatWillYouGet">
+                <p class="per-title-highlight fs-3">What you’ll get...</p>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Exclusive offers on booking amounts 
+                    </div>
+                </div> <hr>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Negotiating a good deal with developers 
+                    </div>
+                </div> <hr>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Post-sales support 
+                    </div>
+                </div> <hr>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        Weekly updates on popular real estate trends 
+                    </div>
+                </div> <hr>
+                <div class="mb-2 cards-title d-flex">
+                    <div class="tick">
+                        <img src="assets/tick.svg" alt="">
+                    </div>
+                    <div class="tick-text">
+                        A Bulletproof commercial investing toolkit 
+                    </div>
+                </div>           
+               
+            </div>
+        </div>
+
+        <!-- <p class="text-center fs-1 mt-5">
+            Frequently Asked Questions
+        </p>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button"  class="btns p-3 rounded mt-5 buttons" data-bs-toggle="modal" data-bs-target="#exampleModal">Kickstart your home search journey now!</button>        -->
+
+    </section>
+
+    <section class="footer">
+        <div class="text-center fs-5 text-white goldenLogo">
+            <img class="mb-5 " src="assets/color.svg" alt="">
+            <p style="font-size: 12px;">
+                For any support, please mail to care@goldenassets.in Our support team will get back to you within 24 hours. The brands and companies that the instructors of goldenassets are working or have worked, have no relation what so ever with <b class="per-title-highlight">GoldenAssets</b>
+            </p>            
+        </div>        
+    </section>
+    <p  style="background-color: #222; color: white; padding: 20px; text-align: center; font-size: 10px;">
+        ©️ 2021 goldenassets.in All rights reserved.
+    </p>    
+
+      <form  name="myform" method="post"   action="http://localhost:3000/sendMail">
+        <div class="modal fade" tabindex="-1" id="exampleModal">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 class="modal-title fw-bold">Enter Your Details</h4>
+              
+              <button type="button" class="close" data-bs-dismiss="modal" onclick="close();">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                   
+                    <section>
+                        <div class="section over-hide z-bigger">
+                            <!-- <input class="checkbox" type="checkbox" name="general" id="general">
+                            <label class="for-checkbox" for="general"></label> -->
+                        
+                            <div class="background-color"></div>
+                            <div class="section over-hide z-bigger">
+                                <div class="container pb-5">
+                                    <!-- <form class="row justify-content-center pb-5" name="studentForm" method="POST" onsubmit="event.preventDefault();"> -->
+                                       <div class="studentsGrade">
+                                        <div class="col-12 pt-5"  >
+                                            <p class="mb-4 pb-2 black fw-bold">Select Students's Grade</p>
+                                        </div>
+                                        <div class="col-12 pb-5" id="grade">
+                                            <input class="checkbox-tools" value="8" type="radio" name="grade" id="grade-1" checked>
+                                            <label class="for-checkbox-tools" for="grade-1">
+                                                8
+                                            </label><!--
+                                            --><input class="checkbox-tools" value="9" type="radio" name="grade" id="grade-2">
+                                            <label class="for-checkbox-tools" for="grade-2">
+                                                9
+                                            </label><!--
+                                            --><input class="checkbox-tools" value="10" type="radio" name="grade" id="grade-3">
+                                            <label class="for-checkbox-tools" for="grade-3">
+                                                10
+                                            </label><!--
+                                            --><input class="checkbox-tools" value="11" type="radio" name="grade" id="grade-4">
+                                            <label class="for-checkbox-tools" for="grade-4">
+                                                11
+                                            </label><!--
+                                            --><input class="checkbox-tools" value="12" type="radio" name="grade" id="grade-5">
+                                            <label class="for-checkbox-tools" for="grade-5">
+                                                12
+                                            </label><!--
+                                            -->
+                                        </div>
+                                       </div>
+                                        
+                                       <div class="subjects">
+                                        <div class="col-12 pt-1">
+                                            <p class="mb-4 pb-2 black fw-bold">Select Subject</p>
+                                        </div>
+                                        <div class="col-xl-12 pb-5">
+                                            <input class="checkbox-budget" value="Math" type="radio" name="subject" id="subject-1" checked>
+                                            <label class="for-checkbox-budget" for="subject-1">
+                                                <span data-hover="Math">Math</span>
+                                            </label><!--
+                                            --><input class="checkbox-budget" value="Science" type="radio" name="subject" id="subject-2">
+                                            <label class="for-checkbox-budget" for="subject-2">							
+                                                <span data-hover="Science">Science</span>
+                                            </label><!--
+                                            --><input class="checkbox-budget" value="Physics" type="radio" name="subject" id="subject-3">
+                                            <label class="for-checkbox-budget" for="subject-3">							
+                                                <span data-hover="Physics">Physics</span>
+                                            </label><!--
+                                            --><input class="checkbox-budget" value="Chemistery" type="radio" name="subject" id="subject-4">
+                                            <label class="for-checkbox-budget" for="subject-4">							
+                                                <span data-hover="Chemistery">Chemistery</span>
+                                            </label>
+                                        
+                                        </div>
+                                       </div>
+                                                          
+                                        <div class="selectDay">
+                                            <div class="col-12 pt-1">
+                                                <p class="mb-4 pb-2 black fw-bold">Select Day</p>
+                                            </div>
+                                            <div class="col-xl-12 pb-5">
+                                                <input class="checkbox-budget" value="Monday" type="radio" name="days" id="day-1" checked>
+                                                <label class="for-checkbox-day" for="day-1">
+                                                    <span data-hover="Monday">Monday</span>
+                                                </label><!--
+                                                --><input class="checkbox-budget" value="Tuesday" type="radio" name="days" id="day-2">
+                                                <label class="for-checkbox-day" for="day-2">							
+                                                    <span data-hover="Tuesday">Tuesday</span>
+                                                </label><!--
+                                                --><input class="checkbox-budget" value="Wednesday" type="radio" name="days" id="day-3">
+                                                <label class="for-checkbox-day" for="day-3">							
+                                                    <span data-hover="Wednesday">Wednesday</span>
+                                                </label><!--
+                                                --><input class="checkbox-budget" value="Thursday" type="radio" name="days" id="day-4">
+                                                <label class="for-checkbox-day" for="day-4">							
+                                                    <span data-hover="Thursday">Thursday</span>
+                                                </label>
+                                                <input class="checkbox-budget" value="Friday" type="radio" name="days" id="day-5">
+                                                <label class="for-checkbox-day" for="day-5">							
+                                                    <span data-hover="Friday">Friday</span>
+                                                </label>
+                                                <input class="checkbox-budget" value="Saturday" type="radio" name="days" id="day-6">
+                                                <label class="for-checkbox-day" for="day-6">							
+                                                    <span data-hover="Saturday">Saturday</span>
+                                                </label>
+                                            
+                                            </div>
+                                        </div>
+                                         
+                                        <div class="selectTime">
+                                            <div class="col-12 pt-1">
+                                                <p class="mb-4 pb-2 black fw-bold">Select Time</p>
+                                            </div>
+                                            <div class="col-xl-12 pb-5">
+                                                <input class="checkbox-budget" value="2:00 PM" type="radio" name="time" id="time-1" checked>
+                                                <label class="for-checkbox-time" for="time-1">
+                                                    <span data-hover="2:00 PM">2:00 PM</span>
+                                                </label><!--
+                                                --><input class="checkbox-budget" value="3:00 PM" type="radio" name="time" id="time-2">
+                                                <label class="for-checkbox-time" for="time-2">							
+                                                    <span data-hover="3:00 PM">3:00 PM</span>
+                                                </label><!--
+                                                --><input class="checkbox-budget" value="4:00 PM" type="radio" name="time" id="time-3">
+                                                <label class="for-checkbox-time" for="time-3">							
+                                                    <span data-hover="4:00 PM">4:00 PM</span>
+                                                </label><!--
+                                                --><input class="checkbox-budget" value="5:00 PM" type="radio" name="time" id="time-4">
+                                                <label class="for-checkbox-time" for="time-4">							
+                                                    <span data-hover="5:00 PM">5:00 PM</span>
+                                                </label>
+                                                <input class="checkbox-budget" value="6:00 PM" type="radio" name="time" id="time-5">
+                                                <label class="for-checkbox-time" for="time-5">							
+                                                    <span data-hover="6:00 PM">6:00 PM</span>
+                                                </label>
+                                                                       
+                                            </div>  
+                                        </div>
+                                        
+                                        <div class="studentInfo">
+                                            <div class="form-group">
+                                                <label for="name" style="float: left;">Full Name</label>
+                                                <input type="text" placeholder="Enter Student name" name="fullName" class="form-control" id="name" pattern="[a-zA-Z ]+" minlength="3" maxlength="30" required>
+                                            </div>
+                                            <div class="form-group"  >
+                                                <label for="phone" style="float: left;">Phone Number</label>
+                                                <input type="text" placeholder="Enter your phone number" name="phone" class="form-control" id="phoneNumber" pattern="\d{10}" minlength="10" maxlength="10" required>
+                                            </div>
+                                            <div class="form-group" >
+                                                <label for="email" style="float: left;">Email</label>
+                                                <input type="email" placeholder="Enter your email" name="email" class="form-control" id="email" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required>
+                                            </div>
+                                        </div>
+                                       
+                                    <!-- </form> -->
+                                    <button type="button" onclick="onSubmit()" data-bs-toggle="modal" data-bs-target="#thanksMessage" class="unlockBtn w-100 p-3 rounded mt-0 fw-bold mt-3">Book A Free Trial</button>
+                                </div>	
+                            </div>
+                        </div>
+                            
+                    
+                    
+                    </section>
+                  </div>
+            </div>
+           
+          </div>
+          
+        </div>
+      </div>  
+      </form>
+
+      <div class="modal fade" tabindex="-1" id="thanksMessage">
+        <div class="modal-dialog modal-lg">
+        
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 class="modal-title fw-bold">Confirm Message</h4>
+              
+              <button type="button" class="close" data-bs-dismiss="modal" onclick="close();">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                   
+                    <h1 class="font-weight-700 text-center m-5">Thank you</h1>
+
+                  <h4 class="fs-20 text-justify p-4"> We have received your details, One of our sales expert will be getting in touch with you soon.</h4>
+                  <div class="fs-25 font-weight-600 text-center">
+                    <i class="fas fa-check fa-4x text-success m-5"></i>
+                  </div>
+                  <!-- <h5 class="text-center"> <a href="https://www.goldenassets.in">Visit Website</a> </h5> -->
+                  </div>
+            </div>
+           
+          </div>
+          
+        </div>
+      </div>
+
+     
+      <!-- modal ends here -->
+     <script src="./virtual-guruji.js"></script>
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <script>
+             stringDate = new Date().toDateString();
+         document.getElementById('registerDate').innerHTML=stringDate;
+         document.getElementById('registerDate1').innerHTML=stringDate;
+         document.getElementById('registerDate2').innerHTML=stringDate;
+        </script>
+
+        <!-- Facebook Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '705423603476044');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=705423603476044&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+</body>
+</html>

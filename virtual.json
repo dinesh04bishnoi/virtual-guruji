@@ -1,0 +1,12 @@
+[
+    {
+        "allClass" : [
+          {
+              "id":1,
+              "class": 8,
+              "boardName": "CBSE",
+              "fees": 32000
+          }
+        ]
+    }
+]
