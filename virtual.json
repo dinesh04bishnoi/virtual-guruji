@@ -1,12 +1,82 @@
 [
     {
-        "allClass" : [
-          {
-              "id":1,
-              "class": 8,
-              "boardName": "CBSE",
-              "fees": 32000
-          }
-        ]
+        "Board" : {
+         "CBSE":{
+             "8" :{
+                 "Math":
+                {
+                    "id":1,                   
+                    "fees": 32000,
+                    "nClasses": 69,
+                    "months": 6,
+                    "subject": "Math",
+                    "board":"CBSE",
+                    "grade": 8
+                },
+                "Science":
+                {
+                    "id":2,                   
+                    "fees": 32000,
+                    "nClasses": 69,
+                    "months": 6,
+                    "subject": "Science",
+                    "board":"CBSE",
+                    "grade": 8
+                },
+                "Physics":
+                {
+                    "id":3,                   
+                    "fees": 32000,
+                    "nClasses": 69,
+                    "months": 6,
+                    "subject": "Physics",
+                    "board":"CBSE",
+                    "grade": 8
+                },
+                "Chemistery":
+                {
+                    "id":4,                   
+                    "fees": 32000,
+                    "nClasses": 69,
+                    "months": 6,
+                    "subject": "Chemistery",
+                    "board":"CBSE",
+                    "grade": 8
+                }
+                
+            }
+         }
+
+         ,
+         "ICSE":[],
+         "OTHERS":[]
+        }
     }
 ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

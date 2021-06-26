@@ -1,3 +1,5 @@
+
+
 function onSubmit(){
     // console.log(studentForm.value)
 
@@ -89,7 +91,128 @@ function setGrade(grade){
 localStorage.setItem('grade',grade);      
 }
 
-if(window.location.pathname.includes('virtual-guruji2.html')){
-    document.getElementById('subject').innerHTML = localStorage.getItem('subject');
-    document.getElementById('board').innerHTML = localStorage.getItem('board');
+// if(window.location.pathname.includes('virtual-guruji2.html')){
+//     document.getElementById('subject').innerHTML = localStorage.getItem('subject');
+//     document.getElementById('board').innerHTML = localStorage.getItem('board');
+// }
+
+
+document.addEventListener('DOMContentLoaded', init, false);
+
+let board;
+let grade;
+let subject;
+let data;
+
+function init(){
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           // Typical action to be performed when the document is ready:
+           data = JSON.parse(xhttp.responseText);
+            board = localStorage.getItem('board');
+            grade = localStorage.getItem('grade');
+            subject = localStorage.getItem('subject');
+            initHtml(board,grade,subject);
+        }
+    };
+    xhttp.open("GET", "virtual.json", true);
+    xhttp.send();
+}
+
+function initHtml(board,grade,subject){
+    let subjectDetail =[];
+    let html = '';
+    subjectDetail.push(data[0]['Board'][board][grade][subject]);
+    console.log(subjectDetail);
+     subjectDetail.forEach(element => {
+         html+= `
+         <div class="card pl-5" style="width: 25rem;box-shadow: 5px 10px 18px #888888; ">
+          <div class="card-title pt-4" style="padding-left: 32px">
+             <span id="subject" class="fs-3 fw-bolder">${element.subject}</span>
+             <small id="board" class="badge rounded-pill bg-primary  mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
+          </div>
+          <hr>
+          <div class="card-body col-12">
+              <div class="d-flex justify-content-around">
+                  <div>
+                      <span class="p-2" style="border-right:1px solid black;">
+                          <span class="text-center fw-bold">${element.nClasses}</span> <br> live Classes
+                      </span>
+                      </div>
+                      <div>
+                          <span class="p-2" style="border-right:1px solid black;">
+                              <span class="text-center fw-bold">${element.months}</span> <br> Months
+                          </span>
+                      </div>
+                       
+                      <div>
+                          <span style="border-left:0;">
+                              <span class="text-center fw-bold">${element.fees}</span> <br> Fees
+                          </span>
+                      </div>
+              </div>
+
+              <div class="mt-3">                    
+                      <div class="p-2 ml-5 fw-bold">
+                          <i class="fas fa-star "></i>                        
+                              Best of Enhancing Problem Solving Skills                            
+                      </div>
+                      <div class="p-2 fw-bold">
+                          <i class="fas fa-star "></i>                           
+                              Best of Enhancing Problem Solving Skills                            
+                      </div> 
+                      <div class="p-2 fw-bold">
+                          <i class="fas fa-star "></i>                          
+                              Best of Enhancing Problem Solving Skills                  
+                      </div>                        
+              </div>
+              <hr>
+
+              <div>
+                  <div class="p-2 ml-5 ">
+                     <i class="fas fa-circle"></i>                       
+                          Best of Enhancing Problem Solving Skills                            
+                  </div>
+                  <div class="p-2 ">
+                     <i class="fas fa-circle"></i>                          
+                          Best of Enhancing Problem Solving Skills                            
+                  </div> 
+                  <div class="p-2 ">
+                     <i class="fas fa-circle"></i>                         
+                          Best of Enhancing Problem Solving Skills                  
+                  </div>
+
+              </div>
+
+              <div class="m-3" >
+                  <a href="./virtual-guruji3.html" style="box-shadow: 5px 10px 18px #888888;" class="btn btn-primary">Explore More</a>
+              </div>             
+                  
+              </div>
+          </div>
+         `
+     });
+
+     document.getElementById('selectedClass').innerHTML= html;
+}
+
+
+function filter(event){
+    // console.log(event.target.value);
+    if(event.target.id == 'grades'){
+       grade = event.target.value;       
+    }
+    if(event.target.id == 'boards'){
+        board = event.target.value;
+        if(grade == 'All Board'){
+           
+        }
+    }
+
+    if(event.target.id == 'subjects'){
+      subject = event.target.value  
+    }
+
+    
 }
