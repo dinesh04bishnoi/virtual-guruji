@@ -1,82 +1,106 @@
 [
     {
-        "Board" : {
-         "CBSE":{
-             "8" :{
-                 "Math":
-                {
-                    "id":1,                   
-                    "fees": 32000,
-                    "nClasses": 69,
-                    "months": 6,
-                    "subject": "Math",
-                    "board":"CBSE",
-                    "grade": 8
-                },
-                "Science":
-                {
-                    "id":2,                   
-                    "fees": 32000,
-                    "nClasses": 69,
-                    "months": 6,
-                    "subject": "Science",
-                    "board":"CBSE",
-                    "grade": 8
-                },
-                "Physics":
-                {
-                    "id":3,                   
-                    "fees": 32000,
-                    "nClasses": 69,
-                    "months": 6,
-                    "subject": "Physics",
-                    "board":"CBSE",
-                    "grade": 8
-                },
-                "Chemistery":
-                {
-                    "id":4,                   
-                    "fees": 32000,
-                    "nClasses": 69,
-                    "months": 6,
-                    "subject": "Chemistery",
-                    "board":"CBSE",
-                    "grade": 8
-                }
-                
-            }
-         }
-
-         ,
-         "ICSE":[],
-         "OTHERS":[]
-        }
+        "id": 1,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Math",
+        "board": "CBSE",
+        "tag_board":"All Board",
+        "tag_subject":"All Subject",
+        "star_bullet_detail":"",
+        "dot_bullet_detail":"",
+        "grade": 8
+    },
+    {
+        "id": 2,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Science",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 8
+    },
+    {
+        "id": 3,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Physics",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 8
+    },
+    {
+        "id": 4,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Chemistery",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 8
+    },
+    {
+        "id": 5,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Math",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 9
+    },
+    {
+        "id": 6,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Science",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 9
+    },
+    {
+        "id": 7,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Physics",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 9
+    },
+    {
+        "id": 8,
+        "fees": 32000,
+        "nClasses": 69,
+        "months": 6,
+        "subject": "Chemistery",
+        "board": "CBSE",
+        "tag": "All Board",
+        "tag_subject": "All Subject",
+        "star_bullet_detail": "",
+        "dot_bullet_detail": "",
+        "grade": 9
     }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

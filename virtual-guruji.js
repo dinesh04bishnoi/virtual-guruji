@@ -113,18 +113,22 @@ function init(){
             board = localStorage.getItem('board');
             grade = localStorage.getItem('grade');
             subject = localStorage.getItem('subject');
-            initHtml(board,grade,subject);
+            const initData=data.filter(function(element) {
+                return element.board==board && element.grade==grade && element.subject==subject;
+            })
+            console.log(initData);
+            initHtml(initData);
         }
     };
     xhttp.open("GET", "virtual.json", true);
     xhttp.send();
 }
 
-function initHtml(board,grade,subject){
+function initHtml(data){
     let subjectDetail =[];
     let html = '';
-    subjectDetail.push(data[0]['Board'][board][grade][subject]);
-    console.log(subjectDetail);
+    subjectDetail=data;
+  
      subjectDetail.forEach(element => {
          html+= `
          <div class="card pl-5" style="width: 25rem;box-shadow: 5px 10px 18px #888888; ">
@@ -199,20 +203,61 @@ function initHtml(board,grade,subject){
 
 
 function filter(event){
-    // console.log(event.target.value);
-    if(event.target.id == 'grades'){
-       grade = event.target.value;       
-    }
-    if(event.target.id == 'boards'){
-        board = event.target.value;
-        if(grade == 'All Board'){
-           
-        }
-    }
+     let initData; 
+        if (event.target.id=='boards')
+            board=event.target.value
 
-    if(event.target.id == 'subjects'){
-      subject = event.target.value  
+        if (event.target.id=='grades')
+            grade=event.target.value
+
+        if (event.target.id=='subjects')
+            subject=event.target.value
+  
+         if(board!="All Board" || subject !="All Subject"){
+            initData = data.filter(function (element) {
+             return (
+                     element.board == board &&
+                     element.grade == grade &&
+                     element.subject == subject
+                   );
+                 }); 
+                   
+             
+         }
+         if(board == "All Board" && subject !="All Subject"){
+             initData = data.filter(function (element) {
+             return (
+                     element.tag == "All Board" &&
+                     element.grade == grade &&
+                     element.subject == subject
+                   );
+                 }); 
+         }
+          if (subject == "All Subject" && board !="All Board") {
+            initData = data.filter(function (element) {
+              return (
+                element.board == board &&
+                element.grade == grade &&
+                element.tag_subject == "All Subject"
+              );
+            });
+          }
+          if (subject == "All Subject" && board =="All Board") {
+            initData = data.filter(function (element) {
+              return (
+                element.tag == "All Board" &&
+                element.grade == grade &&
+                element.tag_subject == "All Subject"
+              );
+            });
+          }
+        
+                 
+                
+            
+        
+          console.log(initData);
+          initHtml(initData);
     }
 
     
-}
