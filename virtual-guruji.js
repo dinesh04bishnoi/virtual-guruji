@@ -134,7 +134,7 @@ function initHtml(data){
   
      subjectDetail.forEach(element => {
          html+= `
-         <div class="card pl-5 mt-4" style="width: 25rem;box-shadow: 5px 10px 18px #888888; ">
+         <div class="card pl-5 mt-4 mb-4" style="width: 27rem;box-shadow: 5px 10px 18px #888888; ">
           <div class="card-title pt-4" style="padding-left: 32px">
              <span id="subject" class="fs-3 fw-bolder">${element.subject}</span>
              <small id="board" class="badge rounded-pill bg-primary  mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
@@ -162,15 +162,15 @@ function initHtml(data){
 
               <div class="mt-3">                    
                       <div class="p-2 ml-5 fw-bold">
-                          <i class="fas fa-star "></i>                        
+                          <img src="assets/star.png" width="25" style="padding-right:8px">                        
                           Best to Score More in Exams                            
                       </div>
                       <div class="p-2 fw-bold">
-                          <i class="fas fa-star "></i>                           
+                          <img src="assets/star.png" width="25" style="padding-right:8px">                           
                           Covers Complete ${element.board} Syllabus.                            
                       </div> 
                       <div class="p-2 fw-bold">
-                          <i class="fas fa-star "></i>                          
+                          <img src="assets/star.png" width="25" style="padding-right:8px">                          
                           Demands 3 Hours of Practise per Week                 
                       </div>                        
               </div>
@@ -178,19 +178,19 @@ function initHtml(data){
 
               <div>
                   <div class="p-2 ml-5 ">
-                     <i class="fas fa-circle"></i>                       
+                     <img src="assets/tick.png" width="25" style="padding-right:8px">                       
                      ${element.nClasses} Live Interactive Classes                            
                   </div>
                   <div class="p-2 ">
-                     <i class="fas fa-circle"></i>                          
+                     <img src="assets/tick.png" width="25" style="padding-right:8px">                          
                      In-Class Case Studies for Real-Life Application                          
                   </div> 
                   <div class="p-2 ">
-                     <i class="fas fa-circle"></i>                         
+                     <img src="assets/tick.png" width="25" style="padding-right:8px">                         
                      Monthly Report Cards to Parents                  
                   </div>
                   <div class="p-2 ">
-                     <i class="fas fa-circle"></i>                         
+                     <img src="assets/tick.png" width="25" style="padding-right:8px">                         
                      3D Visualised Content                 
                   </div>
 
