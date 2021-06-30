@@ -131,14 +131,14 @@ function initHtml(data){
   
      subjectDetail.forEach(element => {
          html+= `
-         <div class="card pl-5" style="width: 25rem;box-shadow: 5px 10px 18px #888888; ">
+         <div class="card pl-5 mt-4" style="width: 25rem;box-shadow: 5px 10px 18px #888888; ">
           <div class="card-title pt-4" style="padding-left: 32px">
              <span id="subject" class="fs-3 fw-bolder">${element.subject}</span>
              <small id="board" class="badge rounded-pill bg-primary  mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
           </div>
           <hr>
           <div class="card-body col-12">
-              <div class="d-flex justify-content-around">
+              <div class="d-flex justify-content-between ">
                   <div>
                       <span class="p-2" style="border-right:1px solid black;">
                           <span class="text-center fw-bold">${element.nClasses}</span> <br> live Classes
@@ -160,15 +160,15 @@ function initHtml(data){
               <div class="mt-3">                    
                       <div class="p-2 ml-5 fw-bold">
                           <i class="fas fa-star "></i>                        
-                              Best of Enhancing Problem Solving Skills                            
+                          Best to Score More in Exams                            
                       </div>
                       <div class="p-2 fw-bold">
                           <i class="fas fa-star "></i>                           
-                              Best of Enhancing Problem Solving Skills                            
+                          Covers Complete ${element.board} Syllabus.                            
                       </div> 
                       <div class="p-2 fw-bold">
                           <i class="fas fa-star "></i>                          
-                              Best of Enhancing Problem Solving Skills                  
+                          Demands 3 Hours of Practise per Week                 
                       </div>                        
               </div>
               <hr>
@@ -176,15 +176,19 @@ function initHtml(data){
               <div>
                   <div class="p-2 ml-5 ">
                      <i class="fas fa-circle"></i>                       
-                          Best of Enhancing Problem Solving Skills                            
+                     ${element.nClasses} Live Interactive Classes                            
                   </div>
                   <div class="p-2 ">
                      <i class="fas fa-circle"></i>                          
-                          Best of Enhancing Problem Solving Skills                            
+                     In-Class Case Studies for Real-Life Application                          
                   </div> 
                   <div class="p-2 ">
                      <i class="fas fa-circle"></i>                         
-                          Best of Enhancing Problem Solving Skills                  
+                     Monthly Report Cards to Parents                  
+                  </div>
+                  <div class="p-2 ">
+                     <i class="fas fa-circle"></i>                         
+                     3D Visualised Content                 
                   </div>
 
               </div>
