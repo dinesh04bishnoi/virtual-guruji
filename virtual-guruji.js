@@ -113,6 +113,9 @@ function init(){
             board = localStorage.getItem('board');
             grade = localStorage.getItem('grade');
             subject = localStorage.getItem('subject');
+            document.getElementById("grades").value=grade;
+            document.getElementById("boards").value=board;
+            document.getElementById("subjects").value=subject;
             const initData=data.filter(function(element) {
                 return element.board==board && element.grade==grade && element.subject==subject;
             })
