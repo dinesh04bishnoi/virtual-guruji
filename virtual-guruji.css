@@ -4,6 +4,14 @@
     /* align-content: space-between; */
 }
 
+body{
+    background-repeat: repeat;
+    background-attachment: inherit;
+    background-size: inherit;
+    background-image: url(assets/bg-pattern-1.png) !important;
+
+}
+
 
 /* nested dropdown start */
 
@@ -383,8 +391,11 @@
   }
   
   .homepage{
-      background-color: #c8eadf;
+       /* background-color: #c8eadf;  */
       padding:4% 12%;
+      /* background-color: #fff; */
+      background-image: linear-gradient( rgba(255,98,0,1),rgba(255,128,0,0.9) );
+      color: #fff;
   }
   
   h5{
@@ -1920,14 +1931,14 @@
 	  padding: 0;
 	  padding-top: 20px;
 	  padding-bottom: 20px;
-	  width: 264px;
+	  width: 135px;
 	  font-size: 28px;
-	  line-height: 19px;
+	  line-height: 5px;
 	  font-weight: 700;
 	  letter-spacing: 1px;
 	  margin: 0 auto;
-	  margin-left: 5px;
-	  margin-right: 5px;
+	  /* margin-left: 5px;
+	  margin-right: 5px; */
 	  margin-bottom: 10px;
 	  text-align: center;
 	  border-radius: 4px;
