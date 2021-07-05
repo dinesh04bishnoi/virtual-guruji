@@ -7,14 +7,17 @@
   color: orange;
 }
 
+.bg-grey{
+    background-color: #f7f5f5;
+}
+
 body{
     background-repeat: repeat;
     background-attachment: inherit;
     background-size: inherit;
-    background-image: url(assets/bg-pattern-1.png) !important;
-
-    
-}
+    /* background-image: url(assets/bg-pattern-1.png) !important; */
+    background-color: #fff !important;
+} 
 
 .rounded-div{
     border-radius: 50%;
@@ -22,9 +25,26 @@ body{
     width: 140px;
     background-color: darkgray;
     align-self: center;
-    
-
 }
+
+ .heading{
+    object-fit: contain;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: .94;
+    letter-spacing: -1.5px;
+    margin: 15px auto;
+}
+
+ .subheading{
+    margin-top: 25px;
+    max-width: 330px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -.8px;
+}
+
 
 
 /* nested dropdown start */
@@ -408,8 +428,8 @@ body{
        /* background-color: #c8eadf;  */
       padding:4% 12%;
       /* background-color: #fff; */
-      background-image: linear-gradient( rgba(255,98,0,1),rgba(255,128,0,0.9) );
-      color: #fff;
+      /* background-image: linear-gradient( rgba(255,98,0,1),rgba(255,128,0,0.9) );
+      color: #fff; */
   }
   
   h5{
@@ -508,14 +528,193 @@ body{
   }
   
   .workshop{
-      background-color:#c0e1d6;
-      padding:4% 12%;
+      /* background-color:#c0e1d6; */
+      padding: 0% 12%;
   }
+
+  .virtual-guruji-effect{
+    padding: 0% 12% 2% 12%;
+  }
+
+  .virtual-guruji-effect .circle .percent{
+    position: relative;
+    width:150px;
+    height: 150px;
+  }
+  .circle .percent svg{
+    position: relative;
+    width:150px;
+    height: 150px;
+  }
+  .circle .percent svg circle{
+    width:150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+  }
+  .circle .percent svg circle:nth-child(1){
+stroke-dashoffset: 0;
+stroke:#f3f3f3;
+  }
+  .circle .percent svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 79) / 100);
+    stroke:#f77422;
+      }
   
+     
+  .circle .percent .number{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #111;
+  }
+
+  .circle .percent .number h2{
+      font-size: 48px;
+  }
+  .circle .percent .number h2 span{
+    font-size: 24px;
+}
+
+.circle .text{
+padding: 10px 0 0;
+color:#999;
+letter-spacing: 1px;
+font-weight: 700;
+}
+
+.virtual-guruji-effect .circle .percent1{
+    position: relative;
+    width:150px;
+    height: 150px;
+  }
+
+.circle .percent1 svg{
+    position: relative;
+    width:150px;
+    height: 150px;
+  }
+  .circle .percent1 svg circle{
+    width:150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+  }
+  .circle .percent1 svg circle:nth-child(1){
+stroke-dashoffset: 0;
+stroke:#f3f3f3;
+  }
+  .circle .percent1 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 87) / 100);
+    stroke:#f77422;
+      }
+  
+     
+  .circle .percent1 .number{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #111;
+  }
+
+  .circle .percent1 .number h2{
+      font-size: 48px;
+  }
+  .circle .percent1 .number h2 span{
+    font-size: 24px;
+}
+
+.circle .text1{
+padding: 10px 0 0;
+color:#999;
+letter-spacing: 1px;
+font-weight: 700;
+}
+  
+
+.virtual-guruji-effect .circle .percent2{
+    position: relative;
+    width:150px;
+    height: 150px;
+  }
+
+.circle .percent2 svg{
+    position: relative;
+    width:150px;
+    height: 150px;
+  }
+  .circle .percent2 svg circle{
+    width:150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: #000;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    stroke-linecap: round;
+  }
+  .circle .percent2 svg circle:nth-child(1){
+stroke-dashoffset: 0;
+stroke:#f3f3f3;
+  }
+  .circle .percent2 svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 95) / 100);
+    stroke:#f77422;
+      }
+  
+     
+  .circle .percent2 .number{
+      position:absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #111;
+  }
+
+  .circle .percent2 .number h2{
+      font-size: 48px;
+  }
+  .circle .percent2 .number h2 span{
+    font-size: 24px;
+}
+
+.circle .text2{
+padding: 10px 0 0;
+color:#999;
+letter-spacing: 1px;
+font-weight: 700;
+}
+
+
   .workshop .cards{
-      background-color: #c8eadf;
-      max-height: 150px;
-      min-height: 150px;
+      background-color: #fff;
+      /* max-height: 150px;
+      min-height: 150px; */
       border-radius: 10px;
   }
   
@@ -645,11 +844,7 @@ body{
       content: 'Seconds';
   }
   
-  .whyGolden{
-      padding:4% 12%;
-      background-color: #032d30;
-      color: white;
-  }
+
   
   .GoldenCards .cards{
       background-color: hsla(0,0%,100%,.1);
@@ -686,11 +881,7 @@ body{
   .believeThemHeading{
       font-size: 60px;
   }
-  
-  .heading{
-      color: #0e8f84;
-      font-weight: 700;
-  }
+ 
   
   .checkboxes{
       padding:4% 12%;
@@ -769,6 +960,10 @@ body{
       width: 91% !important;
       height: 160px;
   }
+
+  .whyVirtual-advantages{
+      display: flex;  
+  }
   
   
   @media (min-width:300px) and (max-width:449.99px){
@@ -776,6 +971,12 @@ body{
     .virtual-guruji-3{
         display: flex;
         flex-direction: column;
+    }
+
+    .whyVirtual-advantages{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
     }
 
     .ourTeam{
@@ -892,9 +1093,7 @@ body{
           padding-top:10px;
       }
   
-      .whyGolden{
-          padding:4% 4%;
-      }
+    
   
        .paragraph .cards{
           background-color: hsla(0,0%,100%,.1);
@@ -964,9 +1163,9 @@ body{
       }
   
       .workshop .cards{
-          background-color: #c8eadf;
-          max-height: 200px;
-          min-height: 200px;
+          background-color: #fff;
+          /* max-height: 200px;
+          min-height: 200px; */
           border-radius: 10px;
       }
       
@@ -1050,6 +1249,11 @@ body{
     .virtual-guruji-3{
         display: flex;
         flex-direction: column;
+    }
+    .whyVirtual-advantages{
+        display: flex !important;
+        flex-direction: column !important;
+       
     }
 
       .homepage{
@@ -1175,11 +1379,7 @@ body{
           padding-top:10px;
       }
   
-      .whyGolden{
-          padding:6% 8%;
-          /* background-color: #032d30;
-          color: white; */
-      }
+    
   
        .paragraph .cards{
           background-color: hsla(0,0%,100%,.1);
@@ -1262,6 +1462,11 @@ body{
     .virtual-guruji-3{
         display: flex;
         flex-direction: column;
+    }
+    .whyVirtual-advantages{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
     }
 
   
@@ -1380,11 +1585,7 @@ body{
           background-color: #f5f5f5;
       }
   
-      .whyGolden{
-          padding:6% 8%;
-          /* background-color: #032d30;
-          color: white; */
-      }
+    
   
        .paragraph .cards{
           background-color: hsla(0,0%,100%,.1);
@@ -1455,9 +1656,9 @@ body{
           margin-top: 27%;
       }
       .workshop .cards {
-          background-color: #c8eadf;
-          max-height: 200px;
-          min-height: 200px;
+          background-color: #fff;
+          /* max-height: 200px;
+          min-height: 200px; */
           border-radius: 10px;
       }
       .unlockbonus{
@@ -1478,6 +1679,12 @@ body{
      .homepage .register {        
           margin-left: -315px !important;
       }
+
+      .whyVirtual-advantages{
+        display: flex !important;
+        flex-direction: column !important;
+        width: 100%;
+    }
   
       .workshop .register{
           margin-left: 0px !important;
@@ -1579,11 +1786,7 @@ body{
           background-color: #f5f5f5;
       }
   
-      .whyGolden{
-          padding:6% 8%;
-          /* background-color: #032d30;
-          color: white; */
-      }
+    
   
        .paragraph .cards{
           background-color: hsla(0,0%,100%,.1);
@@ -1656,9 +1859,8 @@ body{
       margin-top: 56%;
       }
       .workshop .cards {
-          background-color: #c8eadf;
-          max-height: 200px;
-          min-height: 200px;
+          background-color: #fff;
+        
           border-radius: 10px;
       }
       .unlockbonus{
@@ -1688,13 +1890,7 @@ body{
 	  display: flex;
   }
   
-  .heading{
-	  margin-top: 5px;
-	  color: #ff5151;
-	  font-size: 42px;
-	  line-height: 30%;
-	  font-weight: 700;
-  }
+ 
   .description{
 	  margin-top: 10px;
 	  font-size: 16px;
@@ -1725,12 +1921,7 @@ body{
 	  .cards {
 		  display: block !important;
 	  }
-      .virtual-guruji-3{
-        display: flex;
-        flex-direction: column;
-        columns: #fff;
-    }
-
+   
   }
   
   
@@ -1885,7 +2076,7 @@ body{
 	  display: inline-block;
 	  padding: 20px;
 	  width: 110px;
-	  font-size: 14px;
+	  font-size: 37px;
 	  line-height: 20px;
 	  letter-spacing: 1px;
 	  margin: 0 auto;
@@ -1897,12 +2088,12 @@ body{
 	  overflow: hidden;
 	  cursor: pointer;
 	  text-transform: uppercase;
-	  color: var(--white);
+	  color: var(--black);
 	  -webkit-transition: all 300ms linear;
 	  transition: all 300ms linear; 
   }
   .checkbox-tools:not(:checked) + label{
-	  background-color: var(--dark-light);
+	  background-color: #ecedf3;
 	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .checkbox-tools:checked + label{
@@ -1945,7 +2136,7 @@ body{
 	  padding: 0;
 	  padding-top: 20px;
 	  padding-bottom: 20px;
-	  width: 135px;
+	  width: 210px;
 	  font-size: 28px;
 	  line-height: 5px;
 	  font-weight: 700;
@@ -1959,14 +2150,14 @@ body{
 	  overflow: hidden;
 	  cursor: pointer;
 	  text-transform: uppercase;
-	  -webkit-transition: all 300ms linear;
-	  transition: all 300ms linear; 
+	  /* -webkit-transition: all 0ms linear;
+	  transition: all 0ms linear; 
 	  -webkit-text-stroke: 1px var(--white);
 	  -webkit-text-fill-color: transparent;
-	  color: transparent;
+	  color: transparent; */
   }
   .checkbox-budget:not(:checked) + label{
-	  background-color: var(--dark-light);
+	  background-color: #ecedf3;
 	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .checkbox-budget:checked + label{
@@ -2001,12 +2192,12 @@ body{
 	  left: 0;
 	  width: 100%;
 	  overflow: hidden;
-	  -webkit-text-stroke: transparent;
-	  -webkit-text-fill-color: var(--white);
-	  color: var(--white);
-	  -webkit-transition: max-height 0.3s;
+	  /* -webkit-text-stroke: transparent; */
+	  /* -webkit-text-fill-color: var(--white); */
+	  /* color: var(--white); */
+	  /* -webkit-transition: max-height 0.3s;
 	  -moz-transition: max-height 0.3s;
-	  transition: max-height 0.3s;
+	  transition: max-height 0.3s; */
   }
   .checkbox-budget:not(:checked) + label span::before{
 	  max-height: 0;
@@ -2015,12 +2206,12 @@ body{
 	  max-height: 100%;
   }
   
-  .checkbox:checked ~ .section .container .row .col-xl-10 .checkbox-budget:not(:checked) + label{
+  /* .checkbox:checked ~ .section .container .row .col-xl-10 .checkbox-budget:not(:checked) + label{
 	  background-color: var(--light);
 	  -webkit-text-stroke: 1px var(--dark-blue);
 	  box-shadow: 0 1x 4px 0 rgba(0, 0, 0, 0.05);
   }
-  
+   */
   .checkbox-booking:checked + label,
   .checkbox-booking:not(:checked) + label{
 	  position: relative;
@@ -2049,11 +2240,11 @@ body{
 	  text-align: center;
 	  border-radius: 4px;
 	  cursor: pointer;
-	  color: var(--white);
+	  /* color: var(--white);
 	  text-transform: uppercase;
 	  background-color: var(--dark-light);
 	  -webkit-transition: all 300ms linear;
-	  transition: all 300ms linear; 
+	  transition: all 300ms linear;  */
   }
   .checkbox-booking:not(:checked) + label::before{
 	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
@@ -2075,8 +2266,8 @@ body{
 	  border-radius: 4px;
 	  z-index: -2;
 	  background-image: linear-gradient(138deg, var(--red), var(--yellow));
-	  -webkit-transition: all 300ms linear;
-	  transition: all 300ms linear; 
+	  /* -webkit-transition: all 300ms linear; */
+	  /* transition: all 300ms linear;  */
   }
   .checkbox-booking:not(:checked) + label::before{
 	  top: -1px;
@@ -2095,7 +2286,7 @@ body{
 	  border-radius: 4px;
 	  z-index: -2;
 	  background-color: var(--dark-light);
-	  -webkit-transition: all 300ms linear;
+	  /* -webkit-transition: all 300ms linear; */
 	  transition: all 300ms linear; 
   }
   .checkbox-booking:checked + label::after{
@@ -2109,8 +2300,8 @@ body{
   .checkbox-booking:not(:checked) + label .text{
 	  position: relative;
 	  display: inline-block;
-	  -webkit-transition: opacity 300ms linear;
-	  transition: opacity 300ms linear;
+	  /* -webkit-transition: opacity 300ms linear;
+	  transition: opacity 300ms linear; */
   }
   .checkbox-booking:checked + label .text{
 	  opacity: 0.6;
@@ -2126,8 +2317,8 @@ body{
 	  height: 2px;
 	  background-image: linear-gradient(138deg, var(--red), var(--yellow));
 	  z-index: 1;
-	  -webkit-transition: all 300ms linear;
-	  transition: all 300ms linear; 
+	  /* -webkit-transition: all 300ms linear;
+	  transition: all 300ms linear;  */
   }
   .checkbox-booking:not(:checked) + label .text::after{
 	  width: 0;
