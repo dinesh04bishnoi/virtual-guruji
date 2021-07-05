@@ -88,6 +88,91 @@ function setSubject(subject){
 localStorage.setItem('subject',subject);  
 }
 function setGrade(grade){
+    if (grade=='8' || grade=="9" || grade=="10") {
+        let subHtml = `
+            <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888">
+                <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
+                        onclick="setSubject('Science')">
+                        <div>
+                            <img src="assets/science.png" width="100" alt="">
+                        </div>
+                        <div class="text-center m-2 fw-bold">
+                            Science
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+              <div class="cards mb-2 p-3" style="box-shadow: 5px 10px 18px #888888">
+                <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
+                        onclick="setSubject('Math')">
+                        <div>
+                            <img src="assets/math.png" width="100" alt="">
+                        </div>
+                        <div class="text-center m-2 fw-bold">
+                            Math
+                        </div>
+                    </a>
+                </div>
+            </div>
+            `;
+            document.getElementById("subHtml").innerHTML=subHtml;
+        
+    }
+
+    if (grade=="11" || grade=="12") {
+        subHtml = ` <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888">
+                <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
+                        onclick="setSubject('Physics')">
+                        <div>
+                            <img src="assets/physics.png" width="100" alt="">
+                        </div>
+                        <div class="text-center m-2 fw-bold">
+                            Physics
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+              <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888">
+                <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
+                        onclick="setSubject('Chemistery')">
+                        <div>
+                            <img src="assets/chemistery.png" width="100" alt="">
+                        </div>
+                        <div class="text-center m-2 fw-bold">
+                            Chemistery
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+             <div class="cards mb-2 p-3" style="box-shadow: 5px 10px 18px #888888">
+                <div>
+                    <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
+                        onclick="setSubject('Math')">
+                        <div>
+                            <img src="assets/math.png" width="100" alt="">
+                        </div>
+                        <div class="text-center m-2 fw-bold">
+                            Math
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            
+            `;
+
+             document.getElementById("subHtml").innerHTML = subHtml;
+    }
 localStorage.setItem('grade',grade);      
 }
 
