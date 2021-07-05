@@ -3,12 +3,26 @@
     justify-content:space-around;
     /* align-content: space-between; */
 }
+.checked {
+  color: orange;
+}
 
 body{
     background-repeat: repeat;
     background-attachment: inherit;
     background-size: inherit;
     background-image: url(assets/bg-pattern-1.png) !important;
+
+    
+}
+
+.rounded-div{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    background-color: darkgray;
+    align-self: center;
+    
 
 }
 
