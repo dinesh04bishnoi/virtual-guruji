@@ -96,7 +96,6 @@ localStorage.setItem('grade',grade);
 //     document.getElementById('board').innerHTML = localStorage.getItem('board');
 // }
 
-
 document.addEventListener('DOMContentLoaded', init, false);
 
 let board;
