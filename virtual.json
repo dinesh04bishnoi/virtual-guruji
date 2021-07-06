@@ -159,19 +159,7 @@
    "dot_bullet_detail": "",
    "grade": 12
 },
-{
-    "id": 19,
-    "fees": 17500,
-    "nClasses": 180,
-    "months": 9,
-    "subject": "Chemistery",
-    "board": "ICSE",
-    "tag": "All Board",
-    "tag_subject": "All Subject",
-    "star_bullet_detail": "",
-    "dot_bullet_detail": "",
-    "grade": 8
- },
+
 
  {
     "id": 21,
