@@ -534,6 +534,7 @@ body{
 
   .virtual-guruji-effect{
     padding: 0% 12% 2% 12%;
+
   }
 
   .virtual-guruji-effect .circle .percent{
@@ -963,7 +964,12 @@ font-weight: 700;
 
   .whyVirtual-advantages{
       display: flex;  
+     
   }
+
+   .margin-right-custom{
+margin-left: 85px;
+ }
   
   
   @media (min-width:300px) and (max-width:449.99px){
