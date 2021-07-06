@@ -62,3 +62,33 @@
     background-color: none !important;
     color: #000 !important;
 }
+
+.footer{
+    background-color: #222;
+    padding: 4% 12%;
+}
+
+.footer-col{
+    display: flex;
+}
+
+@media (min-width:240px) and (max-width:450px){
+    .footer-col{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-col div{
+        margin: 8% 0%;
+        text-align: center !important;
+    }
+
+    .footer-col a{
+        text-align: center !important;
+    }
+
+    .footer-col ul{
+        text-align: center !important;
+    }
+}
