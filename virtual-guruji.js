@@ -122,7 +122,7 @@ localStorage.setItem('subject',subject);
 function setGrade(grade){
     if (grade=='8' || grade=="9" || grade=="10") {
         let subHtml = `
-            <div class="cards mb-2 p-3 cursor-pointer" style="box-shadow: 5px 10px 18px #888888 ;margin-right:50px">
+            <div class="cards mb-2 p-3 cursor-pointer subject-cards" >
                 <div>
                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
                         onclick="setSubject('Science')">
@@ -137,7 +137,7 @@ function setGrade(grade){
                 </div>
 
             </div>
-              <div class="cards mb-2 p-3" style="box-shadow: 5px 10px 18px #888888 ;margin-right:50px">
+              <div class="cards mb-2 p-3 cursor-poniter subject-cards" >
                 <div>
                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
                         onclick="setSubject('Math')">
