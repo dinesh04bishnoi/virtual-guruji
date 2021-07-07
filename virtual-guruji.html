@@ -491,8 +491,8 @@
             <div class="">
                 <p class="fw-bold heading">India's Learning Won't Stop</p>
                 <p class="subheading">Real Live Learning in small Batches for</p>
-                <span class="badge bg-secondary p-2">Grade 8-12</span> <br> <br>
-                <a href="#workshop" class="bg-white text-decoration-none my-2 py-2 px-4"
+                <span class="badge bg-secondary p-2 gradebtn">Grade 8-12</span> <br> <br>
+                <a href="#workshop" class="bg-white text-decoration-none my-2 py-2 px-4 join-course-btn"
                     style="border-radius: 5px;margin-bottom: 20px;box-shadow: 5px 10px 10px #888888">Join Courses</a>
             </div>
             <!-- <div class="col-6 home-image">
@@ -501,25 +501,31 @@
         </div>
     </section>
 
-    <section class="my-5 tab-section">
+    <section class="mt-5 tab-section">
+        <p class="heading ">
+            How we bring out the best in your child
+        </p>
+        <p class="subheading">
+            Virtual Guruji is different and here’s how!
+        </p>
         <ul class="nav nav-pills mb-5 justify-content-center bg-white mt-5" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active p-3" id="pills-home-tab" data-bs-toggle="pill"
+            <li class="nav-item m-1" role="presentation" style="background-color: rgb(247, 245, 245)">
+                <button class="nav-link active p-3 tab-btns" id="pills-home-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                     aria-selected="true">India's Best Teacher</button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link p-3" id="pills-profile-tab" data-bs-toggle="pill"
+            <li class="nav-item m-1" role="presentation" style="background-color: rgb(247, 245, 245)">
+                <button class="nav-link p-3 tab-btns" id="pills-profile-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                     aria-selected="false">Personal Attention</button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link p-3" id="pills-contact-tab" data-bs-toggle="pill"
+            <li class="nav-item m-1" role="presentation" style="background-color: rgb(247, 245, 245)">
+                <button class="nav-link p-3 tab-btns" id="pills-contact-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
                     aria-selected="false">Innovative Methodology</button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link p-3" id="pills-rigrous-tab" data-bs-toggle="pill"
+            <li class="nav-item m-1" role="presentation" style="background-color: rgb(247, 245, 245)">
+                <button class="nav-link p-3 tab-btns" id="pills-rigrous-tab" data-bs-toggle="pill"
                     data-bs-target="#pills-rigrous" type="button" role="tab" aria-controls="pills-rigrous"
                     aria-selected="false">Rigorous Approach</button>
             </li>
@@ -527,7 +533,7 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="row">
-                    <div class="row col-3 flex-column">
+                    <div class="row col-3 flex-column best-teacher-paragraph">
                         <div class="border p-3 bg-grey"><strong>908 + </strong> Active Teacher</div>
                         <div class="border p-3 bg-grey mt-2">In Depth Subject Expertise<strong> Active Teacher</strong>
                         </div>
@@ -537,15 +543,33 @@
                             infrastructure to conduct online classes effectively</div>
                     </div>
                     <div class="row col-9 mt-5 justify-content-center">
+                        
+                        <div class="card text-center bg-transparent border-0" style="width: 15rem;">
+                            <div class="rounded-div">
+                                <img class="rounded-div" src="./assets/IMG_6548 copy.JPG" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title fw-bold">Diwakar Sir</h4>
+                                <h6 class="card-text fw-bold">8+ years of experience</h6>
+                                <div>B.Tech(Civil)</div>
+                                <div class="fs-6">Ex-FIT JEE,Ex-AAKASH</div>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                        
                         <div class="card text-center bg-transparent border-0" style="width: 15rem;">
                             <div class="rounded-div">
                                 <img class="rounded-div" src="./assets/Pooja Jalmoru_Teacher (2).jpeg" alt="">
                             </div>
                             <div class="card-body">
                                 <h4 class="card-title fw-bold">Pooja Jalmoru</h4>
-                                <h6 class="card-text fw-bold">Chemistry Expert</h6>
-                                <span>M.Sc.(Chemistry), B.Ed.</span>
-                                <span>6+ years of experience</span>
+                                <h6 class="card-text fw-bold">7+ years of experience</h6>
+                                <div>M.SC(Chemistery)</div>
+                                <div class="fs-6">Pursuing Phd</div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -553,31 +577,16 @@
                                 <span class="fa fa-star"></span>
                             </div>
                         </div>
-                        <div class="card text-center bg-transparent border-0" style="width: 15rem;">
-                            <div class="rounded-div">
-                                <img class="rounded-div" src="./assets/IMG_6548 copy.JPG" alt="">
-                            </div>
-                            <div class="card-body">
-                                <h4 class="card-title fw-bold">Diwakar Thakur</h4>
-                                <h6 class="card-text fw-bold">Maths Expert</h6>
-                                <span>B.Tech(Civil)</span>
-                                <span>5+ years of experience</span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                            </div>
-                        </div>
+                        
                         <div class="card text-center bg-transparent border-0" style="width: 15rem;">
                             <div class="rounded-div">
                                 <img class="rounded-div" src="./assets/Hardic Garg.jpeg" alt="">
                             </div>
                             <div class="card-body">
-                                <h4 class="card-title fw-bold">Hardic Garg</h4>
-                                <h6 class="card-text fw-bold">Physics Expert</h6>
-                                <span>B.Tech(Mechanical)</span>
-                                <span>4+ years of experience</span>
+                                <h4 class="card-title fw-bold">Ashish Awasthi</h4>
+                                <h6 class="card-text fw-bold">12+ years of experience</h6>
+                                <div>B.Tech(CUSAT)</div>
+                                <div class="fs-6">Ex-NARAYANA</div>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
@@ -590,12 +599,25 @@
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                 <div class="row col-12">
-                    <div class="col-6">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
                         <img src="./assets/patdesk.png" alt="" width="100%">
 
                     </div>
-                    <div class="col-6">
-
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 justify-content-end personal-attention-paragraph">
+                      <h5>
+                        At <span class="per-title-highlight">Virtual Guruji, we focus on</span>  Tutoring which helps in improving student processing of conventional instruction.
+                      </h5>
+                      <p>
+                        It is a method of enhancing the prerequisite feedback-corrective process where:
+                      </p>
+                      <ol>
+                          <li>
+                            The teacher <b>reteaches the items</b> that the majority of students have missed and <b>small groups of students help each other</b> over items that have been missed.
+                          </li>
+                          <li>
+                            The interaction between some students and teachers serve as an <b>encouragement</b> for a more active participation for other students as well. Children become more <b>interactive</b> thereby improving the overall learning level of the classroom.
+                          </li>
+                      </ol>
                     </div>
                 </div>
             </div>
@@ -607,42 +629,19 @@
                     src="./assets/Rigrous approach desktop.PNG" alt="" width="100%"></div>
         </div>
 
-
-
-
-
-
-        <div class="builders mt-5 text-center">
-            <p class=" fs-1 fw-bold heading"> Schools we work with</p>
-            <!-- <p class="text-center fs-1" style="margin: 5% 0%;">Builders we work with</p> -->
+        <div class="mt-5">  
             <div class="buildersLargeImg">
-                <img src="assets/schoolsImage.png" alt="" width="100%" height="100%">
+                <img src="assets/schoolsImage.jpeg" alt="" width="100%">
             </div>
             <div class="buildersSmallImg">
-                <img src="assets/schoolImageMobile.png" alt="">
-            </div>
-
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> <img
-                    src="./assets/innovative methodology desktop.PNG" alt="" width="100%"></div>
-
-            <div class="tab-pane fade" id="pills-rigrous" role="tabpanel" aria-labelledby="pills-rigrous-tab"><img
-                    src="./assets/Rigrous approach desktop.PNG" alt="" width="100%"></div>
-        </div>
-        <div class="builders mt-5 text-center">
-            <p class=" fs-1 fw-bold heading"> Schools we work with</p>
-            <!-- <p class="text-center fs-1" style="margin: 5% 0%;">Builders we work with</p> -->
-            <div class="buildersLargeImg">
-                <img src="assets/schoolsImage.png" alt="" width="100%" height="100%">
-            </div>
-            <div class="buildersSmallImg">
-                <img src="assets/schoolImageMobile.png" alt="">
+                <img src="assets/schoolImageMobile.jpeg" width="100%" alt="">
             </div>
         </div>
     </section>
 
-    <section id="our-clients" class="our-clients bg-white  py-5">
+    <section id="our-clients" class="our-clients bg-white  pb-5">
         <div class="container">
-            <p class="text-center fw-bold py-5 heading">Our numbers speak for themselves</p>
+            <p class="text-center fw-bold pb-5 heading">Our numbers speak for themselves</p>
             <div class="row no-gutters">
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="20" data-decimals="0" Cr
@@ -680,7 +679,7 @@
         <p class="text-center heading">
             Learning never stops at Virtual Guruji
         </p>
-        <p class="text-center fs-5 black mb-5">
+        <p class="subheading">
             Choose your child’s grade to discover our subjects
         </p>
 
@@ -869,23 +868,22 @@
         <div class="row">
             <div id="carouselExampleControls" class="carousel slide col-6" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" style="border-radius: 16px;">
+                    <div class="carousel-item active" style="border:15px solid #000; border-radius: 16px;">
                         <div id="outer">
-                            <video controls class="video" src="assets/video1.mp4"></video>
-
+                            <video controls class="video" width="900px" src="assets/video1.mp4"></video>
                         </div>
                     </div>
-                    <div class="carousel-item " id="outer">
-                        <video controls>
-                            <source src="assets/video2.mp4" type="video/mp4">
-                        </video>
+                    <div class="carousel-item"  style="border:15px solid #000; border-radius: 16px;">
+                        <div id="outer">
+                            <video controls class="video" src="assets/video2.mp4"></video>
+                        </div>
                     </div>
 
-                    <div class="carousel-item">
+                    <!-- <div class="carousel-item" style="border:15px solid #fff; border-radius: 16px;">
                         <video width="400" height="400" controls>
                             <source src="assets/1.webm" type="video/webm">
                         </video>
-                    </div>
+                    </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
@@ -909,7 +907,7 @@
     <section class="whyVirtual bg-white my-5">
         <div class="container">
             <p class="text-center fw-bold py-5 heading">Get the Virtual Guruji advantage</p>
-            <div class=" whyVirtual-advantages text-center">
+            <div class="whyVirtual-advantages text-center">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <img src="assets/live-class.png" width="100" alt="">
                     <h4 class="fw-bold">Live and Interactive Classes</h4>
@@ -929,7 +927,7 @@
                 </div>
             </div>
 
-            <div class="  whyVirtual-advantages text-center">
+            <div class="whyVirtual-advantages text-center">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <img src="assets/doubt-solving.png" width="100" alt="">
                     <h4 class="fw-bold">Doubt Solving</h4>
@@ -949,7 +947,7 @@
                 </div>
             </div>
 
-            <div class="  whyVirtual-advantages text-center">
+            <div class="whyVirtual-advantages text-center">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <img src="assets/time-saving.png" width="100" alt="">
                     <h4 class="fw-bold">Time Saving and Economical</h4>

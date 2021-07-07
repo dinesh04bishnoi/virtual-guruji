@@ -14,9 +14,7 @@
 
 
 body{
-    background-repeat: repeat;
-    background-attachment: inherit;
-    background-size: inherit;
+    font-family: cursive !important;
     /* background-image: url(assets/bg-pattern-1.png) !important; */
     background-color: #fff !important;
 } 
@@ -29,6 +27,26 @@ body{
     align-self: center;
 }
 
+.homepage .heading{
+    object-fit: contain;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: .94;
+    letter-spacing: -1.5px;
+    margin: 15px auto;
+    text-align: left;
+}
+
+ .homepage .subheading{
+    margin-top: 25px;
+    /* max-width: 330px; */
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -.8px;
+    text-align: left;
+}
+
  .heading{
     object-fit: contain;
     font-size: 50px;
@@ -36,15 +54,30 @@ body{
     line-height: .94;
     letter-spacing: -1.5px;
     margin: 15px auto;
+    text-align: center;
 }
 
  .subheading{
     margin-top: 25px;
-    max-width: 330px;
+    /* max-width: 330px; */
     font-size: 20px;
     font-weight: 500;
     line-height: 1.4;
     letter-spacing: -.8px;
+    text-align: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(75deg, #FDC830, #F37335, #f12711, #f5af19);
+}
+
+.nav-link{
+    color: #000;
+}
+
+.nav-link:hover{
+    color: #000;
 }
 
 
@@ -999,6 +1032,52 @@ margin-left: 85px;
         display: flex;
         flex-direction: column;
     }
+    .homepage .heading{
+      font-size: 28px;               
+    }
+    .gradebtn{
+        margin-left: 32%;
+    }
+    .join-course-btn{
+        margin-left: 21%;
+    }
+    
+     .homepage .subheading{       
+        /* max-width: 330px; */
+        font-size: 16px;   
+    }
+
+    .heading{
+        object-fit: contain;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: .94;
+        letter-spacing: -1.5px;
+        margin: 15px auto;
+        text-align: center;
+    }
+    
+     .subheading{
+        margin-top: 25px;
+        /* max-width: 330px; */
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.4;
+        letter-spacing: -.8px;
+        text-align: center;
+    }
+    
+
+    .personal-attention-paragraph{
+        display: none;
+    }
+
+    .best-teacher-paragraph{
+        display: none;
+    }
+    .tab-btns{
+        width: 15rem !important;
+    }
 
     .footer-col{
         width: 100%;
@@ -1008,16 +1087,16 @@ margin-left: 85px;
 
     .footer-col div{
         margin: 8% 0%;
-        text-align: center !important;
+        /* text-align: center !important; */
     }
 
-    .footer-col a{
-        text-align: center !important;
+    /* .footer-col a{
+        /* text-align: center !important; *
     }
 
     .footer-col ul{
         text-align: center !important;
-    }
+    } */
 
     .whyVirtual-advantages{
         display: flex !important;
@@ -1301,6 +1380,9 @@ margin-left: 85px;
         flex-direction: column !important;
        
     }
+    .personal-attention-paragraph{
+        display: none;
+    }
 
       .homepage{
           padding: 4% 4%;
@@ -1509,13 +1591,14 @@ margin-left: 85px;
         display: flex;
         flex-direction: column;
     }
+    .personal-attention-paragraph{
+        display: none;
+    }
     .whyVirtual-advantages{
         display: flex !important;
         flex-direction: column !important;
         width: 100%;
-    }
-
-  
+    }  
       .register {
           /* padding: 4% 5%; */
           /* font-size: 18px !important;
