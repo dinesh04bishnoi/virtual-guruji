@@ -33,7 +33,7 @@ overflow-y:hidden
 }
 
 .virtual-app{
-    /* padding: 2% 4%; */
+    padding: 2% 4%;
     background-image: linear-gradient(177deg,rgba(247,194,58,.6) 40%,hsla(0,0%,100%,.6) 86%);
 }
 
