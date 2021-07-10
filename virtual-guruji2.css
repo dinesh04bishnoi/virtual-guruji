@@ -103,7 +103,7 @@ body{
     width: 27rem;
 }
 
-@media (min-width:240px) and (max-width:450px){
+@media (min-width:240px) and (max-width:768px){
     .courses{
         text-align: center;
         margin: 10px 0px;
