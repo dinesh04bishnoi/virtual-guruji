@@ -1,5 +1,8 @@
 
 if (window.location.pathname.includes("virtual-guruji.html")) {
+    localStorage.setItem('subject','Science');
+    localStorage.setItem('board','ICSE');
+    localStorage.setItem('grade','8');
   let subHtml = `
             <div class="cards mb-2 p-3 justify-content-center cursor-pointer my-m" style="box-shadow: 5px 10px 18px #888888" >
                 <div>
@@ -250,7 +253,7 @@ function initHtml(data){
   
      subjectDetail.forEach(element => {
          html+= `
-         <div class="card pl-5 mt-4 mb-4" style="width: 27rem;box-shadow: 5px 10px 18px #888888; ">
+         <div class="card pl-5 mt-4 mb-4 subject-card" style="box-shadow: 5px 10px 18px #888888; ">
           <div class="card-title pt-4" style="padding-left: 32px">
              <span id="subject" class="fs-3 fw-bolder">${element.subject}</span>
              <small id="board" class="badge rounded-pill bg-primary  mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
@@ -276,7 +279,7 @@ function initHtml(data){
                       </div>
               </div>
 
-              <div class="mt-3">                    
+              <div class="mt-3 card-font" >                    
                       <div class="p-2 ml-5 fw-bold">
                           <img src="assets/star.png" width="25" style="padding-right:8px">                        
                           Best to Score More in Exams                            
@@ -292,7 +295,7 @@ function initHtml(data){
               </div>
               <hr>
 
-              <div>
+              <div class="card-font">
                   <div class="p-2 ml-5 ">
                      <img src="assets/tick.png" width="25" style="padding-right:8px">                       
                      ${element.nClasses} Live Interactive Classes                            
