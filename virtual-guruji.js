@@ -75,21 +75,22 @@ function onSubmit(){
 var myHeaders = new Headers();
 myHeaders.append("Content-Type", "application/json");
 
-// var raw = JSON.stringify({
-//   name: name,
-//   phone: phone,
-//   grade: Grade,
-//   time: Time,
-//   day: Day,
-//   email: email,
-//   subject: Subject,
-// });
+var raw = JSON.stringify({
+  name: name,
+  phone: phone,
+  grade: Grade,
+  time: Time,
+  day: Day,
+  email: email,
+  subject: Subject,
+});
+console.log(raw);
 
 var requestOptions = {
   method: "POST",
   mode: "no-cors",
   headers:{},
-  body: Body,
+  body: raw
  
 };
 
