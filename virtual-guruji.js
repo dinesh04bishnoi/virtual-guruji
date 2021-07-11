@@ -87,7 +87,7 @@ var raw = JSON.stringify({
 
 var requestOptions = {
   method: "POST",
-  mode: "cors",
+  mode: "no-cors",
   headers:{},
   body: raw,
  
