@@ -72,34 +72,34 @@ function onSubmit(){
      let Body = `Name: ${name} <br>  Phone Number: ${phone} <br> Email:  ${email} <br>  Grade: ${Grade} <br> Subject: ${Subject} <br> Day: ${Day} <br> Time: ${Time} `;
      console.log(Body);
 
-//      var myHeaders = new Headers();
-// myHeaders.append("Content-Type", "application/json");
-// myHeaders.append("Access-Control-Allow-Origin", "*");
+var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+myHeaders.append("Access-Control-Allow-Origin", "*");
 
 
-// var raw = JSON.stringify({
-//   "name": name,
-//   "phone": phone,
-//   "grade": Grade,
-//   "time": Time,
-//   "day": Day,
-//   "email": email,
-//   "subject": Subject
-// });
+var raw = JSON.stringify({
+  "name": name,
+  "phone": phone,
+  "grade": Grade,
+  "time": Time,
+  "day": Day,
+  "email": email,
+  "subject": Subject
+});
 
-// var requestOptions = {
-//   method: 'POST',
-//   mode: 'cors',
-// //   headers: myHeaders,
+var requestOptions = {
+  method: 'POST',
+  mode: 'cors',
+//   headers: myHeaders,
 
-//   body: raw,
-// //   redirect: 'follow'
-// };
+  body: raw,
+//   redirect: 'follow'
+};
 
-// fetch("https://raiseme.in/api/sendOtherMail", requestOptions)
-//   .then(response => response.text())
-//   .then(result => console.log(result))
-//   .catch(error => console.log('error', error));
+fetch("https://raiseme.in/api/sendOtherMail", requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
  
 // Email.send({
 //     //  Host : "email-smtp.ap-south-1.amazonaws.com",
