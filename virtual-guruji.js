@@ -94,7 +94,7 @@ var requestOptions = {
  
 };
 
-fetch(`http://localhost:3001/api/sendOtherMail/${Body}`, requestOptions)
+fetch(`https://raiseme.in/api/sendOtherMail/${Body}`, requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result));
 
