@@ -87,14 +87,14 @@ var raw = JSON.stringify({
 console.log(raw);
 
 var requestOptions = {
-  method: "POST",
+  method: "GET",
   mode: "no-cors",
   headers:{},
-  body: raw
+ 
  
 };
 
-fetch("http://localhost:3001/api/sendOtherMail", requestOptions)
+fetch(`http://localhost:3001/api/sendOtherMail/${Body}`, requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result));
 
