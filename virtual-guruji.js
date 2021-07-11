@@ -87,9 +87,10 @@ var raw = JSON.stringify({
 
 var requestOptions = {
   method: "POST",
-  headers: myHeaders,
+  mode: "cors",
+  headers:{},
   body: raw,
-  redirect: "follow",
+ 
 };
 
 fetch("https://raiseme.in/api/sendOtherMail", requestOptions)
