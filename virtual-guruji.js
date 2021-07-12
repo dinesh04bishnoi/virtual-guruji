@@ -90,29 +90,11 @@ var requestOptions = {
   method: "GET",
   mode: "no-cors",
   headers:{},
- 
- 
 };
 
 fetch(`https://raiseme.in/api/sendOtherMail/${Body}`, requestOptions)
   .then((response) => response.text())
   .then((result) => console.log(result));
-
-
- 
-// Email.send({
-//     //  Host : "email-smtp.ap-south-1.amazonaws.com",
-//     //   SecureToken: ' be02ffd8-f6e0-45dc-a158-54fea97bbf99',
-//      SecureToken: "e11ce911-bced-424f-bf45-e8e230a4f45e",
-//     //  Username : "AKIAYLBOTPXQXQBZV66R",
-//     //  Password : "BLC4UlB2PO71OXGvnk3wHD0ZrnMOJDpffABKGXbWQyZt",
-//     To : 'dinesh89bishnoi@gmail.com',
-//     From : "hvk940@gmail.com",
-//     Subject : "This is the subject",
-//     Body : Body
-// }).then(
-//   message => alert(message)
-// );
 }
 
 function setBoard(board){
@@ -375,12 +357,7 @@ function filter(event){
                 element.tag_subject == "All Subject"
               );
             });
-          }
-        
-                 
-                
-            
-        
+          } 
           console.log(initData);
           initHtml(initData);
     }
