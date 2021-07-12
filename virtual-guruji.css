@@ -306,8 +306,8 @@ body{
       background-size: 300%;
       background-position: left;
       transition: 300ms background-position ease-in-out;
-      width: 320px !important;
-      margin-left: 20px;
+      /* width: 320px !important;
+      margin-left: 20px; */
   }
   
   .btns{
@@ -655,7 +655,7 @@ font-weight: 700;
   
   .footer{
       background-color: #222;
-      padding: 4% 12%;     
+      padding: 2% 12%;     
   }
   .footer-col{
     display: flex;
@@ -706,6 +706,12 @@ font-weight: 700;
     }
       .virtual-app-img{
         width: 50%;
+    }
+
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
     }
 
     .homepage .home-image{
@@ -815,7 +821,7 @@ font-weight: 700;
       }    
   
       input{
-          width: 220% !important;
+          width: 100% !important;
   
       }
   
@@ -920,6 +926,11 @@ font-weight: 700;
     .testimonial{
         display: flex;
         flex-direction: column;
+    }
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
     }
   
     .subject-cards{
@@ -1086,6 +1097,11 @@ font-weight: 700;
         display: flex;
         flex-direction: column;
     }   
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
+    }
  
     .subject-cards{
         box-shadow: 5px 10px 18px #888888 ;
@@ -1234,6 +1250,11 @@ font-weight: 700;
         display: flex;
         flex-direction: column;
     }
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
+    }
     .testimonial{
         display: flex;
         flex-direction: column;
@@ -1253,14 +1274,7 @@ font-weight: 700;
      }
     .homepage .heading{
       font-size: 28px;               
-    }
-    /* .gradebtn{
-        margin-left: 32%;
-    } */
-    /* .join-course-btn{
-        margin-left: 21%;
-    } */
-    
+    }    
      .homepage .subheading{       
         /* max-width: 330px; */
         font-size: 16px;   
@@ -1295,14 +1309,7 @@ font-weight: 700;
         display: none;
     }
     .tab-btns{
-       width: 206px;
-    /* width: 151px !important;
-    margin-left: -17px;
-    line-height: 1.2;
-   
-    padding: 6px !important;
-    font-weight: 700;
-    text-align: center !important; */
+       width: 206px;   
     }
 
     .footer-col{
@@ -1316,37 +1323,22 @@ font-weight: 700;
         /* text-align: center !important; */
     }
 
-    /* .footer-col a{
-        /* text-align: center !important; *
-    }
-
-    .footer-col ul{
-        text-align: center !important;
-    } */
 
     .whyVirtual-advantages{
         display: flex !important;
         flex-direction: column !important;
         width: 100%;
-    }
-
-   
+    }  
 
     .ourTeam{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
       .workshop .register{
           margin-left: 0px !important;
       }
   
-      .GoldenCards .cards {
-          min-height: 252px !important;
-      max-height: 252px !important;
-      }
-  
-      .homepage{
+         .homepage{
           padding: 4% 4%;
       }
   
@@ -1356,13 +1348,7 @@ font-weight: 700;
           font-size: 15px !important;
           /* margin-top: -0% !important; */
       }
-  
-      .largeCoupon img{
-          width: 73%;
-          height: 150px;
-      }
-  
-      .homepageHeading{
+       .homepageHeading{
       text-align: center;
       font-weight: 500;
       font-size: 34px;
@@ -1375,30 +1361,13 @@ font-weight: 700;
           font-size: 16px !important;
           width: 92%;
           margin-left: 4.5vw;
-      }
-  
-      .youtubeVideo {       
-      margin-left: -226px;
-      margin-right: 35%;
-      }
-  
-      .buttons-cards {
-          width: 245px !important;
-          font-size: 13px !important;
-          padding: 5px;
-          margin-left: 15%;
-      }
-  
+      } 
+      
       .unlockBtn{
           width: 403px !important;
           margin-left: -381px;
       }
   
-      /* .cardVideo{
-          display: flex;
-          flex-direction: column;
-          /* margin: 2%; 
-      } */
   
       .buildersLargeImg{
           display: flex;
@@ -1418,100 +1387,9 @@ font-weight: 700;
       .homepage .cards{
           margin: auto 1vw;
           width: 37rem;
-          /* align-items: center;
-          justify-content: center; */
-      }
-  
-      .believeThemHeading {
-          font-size: 47px;
-      }
-      .checkboxes .boxes .row .card-title {        
-          max-height: 100px;
-          min-height: 100px;
-      }
+             }
       
-      .checkboxes .register {
-          margin-left: 0% !important;
-      }
-  
-      .afterRegistering{
-          padding:6% 8%;
-          background-color: #f5f5f5;
-      }
-  
-    
-  
-       .paragraph .cards{
-          background-color: hsla(0,0%,100%,.1);
-          color: #27bd93;
-          border-radius: 16px;
-          padding: 10px;
-          min-height:100px;
-          font-size:18px;
-          max-width:85%;
-          margin-left: 7.5%;
-      }
-      
-  
-      .clockdiv div:before{       
-          font-size: 20px !important;        
-      }
-      .clockdiv div {
-          position: relative;
-          width: 15vw;
-          height: 7vh;       
-          font-size: 57px;
-      }
-         .clockdiv button{
-             margin-top: 20%;
-         }
-  
-        
-  
-         .coupon img{
-           /* vertical-align:middle; */
-           /* align-content: center; */
-           margin: auto 12.5%;
-         }
-  
-         .whatWillYouGet{
-          margin-top: 0% !important;
-      }
-  
-      .gauravHarjit{
-          margin-left: 12% !important;
-      }
-      .why{
-          text-align: justify !important;
-          font-size: 16px !important;
-      }
-      .buildersLargeImg1{
-          margin: 0% 4%;
-      }
-      .card-img-top {
-          width: 105% !important;
-          margin-left: 0% !important;
-      }
-      /* .couponDisplay{
-          display: block !important;
-      } */
-  
-      .couponFirstText {
-          position: absolute;
-          top: 10px;
-          left: 72px;
-      }
-      .coupons {
-          padding: 4% 5%;
-          background-color: #c8eadf;
-      }
-  
-      .card-img-tops {
-          width: 100% !important;
-      margin-left: 50% !important;
-      margin-top: 56%;
-      }
-      .workshop .cards {
+       .workshop .cards {
           background-color: #fff;
         
           border-radius: 10px;
@@ -1519,23 +1397,13 @@ font-weight: 700;
       .unlockbonus{
           font-size: 23px !important;
       }
-      .time-runing-out{
-          font-size: 18px !important;
-      }
-      .faq{
-          padding:4% 4%;
-          background-color: #c8eadf;
-      }
+    
   }
 
 
 
   /* for modal  */
 
-  .fourCards{
-	background-color: black;
-	padding: 4% 12%;
-  }
   
   .cards{
 	  padding: 18px;
@@ -1544,15 +1412,7 @@ font-weight: 700;
 	  /* display: inline-block; */
 	  display: flex;
   }
-  
- 
-  .description{
-	  margin-top: 10px;
-	  font-size: 16px;
-	  line-height: 30%;
-	  color: #fff;
-  }
-  
+
   div i{
 	  color: #fff;
 	  border: 0;
@@ -1564,13 +1424,7 @@ font-weight: 700;
 	  /* background-color: blueviolet; */
 	  border-radius: 5px;   
   }
-  
-  .firstCard{
-	  margin-right: 20px;
-	  padding: 18px;
-	  border-radius: 21px;
-	  background-color: hsla(0,0%,100%,.05);
-  }
+
   
   @media (min-width:300px) and (max-width:449px){
 	  .cards {
@@ -1751,6 +1605,7 @@ font-weight: 700;
   .checkbox-tools:checked + label{
 	  background-color: transparent;
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
   }
   .checkbox-tools:not(:checked) + label:hover{
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -1815,6 +1670,7 @@ font-weight: 700;
   .checkbox-budget:checked + label{
 	  background-color: transparent;
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
   }
   .checkbox-budget:not(:checked) + label:hover{
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -1892,8 +1748,8 @@ font-weight: 700;
 	  text-align: center;
 	  border-radius: 4px;
 	  cursor: pointer;
-	  /* color: var(--white);
-	  text-transform: uppercase;
+	  color: var(--white);
+	  /* text-transform: uppercase;
 	  background-color: var(--dark-light);
 	  -webkit-transition: all 300ms linear;
 	  transition: all 300ms linear;  */
