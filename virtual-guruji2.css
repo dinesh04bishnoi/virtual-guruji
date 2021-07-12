@@ -173,14 +173,14 @@ body{
 
     .footer-col div{
         margin: 8% 0%;
-        text-align: center !important;
+        /* text-align: center !important; */
     }
 
-    .footer-col a{
+    /* .footer-col a{
         text-align: center !important;
     }
 
     .footer-col ul{
         text-align: center !important;
-    }
+    } */
 }
