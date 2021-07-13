@@ -708,6 +708,11 @@ font-weight: 700;
         width: 50%;
     }
 
+    .join-course-btn{
+        margin-left: 30%;
+        /* margin-bottom: 10% !important; */
+    }
+
     .buttons {
         width: 100%;
         margin-left: 0%;
@@ -858,8 +863,9 @@ font-weight: 700;
       .buildersSmallImg{
           /* display: flex; */
            display: block;
-           text-align: center;
-      
+           /* text-align: center; */
+           width: 142%;
+           margin-left: -18%;      
       }
     
      .homepage .btn {       
@@ -1053,12 +1059,12 @@ font-weight: 700;
       }
   
       .buildersSmallImg{
-          /* display: flex; */
-          display: block;
-          text-align: center;
-
-
-      }
+        /* display: flex; */
+         display: block;
+         /* text-align: center; */
+         width: 142%;
+         margin-left: -18%;      
+    }
   
       .homepage .btn {       
           width: 75% !important;
@@ -1223,10 +1229,12 @@ font-weight: 700;
       }
   
       .buildersSmallImg{
-          /* display: flex; */
-           display: block;
-           text-align: center;
-      }
+        /* display: flex; */
+         display: block;
+         /* text-align: center; */
+         width: 142%;
+         margin-left: -3%;      
+    }
       
   
       .homepage .btn {       
