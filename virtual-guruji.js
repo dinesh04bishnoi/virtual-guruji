@@ -41,6 +41,7 @@ function onSubmit(){
      var name = document.getElementById('name').value;
      var phone = document.getElementById('phoneNumber').value;
      var email = document.getElementById('email').value;
+     var city = document.getElementById('city').value;
     //  var grade = document.getElementById('grade').value;
 
      var grade = document.getElementsByName('grade');              
@@ -69,7 +70,7 @@ function onSubmit(){
          }
      }
 
-     let Body = `Name: ${name} <br>  Phone Number: ${phone} <br> Email:  ${email} <br>  Grade: ${Grade} <br> Subject: ${Subject} <br> Day: ${Day} <br> Time: ${Time} `;
+     let Body = `Name: ${name} <br>  Phone Number: ${phone} <br> Email:  ${email} <br>  Grade: ${Grade} <br> Subject: ${Subject} <br> Day: ${Day} <br> Time: ${Time} <br> City: ${city} `;
      console.log(Body);
 
 var myHeaders = new Headers();
@@ -83,6 +84,7 @@ var raw = JSON.stringify({
   day: Day,
   email: email,
   subject: Subject,
+  city: city
 });
 console.log(raw);
 
@@ -241,21 +243,21 @@ function initHtml(data){
           </div>
           <hr>
           <div class="card-body col-12">
-              <div class="d-flex justify-content-between ">
+              <div class="d-flex justify-content-evenly">
                   <div>
                       <span class="p-2" style="border-right:1px solid black;">
-                          <span class="text-center fw-bold">${element.nClasses}</span> <br> live Classes
+                          <span class="text-center fw-bold">${element.nClasses}</span>  live Classes
                       </span>
                       </div>
                       <div>
-                          <span class="p-2" style="border-right:1px solid black;">
-                              <span class="text-center fw-bold">${element.months}</span> <br> Months
+                          <span class="py-2 px-3" style="border-right:1px solid black;">
+                              <span class="text-center fw-bold">${element.months}</span>  Months
                           </span>
                       </div>
                        
                       <div>
                           <span style="border-left:0;">
-                              <span class="text-center fw-bold">${element.fees}</span> <br> Fees
+                              <span class="text-center fw-bold">${element.fees}</span>  Fees
                           </span>
                       </div>
               </div>
@@ -297,7 +299,8 @@ function initHtml(data){
               </div>
 
               <div class="m-3" >
-                  <a href="./virtual-guruji3.html" style="box-shadow: 5px 10px 18px #888888;" class="btn btn-primary">Explore More</a>
+                  <a data-bs-toggle="modal"
+                  data-bs-target="#exampleModal" style="box-shadow: 5px 10px 18px #888888;" class="btn btn-primary">Book Demo</a>
               </div>             
                   
               </div>
