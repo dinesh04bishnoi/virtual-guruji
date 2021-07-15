@@ -187,129 +187,8 @@ body{
 .virtual-guruji-3{
     display: flex;
     color: #000 !important;
-}
-.content form .user-details{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 20px 0 12px 0;
-  }
-  form .user-details .input-box{
-    margin-bottom: 15px;
-    width: calc(100% / 2 - 20px);
-  }
-  form .input-box span.details{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-    width: 200px;
-  }
-  .user-details .input-box input{
-    height: 45px;
-    width: 90%;
-    outline: none;
-    font-size: 16px;
-    border-radius: 5px;
-    padding-left: 15px;
-    border: 1px solid #ccc;
-    border-bottom-width: 2px;
-    transition: all 0.3s ease;
-  }
-  .budget-details{
-      width: 100%;
-  }
-  .property-details{
-      margin-left: -53%;margin-right: 15%;
-  }
-  .budget-details select{
-      height: 45px;
-      width: 42%;
-      outline: none;
-      font-size: 16px;
-      border-radius: 5px;
-      padding-left: 15px;
-      border: 1px solid #ccc;
-      border-bottom-width: 2px;
-      transition: all 0.3s ease;
-      background: white;
-    }
+} 
   
-  .user-details .input-box input:focus,
-  .user-details .input-box input:valid{
-    border-color: #9b59b6;
-  }
-   form .property-details .property-title{
-    font-size: 20px;
-    font-weight: 500;
-   }
-   form .budget-details .budget-title{
-      font-size: 20px;
-      font-weight: 500;
-     }
-   form .category{
-     display: flex;
-     width: 80%;
-     margin: 14px 0 ;
-     justify-content: space-between;
-   }
-   
-   form .category label{
-     display: flex;
-     align-items: center;
-     cursor: pointer;
-   }
-   form .category label .dot{
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    margin-right: 10px;
-    background: #d9d9d9;
-    border: 5px solid transparent;
-    transition: all 0.3s ease;
-  }
-    #dot-3:checked ~ .category label .three,
-   #dot-4:checked ~ .category label .four,
-   #dot-6:checked ~ .category label .six,
-   #dot-7:checked ~ .category label .seven,
-   #dot-5:checked ~ .category label .five{
-     background: #9b59b6;
-     border-color: #d9d9d9;
-   }
-  
-   form .propertyCategory{
-      display: flex;
-      width: 90%;
-      margin: 14px 0 ;
-      justify-content: space-between;
-    }
-    
-    form .propertyCategory label{
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-    }
-    form .propertyCategory label .dot{
-     height: 18px;
-     width: 18px;
-     border-radius: 50%;
-     margin-right: 10px;
-     background: #d9d9d9;
-     border: 5px solid transparent;
-     transition: all 0.3s ease;
-   }
-    #dot-1:checked ~ .propertyCategory label .one,
-    #dot-2:checked ~ .propertyCategory label .two{
-      background: #9b59b6;
-      border-color: #d9d9d9;
-    }
-  
-   form input[type="radio"]{
-     display: none;
-   }
-   form .button{
-     height: 45px;
-     margin: 35px 0
-   }
    form .button input{
      height: 100%;
      width: 100%;
@@ -332,16 +211,7 @@ body{
   
   .modalForm{
       display: flex;
-  }
-  
-  /* sectct box css */
-  .select-box {
-      cursor: pointer;
-      position : relative;
-      max-width:  20em;
-      margin: 20px auto;
-      width: 100%;
-    }
+  } 
     
     .select,
     .label {
@@ -360,9 +230,6 @@ body{
       /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
       background: none transparent;
       border: 0 none;
-    }
-    .select-box1 {
-      background: #ececec;
     }
     
     .label {
@@ -396,14 +263,6 @@ body{
       background-color: #fff;    
   }
   
-  .wrap{width:300px;}
-  .center{
-   top:50%;
-   transform:translateY(-50%);
-   position:relative;
-   margin:auto;}
-  
-  
   label{
       display: block;
       position: static;
@@ -413,25 +272,6 @@ body{
       font-family: 'Arvo';
       font-size: 20px;
       margin: 2px;
-  }
-  
-  .wrap-label{
-    width: 300px;
-    height: 34px;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    bottom: -15px;
-    overflow: hidden;}
-  
-  .iconicfill-pen-alt2{
-      position: absolute;
-      left: 10px;
-      color: #fff;
-      font-size:19px;
-      opacity: 1;
-      top: -2px;
-      transform:translateX(-100px);
   }
   
   /* ==== Pen animation ==== */
@@ -466,8 +306,8 @@ body{
       background-size: 300%;
       background-position: left;
       transition: 300ms background-position ease-in-out;
-      width: 320px !important;
-      margin-left: 20px;
+      /* width: 320px !important;
+      margin-left: 20px; */
   }
   
   .btns{
@@ -524,27 +364,10 @@ body{
   margin-right: 10px !important;
   }
   
-  .youtubeVideo{        
-      border: 15px solid white;
-      /* margin: 2% 6%; */
-  }
-  
   .buildersSmallImg{
       display: none;
   }
-  
-  .register {
-      padding: 4% 5%;
-      font-size: 18px !important;
-      line-height: 22px !important;
-      font-weight: 700 !important;
-      color: #00747b !important;
-  }
-  
-  .consultantsDetails{
-      font-size: 14px;
-  }
-  
+   
   .per-title-highlight {
       background-image: linear-gradient(130deg,#39df9e,#00747b);
       -webkit-background-clip: text;
@@ -571,17 +394,9 @@ body{
       line-height: 31px;
       font-size: 22px;
       color: #444444;   
-  }
-  
-  .cardVideo .card{
-      border-radius: 16px;
-  }
-  
-  .buttons-cards{    
-      background: white;width: 17rem;height: 50px; border-radius: 16px;border: none; margin-left: 5%;cursor:  context-menu;
-      font-size: 13px; line-height: 32px;font-weight: 700;color: #333333;
-  }
-  
+  } 
+
+   
   .register {
       /* padding: 4% 5%; */
       font-size: 20px !important;
@@ -638,8 +453,7 @@ stroke:#f3f3f3;
     stroke-dashoffset: calc(440 - (440 * 79) / 100);
     stroke:#f77422;
       }
-  
-     
+       
   .circle .percent .number{
       position:absolute;
       top:0;
@@ -793,24 +607,8 @@ font-weight: 700;
   
   .workshop .fas{
       color: #0e8f85;
-  }
-  
-  .afterRegistering{
-      padding:4% 12%;
-      background-color: #f5f5f5;
-  }
-  
-  .afterRegistering .far{
-      color: green;
-  }
-  
-  .afterRegistering .card{
-      border-radius: 16px;
-  }
-  
-  .afterRegistering .cards-title{
-      border: 1px solid rgb(230, 219, 219);padding:10px; border-radius: 16px; background-color: white;
-  }
+  }  
+
   .tick{
       padding-right: 20px;
   }
@@ -820,57 +618,7 @@ font-weight: 700;
       line-height: 26px !important;
       font-weight: 500 !important;
   }
-  
-  .extraBonus{
-      background-image: linear-gradient(133deg,#0f8f85,#27bd93) !important;   
-      color: #fff; 
-  }
-  
-  .afterRegistering img{
-      background-color: rgba(0,116,123,.1); padding: 10px; border-radius: 16px;
-  }
-  
-  .coupons{
-      padding:4% 12%;
-      background-color: #c8eadf;
-  }
-  
-  .couponFirst{
-      position: relative;
-  }
-  .couponFirstText{
-      position: absolute;
-      top: 10px;
-      left: 50px;
-  }
-  
-  .underline{
-      text-decoration-color: blue;
-  }
-  
-  .clockdiv{
-      display: flex;
-      margin-top: 50px;
-      align-items: center;
-      justify-content: center;
-      /* border-radius: 6px; */
-  }
-  
-  .clockdiv div{
-   position: relative;
-   width: 15vw;
-   height: 15vh;
-   line-height: 100px;
-   text-align: center;
-   /* background: #333; */
-   background-image: linear-gradient(133deg,#0f8f85,#27bd93);
-   color: #fff;
-   margin:0 15px;
-   font-size: 69px;
-   font-weight:bold;
-   border-radius: 6px;
-  }
-  
+
   .homepage span #registerDate{
       position: relative;
       width: 15vw;
@@ -888,120 +636,8 @@ font-weight: 700;
   
      /* .homepage span#registerDate:before{
       content: 'Days';
-  } */
-  
-  .clockdiv div:before{
-      content: '';
-      position: absolute;
-      bottom: -30px;
-      left:0;
-      width: 100%;
-      height: 35px;
-      /* background: #ff0; */
-      background-image: linear-gradient(133deg,#0f8f85,#27bd93);
-      color: white;
-      font-size: 20px;
-      line-height: 35px;
-      font-weight: 300;
-      border-radius: 6px;
-  }
-  
-  .clockdiv div#days:before{
-      content: 'Days';
-  }
-  .clockdiv div#hours:before{
-      content: 'Hours';
-  }.clockdiv div#minutes:before{
-      content: 'Minutes';
-  }.clockdiv div#seconds:before{
-      content: 'Seconds';
-  }
-  
-
-  
-  .GoldenCards .cards{
-      background-color: hsla(0,0%,100%,.1);
-      color: white;
-      border-radius: 16px;
-      padding: 10px;
-      min-height:150px !important;
-      /* max-height:240px !important; */
-  }
-  
-  .GoldenCards h5{
-      font-size: 28px !important;
-      line-height: 44px !important;
-      font-weight: 700 !important;
-  }
-  
-    .paragraph .cards{
-      background-color: hsla(0,0%,100%,.1);
-      /* color: #27bd93; */
-      /* color: #39df9e,#00747b; */
-      border-radius: 10px;
-      padding: 10px;
-      /* min-height:100px; */
-      font-size:24px !important;
-      line-height: 29px !important;
-      font-weight: 700;
-      }
-  
-  .believeThem{
-      padding:8% 12%;
-      background-color: #c8eadf;
-  }
-  
-  .believeThemHeading{
-      font-size: 60px;
-  }
+  } */    
  
-  
-  .checkboxes{
-      padding:4% 12%;
-      background-color: #c2e5da;
-  }
-  
-  .checkboxes .card{
-      background-color: hsla(0,0%,100%,.4);
-      border-radius: 16px;
-      border: .5px solid rgba(3,45,48,.15)
-  }
-  
-  .checkboxes .boxes .row .card-title{
-      border: 1px solid rgb(230, 219, 219);padding:10px; background-color: hsla(0,0%,100%,.4); border-radius: 16px;padding: 10px;
-      max-height: 80px;
-  }
-  
-  .check{
-      height: 30px !important;
-      width: 30px !important;
-      margin-top: 15px;   
-      border: 1px solid #9dd6c4;
-      color: #2ac294;
-      align-items: center;
-      /* padding: 5px; */
-      padding-right: 10px;
-  }
-  .checkText{
-      padding-left: 10px;
-      padding-top: 10px;
-  }
-  
-  
-  
-  .meetConsultant{
-      padding:4% 12%;
-      background-image: linear-gradient(140deg,#29c194,#0e8f84);
-  }
-  
-  .whatWillYouGet div img{
-      background-color: rgba(0,116,123,.1); padding: 10px; border-radius: 16px;
-     }
-  
-  .faq{
-      padding:4% 12%;
-      background-color: #c8eadf;
-  }
   .accordion-item{
       margin-bottom: 10px;
       background-image: linear-gradient(90deg,rgba(41,193,148,.2),rgba(14,143,132,.2));
@@ -1019,7 +655,7 @@ font-weight: 700;
   
   .footer{
       background-color: #222;
-      padding: 4% 12%;     
+      padding: 2% 12%;     
   }
   .footer-col{
     display: flex;
@@ -1028,26 +664,12 @@ font-weight: 700;
       width: 50%; margin-left: 25%;margin-top: 3% !important;
   }
   
-  .goldenLogo img{
-      width: 20%;
-      height: 20%;
-  }
-  .largeCoupon img{
-      width: 91% !important;
-      height: 160px;
-  }
-
+  
   .whyVirtual-advantages{
       display: flex;  
      
   }
-  #outer {
-    width: 500px;
-    height: 400px;
-    border-radius: 20px;
-    overflow:hidden;
-    position: relative;
-}
+
 .video {
   position: relative;
   left: 0;
@@ -1084,6 +706,17 @@ font-weight: 700;
     }
       .virtual-app-img{
         width: 50%;
+    }
+
+    .join-course-btn{
+        margin-left: 30%;
+        /* margin-bottom: 10% !important; */
+    }
+
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
     }
 
     .homepage .home-image{
@@ -1124,13 +757,7 @@ font-weight: 700;
     .homepage .heading{
       font-size: 28px;               
     }
-    /* .gradebtn{
-        margin-left: 32%;
-    } */
-    /* .join-course-btn{
-        margin-left: 21%;
-        
-    } */
+   
     
      .homepage .subheading{       
         /* max-width: 330px; */
@@ -1167,13 +794,7 @@ font-weight: 700;
     }
     .tab-btns{
       width: 206px;
-    /* width: 151px !important;
-    margin-left: -17px;
-    line-height: 1.2;
-   
-    padding: 6px !important;
-    font-weight: 700;
-    text-align: center !important; */
+
     }
 
     .footer-col{
@@ -1187,21 +808,12 @@ font-weight: 700;
         /* text-align: center !important; */
     }
 
-    /* .footer-col a{
-        /* text-align: center !important; *
-    }
-
-    .footer-col ul{
-        text-align: center !important;
-    } */
 
     .whyVirtual-advantages{
         display: flex !important;
         flex-direction: column !important;
         width: 100%;
-    }
-
-   
+    }   
 
     .ourTeam{
         display: flex;
@@ -1211,22 +823,10 @@ font-weight: 700;
   
       .modalForm{
           display: block !important;
-      }
-  
-      .budget-details{
-          width: 225% !important;
-      }
-      .property-details{
-          margin-left: 0%;
-      }
-  
-      .formBudget{
-          display: inline-block !important;
-          width: 5rem !important;
-      }
+      }    
   
       input{
-          width: 220% !important;
+          width: 100% !important;
   
       }
   
@@ -1237,23 +837,7 @@ font-weight: 700;
       .homepage{
           padding: 4% 4%;
       }
-  
-      .buttons-cards{
-          width: 169px !important;
-          font-size: 10px !important;
-          padding: 5px;
-          margin-left: 2%;
-          /* background: white;width: 17rem;height: 50px; border-radius: 16px;border: none; margin-left: 5%;cursor:  context-menu; */
-      }
-  
-      .buttons{
-          width: 100% !important; 
-          margin-left: 0% !important;
-          font-size: 11px !important;
-          font-weight: bold !important;
-          line-height: 32px;
-      }
-  
+   
       .homepageHeading{
       text-align: center;
       font-weight: 700;
@@ -1272,25 +856,18 @@ font-weight: 700;
           color: #444444;
       }
   
-      .consultantCard{
-          margin-left: 3.5%;
-      }
-  
-      .buildersLargeImg{
+    .buildersLargeImg{
           display: none;
       }
   
       .buildersSmallImg{
           /* display: flex; */
            display: block;
-           text-align: center;
-      
+           /* text-align: center; */
+           width: 142%;
+           margin-left: -18%;      
       }
-      .youtubeVideo{        
-          border: 15px solid white;
-          margin: 2% 6%;        
-      }
-  
+    
      .homepage .btn {       
           width: 75% !important;
           margin-left: 14%;
@@ -1306,82 +883,10 @@ font-weight: 700;
       .video{   
           padding: 8% 0%;     
           order: -1;
-      }  
-      
-      .afterRegistering{
-          padding:4% 4%;
-          background-color: #f5f5f5;
-      }
-      .tick{
-          padding-right: 10px;
-          padding-top: 10px;
-      }
-      .tick-text{
-          padding-top:10px;
-      }
-  
+      }       
     
-  
-       .paragraph .cards{
-          background-color: hsla(0,0%,100%,.1);
-          color: #27bd93;
-          border-radius: 16px;
-          padding: 10px;
-          min-height:100px;
-          font-size:14px;
-          max-width:85%;
-          margin-left: 7.5%;
-      }
-  
-      .GoldenCards .cards{
-          background-color: hsla(0,0%,100%,.1);
-          color: white;
-          border-radius: 16px;
-          padding: 10px;
-          min-height:250px !important;
-          /* max-height:240px !important; */
-      }
-  
       .workshop {
           padding: 4% 3%;
-      }
-  
-      .coupons {
-          padding: 4% 6%;
-      }
-      
-      .checkboxes{
-          padding:4% 6%;
-          background-color: #c2e5da;
-      }
-  
-      .checkboxes .boxes .row .card-title{
-          border: 1px solid rgb(230, 219, 219);padding:10px; background-color: hsla(0,0%,100%,.4); border-radius: 16px;padding: 10px;
-          max-height: 100px;
-      }    
-      
-      .checkText{
-          padding-left: 10px;
-          padding-top: 5px;
-      }
-  
-      .believeThem{
-          padding:8% 4%;
-      }
-  
-      
-  .believeThemHeading{
-      font-size: 35px;
-  }
-  
-      .meetConsultant{
-          padding:4% 0%;
-          /* background-image: linear-gradient(140deg,#29c194,#0e8f84); */
-      }
-  
-      .meetOurConsultant{
-        text-align: center !important;
-        font-size: 25px !important;
       }
   
       .register {
@@ -1395,29 +900,7 @@ font-weight: 700;
           min-height: 200px; */
           border-radius: 10px;
       }
-      
-  
-      .clockdiv div:before{       
-          font-size: 13px;        
-      }
-      .clockdiv div{
-          position: relative;
-          width: 20vw;
-          height: 12vh;
-          /* line-height: 100px; */
-          text-align: center;
-          /* background: #333; */
-          background-image: linear-gradient(133deg,#0f8f85,#27bd93);
-          color: #fff;
-          margin:0 5px;
-          /* margin-top: ; */
-          font-size: 30px;
-          font-weight: 500;
-         }
-  
-         .gauravHarjit{
-             margin-left: 12% !important;
-         }
+   
          .registerNow{
              width: 75%;
              margin-left: 12.5%;
@@ -1432,33 +915,8 @@ font-weight: 700;
          }
          .whatWillYouGet{
           margin-top: 15% !important;
-      }
-  
-        .card-img-top {
-          width: 126%;
-          margin-left: -12%;
-      }
-  
-      .unlockbonus{
-          font-size: 23px !important;
-      }
-      .time-runing-out{
-          font-size: 18px !important;
-      }
-      .faq{
-          padding:4% 6%;
-          background-color: #c8eadf;
-      }
-  
-      .goldenLogo img{
-          width: 57%;
-          /* height: 0%; */
-          margin-top: 8%;
-      }
-      .largeCoupon img{
-          width: 95% !important;
-          height: 150px;
-      }
+      } 
+   
     }
   
   
@@ -1475,10 +933,12 @@ font-weight: 700;
         display: flex;
         flex-direction: column;
     }
-    /* .testimonial .videoText{
-        order: 1;
-    } */
- 
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
+    }
+  
     .subject-cards{
         box-shadow: 5px 10px 18px #888888 ;
         /* margin-right:50px; */
@@ -1490,13 +950,7 @@ font-weight: 700;
      }
     .homepage .heading{
       font-size: 28px;               
-    }
-    /* .gradebtn{
-        margin-left: 32%;
-    } */
-    /* .join-course-btn{
-        margin-left: 21%;
-    } */
+    } 
     
      .homepage .subheading{       
         /* max-width: 330px; */
@@ -1521,8 +975,7 @@ font-weight: 700;
         line-height: 1.4;
         letter-spacing: -.8px;
         text-align: center;
-    }
-    
+    }   
 
     .personal-attention-paragraph{
         display: none;
@@ -1533,13 +986,7 @@ font-weight: 700;
     }
     .tab-btns{
         width: 206px;
-    /* width: 151px !important;
-    margin-left: -17px;
-    line-height: 1.2;
-   
-    padding: 6px !important;
-    font-weight: 700;
-    text-align: center !important; */
+    
     }
 
     .footer-col{
@@ -1566,31 +1013,7 @@ font-weight: 700;
         flex-direction: column;
         
     }
-      .budget-details{
-          width: 239.5% !important;
-      }
-      .property-details{
-          margin-left: 0%;
-      }
-      .modalForm{
-          display: block !important;
-      }
-      input{
-          width: 220% !important;
-  
-      }
-  
-      form .button input{
-          width: 100% !important;
-      }
-  
-      .buttons{
-          width: 100% !important; 
-          margin-left: 0% !important;
-          font-size: 15px !important;
-          /* margin-top: -0% !important; */
-      }
-  
+       
       .unlockBtn{
           margin-left: 20% !important;
       }
@@ -1600,15 +1023,7 @@ font-weight: 700;
           height: 150px;
       }
   
-      .couponFirstText {
-          position: absolute;
-          top: 10px;
-          left: 93px !important;
-      }
-  
-      .believeThemHeading{
-          font-size: 40px;
-      }
+    
   
       .homepageHeading{
       text-align: justify;
@@ -1637,23 +1052,19 @@ font-weight: 700;
           margin-left: 9%;
       }
   
-      /* .cardVideo{
-          display: flex;
-          flex-direction: column;
-          /* margin: 2%; 
-      } */
+     
   
       .buildersLargeImg{
           display: none;
       }
   
       .buildersSmallImg{
-          /* display: flex; */
-          display: block;
-          text-align: center;
-
-
-      }
+        /* display: flex; */
+         display: block;
+         /* text-align: center; */
+         width: 142%;
+         margin-left: -18%;      
+    }
   
       .homepage .btn {       
           width: 75% !important;
@@ -1675,97 +1086,8 @@ font-weight: 700;
       .register {
           padding: 4% 5%;
           font-size: 16px !important;
-      }
-  
-      .afterRegistering{
-          padding:6% 8%;
-          background-color: #f5f5f5;
-      }
-  
-      .tick{
-          padding-right: 10px;
-          padding-top: 5px;
-      }
-      .tick-text{
-          padding-top:10px;
-      }
-  
+      } 
     
-  
-       .paragraph .cards{
-          background-color: hsla(0,0%,100%,.1);
-          color: #27bd93;
-          border-radius: 16px;
-          padding: 10px;
-          min-height:100px;
-          font-size:18px;
-          max-width:85%;
-          margin-left: 7.5%;
-      }
-      
-  
-      .clockdiv div:before{       
-          font-size: 10px;        
-      }
-      .clockdiv div{
-          position: relative;
-          width: 15vw;
-          height: 10vh;
-          line-height: 100px;
-          text-align: center;
-          /* background: #333; */
-          background-image: linear-gradient(133deg,#0f8f85,#27bd93);
-          color: #fff;
-          margin:0 15px;
-          font-size: 30px;
-          font-weight: 500;
-         }
-  
-         .clockdiv button{
-             margin-top: 20%;
-         }
-  
-        
-  
-         .coupon img{
-           /* vertical-align:middle; */
-           /* align-content: center; */
-           margin: auto 12.5%;
-         }
-  
-         .whatWillYouGet{
-          margin-top: 15% !important;
-      }
-  
-      .gauravHarjit{
-          margin-left: 12% !important;
-      }
-      .why{
-          text-align: justify !important;
-          font-size: 16px !important;
-      }
-      .buildersLargeImg1{
-          margin: 0% 4%;
-      }
-       .card-img-top {
-          width: 139% !important;
-          margin-left: -12% !important;
-      }
-  
-      .card-img-tops {
-          width: 139% !important;
-          margin-left: 19% !important;
-      }
-      .unlockbonus{
-          font-size: 23px !important;
-      }
-      .time-runing-out{
-          font-size: 18px !important;
-      }
-      .faq{
-          padding:4% 4%;
-          background-color: #c8eadf;
-      }
   }
   
   
@@ -1780,10 +1102,12 @@ font-weight: 700;
     .testimonial{
         display: flex;
         flex-direction: column;
+    }   
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
     }
-    /* .testimonial .videoText{
-        order: 1;
-    } */
  
     .subject-cards{
         box-shadow: 5px 10px 18px #888888 ;
@@ -1797,12 +1121,7 @@ font-weight: 700;
     .homepage .heading{
      font-size: 50px;           
     }
-    /* .gradebtn{
-        margin-left: 32%;
-    } */
-    /* .join-course-btn{
-        margin-left: 21%;
-    } */
+  
     
      .homepage .subheading{       
         /* max-width: 330px; */
@@ -1839,13 +1158,7 @@ font-weight: 700;
     }
     .tab-btns{
          width: 206px;
-    /* width: 151px !important;
-    margin-left: -17px;
-    line-height: 1.2;
-   
-    padding: 6px !important;
-    font-weight: 700;
-    text-align: center !important; */
+  
     }
 
     .footer-col{
@@ -1857,23 +1170,13 @@ font-weight: 700;
     .footer-col div{
         margin: 8% 0%;
         /* text-align: center !important; */
-    }
-
-    /* .footer-col a{
-        /* text-align: center !important; *
-    }
-
-    .footer-col ul{
-        text-align: center !important;
-    } */
+    }  
 
     .whyVirtual-advantages{
         display: flex !important;
         flex-direction: column !important;
         width: 100%;
-    }
-
-   
+    }   
 
     .ourTeam{
         display: flex;
@@ -1881,11 +1184,7 @@ font-weight: 700;
         
     } 
       .register {
-          /* padding: 4% 5%; */
-          /* font-size: 18px !important;
-          line-height: 22px !important;
-          font-weight: 700 !important;
-          color: #00747b !important; */
+        
           margin-left: -150px !important;
       }
   
@@ -1893,18 +1192,7 @@ font-weight: 700;
           margin-left: 0px !important;
       }
   
-      .GoldenCards .cards {
-          background-color: hsla(0,0%,100%,.1);
-          color: white;
-          border-radius: 16px;
-          padding: 10px;
-          min-height: 324px !important;
-          max-height: 324px !important;
-      }
-  
-      .homepage{
-          padding: 4% 4%;
-      }
+ 
   
       .buttons{
           width: 100% !important; 
@@ -1913,10 +1201,6 @@ font-weight: 700;
           /* margin-top: -0% !important; */
       }
   
-      .largeCoupon img{
-          width: 73%;
-          height: 150px;
-      }
   
       .homepageHeading{
       text-align: center;
@@ -1938,36 +1222,20 @@ font-weight: 700;
           margin: 2% 6%;
           height: 200px;
           margin-left: -131px;
-      }
-  
-      .buttons-cards {
-          width: 245px !important;
-          font-size: 13px !important;
-          padding: 5px;
-          margin-left: 15%;
-      }
-  
-      .unlockBtn{
-          width: 403px !important;
-          margin-left: -323px;
-      }
-  
-      /* .cardVideo{
-          display: flex;
-          flex-direction: column;
-          /* margin: 2%; 
-      } */
-  
+      } 
+    
       .buildersLargeImg{
           display: none;
       }
   
       .buildersSmallImg{
-          /* display: flex; */
-           display: block;
-           text-align: center;
-      }
-      }
+        /* display: flex; */
+         display: block;
+         /* text-align: center; */
+         width: 142%;
+         margin-left: -3%;      
+    }
+      
   
       .homepage .btn {       
           width: 75% !important;
@@ -1981,109 +1249,6 @@ font-weight: 700;
           justify-content: center; */
       }
   
-      .believeThemHeading {
-          font-size: 47px;
-      }
-      .checkboxes .boxes .row .card-title {        
-          max-height: 100px;
-          min-height: 100px;
-      }
-      
-      .checkboxes .register {
-          margin-left: 0% !important;
-      }
-  
-      .afterRegistering{
-          padding:6% 8%;
-          background-color: #f5f5f5;
-      }
-  
-    
-  
-       .paragraph .cards{
-          background-color: hsla(0,0%,100%,.1);
-          color: #27bd93;
-          border-radius: 16px;
-          padding: 10px;
-          min-height:100px;
-          font-size:18px;
-          max-width:85%;
-          margin-left: 7.5%;
-      }
-      
-  
-      .clockdiv div:before{       
-          font-size: 10px;        
-      }
-      .clockdiv div{
-          position: relative;
-          width: 15vw;
-          height: 10vh;
-          line-height: 100px;
-          text-align: center;
-          /* background: #333; */
-          background-image: linear-gradient(133deg,#0f8f85,#27bd93);
-          color: #fff;
-          margin:0 15px;
-          font-size: 30px;
-          font-weight: 500;
-         }
-  
-         .clockdiv button{
-             margin-top: 20%;
-         }
-  
-        
-  
-         .coupon img{
-           /* vertical-align:middle; */
-           /* align-content: center; */
-           margin: auto 12.5%;
-         }
-  
-         .whatWillYouGet{
-          margin-top: 15% !important;
-      }
-  
-      .gauravHarjit{
-          margin-left: 12% !important;
-      }
-      .why{
-          text-align: justify !important;
-          font-size: 16px !important;
-      }
-      .buildersLargeImg1{
-          margin: 0% 4%;
-      }
-      .card-img-top {
-          width: 139% !important;
-          margin-left: 9% !important;
-      }
-      .couponDisplay{
-          display: block !important;
-      }
-  
-      .card-img-tops {
-          width: 161% !important;
-          margin-left: 48% !important;
-          margin-top: 27%;
-      }
-      .workshop .cards {
-          background-color: #fff;
-          /* max-height: 200px;
-          min-height: 200px; */
-          border-radius: 10px;
-      }
-      .unlockbonus{
-          font-size: 23px !important;
-      }
-      .time-runing-out{
-          font-size: 18px !important;
-      }
-      .faq{
-          padding:4% 4%;
-          background-color: #c8eadf;
-      }
   }
   
   @media (min-width:851px) and (max-width:1100.99px){
@@ -2092,6 +1257,11 @@ font-weight: 700;
     .virtual-guruji-3{
         display: flex;
         flex-direction: column;
+    }
+    .buttons {
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 5% !important;
     }
     .testimonial{
         display: flex;
@@ -2112,14 +1282,7 @@ font-weight: 700;
      }
     .homepage .heading{
       font-size: 28px;               
-    }
-    /* .gradebtn{
-        margin-left: 32%;
-    } */
-    /* .join-course-btn{
-        margin-left: 21%;
-    } */
-    
+    }    
      .homepage .subheading{       
         /* max-width: 330px; */
         font-size: 16px;   
@@ -2154,14 +1317,7 @@ font-weight: 700;
         display: none;
     }
     .tab-btns{
-       width: 206px;
-    /* width: 151px !important;
-    margin-left: -17px;
-    line-height: 1.2;
-   
-    padding: 6px !important;
-    font-weight: 700;
-    text-align: center !important; */
+       width: 206px;   
     }
 
     .footer-col{
@@ -2175,37 +1331,22 @@ font-weight: 700;
         /* text-align: center !important; */
     }
 
-    /* .footer-col a{
-        /* text-align: center !important; *
-    }
-
-    .footer-col ul{
-        text-align: center !important;
-    } */
 
     .whyVirtual-advantages{
         display: flex !important;
         flex-direction: column !important;
         width: 100%;
-    }
-
-   
+    }  
 
     .ourTeam{
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
       .workshop .register{
           margin-left: 0px !important;
       }
   
-      .GoldenCards .cards {
-          min-height: 252px !important;
-      max-height: 252px !important;
-      }
-  
-      .homepage{
+         .homepage{
           padding: 4% 4%;
       }
   
@@ -2215,13 +1356,7 @@ font-weight: 700;
           font-size: 15px !important;
           /* margin-top: -0% !important; */
       }
-  
-      .largeCoupon img{
-          width: 73%;
-          height: 150px;
-      }
-  
-      .homepageHeading{
+       .homepageHeading{
       text-align: center;
       font-weight: 500;
       font-size: 34px;
@@ -2234,30 +1369,13 @@ font-weight: 700;
           font-size: 16px !important;
           width: 92%;
           margin-left: 4.5vw;
-      }
-  
-      .youtubeVideo {       
-      margin-left: -226px;
-      margin-right: 35%;
-      }
-  
-      .buttons-cards {
-          width: 245px !important;
-          font-size: 13px !important;
-          padding: 5px;
-          margin-left: 15%;
-      }
-  
+      } 
+      
       .unlockBtn{
           width: 403px !important;
           margin-left: -381px;
       }
   
-      /* .cardVideo{
-          display: flex;
-          flex-direction: column;
-          /* margin: 2%; 
-      } */
   
       .buildersLargeImg{
           display: flex;
@@ -2277,100 +1395,9 @@ font-weight: 700;
       .homepage .cards{
           margin: auto 1vw;
           width: 37rem;
-          /* align-items: center;
-          justify-content: center; */
-      }
-  
-      .believeThemHeading {
-          font-size: 47px;
-      }
-      .checkboxes .boxes .row .card-title {        
-          max-height: 100px;
-          min-height: 100px;
-      }
+             }
       
-      .checkboxes .register {
-          margin-left: 0% !important;
-      }
-  
-      .afterRegistering{
-          padding:6% 8%;
-          background-color: #f5f5f5;
-      }
-  
-    
-  
-       .paragraph .cards{
-          background-color: hsla(0,0%,100%,.1);
-          color: #27bd93;
-          border-radius: 16px;
-          padding: 10px;
-          min-height:100px;
-          font-size:18px;
-          max-width:85%;
-          margin-left: 7.5%;
-      }
-      
-  
-      .clockdiv div:before{       
-          font-size: 20px !important;        
-      }
-      .clockdiv div {
-          position: relative;
-          width: 15vw;
-          height: 7vh;       
-          font-size: 57px;
-      }
-         .clockdiv button{
-             margin-top: 20%;
-         }
-  
-        
-  
-         .coupon img{
-           /* vertical-align:middle; */
-           /* align-content: center; */
-           margin: auto 12.5%;
-         }
-  
-         .whatWillYouGet{
-          margin-top: 0% !important;
-      }
-  
-      .gauravHarjit{
-          margin-left: 12% !important;
-      }
-      .why{
-          text-align: justify !important;
-          font-size: 16px !important;
-      }
-      .buildersLargeImg1{
-          margin: 0% 4%;
-      }
-      .card-img-top {
-          width: 105% !important;
-          margin-left: 0% !important;
-      }
-      /* .couponDisplay{
-          display: block !important;
-      } */
-  
-      .couponFirstText {
-          position: absolute;
-          top: 10px;
-          left: 72px;
-      }
-      .coupons {
-          padding: 4% 5%;
-          background-color: #c8eadf;
-      }
-  
-      .card-img-tops {
-          width: 100% !important;
-      margin-left: 50% !important;
-      margin-top: 56%;
-      }
-      .workshop .cards {
+       .workshop .cards {
           background-color: #fff;
         
           border-radius: 10px;
@@ -2378,23 +1405,13 @@ font-weight: 700;
       .unlockbonus{
           font-size: 23px !important;
       }
-      .time-runing-out{
-          font-size: 18px !important;
-      }
-      .faq{
-          padding:4% 4%;
-          background-color: #c8eadf;
-      }
+    
   }
 
 
 
   /* for modal  */
 
-  .fourCards{
-	background-color: black;
-	padding: 4% 12%;
-  }
   
   .cards{
 	  padding: 18px;
@@ -2403,15 +1420,7 @@ font-weight: 700;
 	  /* display: inline-block; */
 	  display: flex;
   }
-  
- 
-  .description{
-	  margin-top: 10px;
-	  font-size: 16px;
-	  line-height: 30%;
-	  color: #fff;
-  }
-  
+
   div i{
 	  color: #fff;
 	  border: 0;
@@ -2423,13 +1432,7 @@ font-weight: 700;
 	  /* background-color: blueviolet; */
 	  border-radius: 5px;   
   }
-  
-  .firstCard{
-	  margin-right: 20px;
-	  padding: 18px;
-	  border-radius: 21px;
-	  background-color: hsla(0,0%,100%,.05);
-  }
+
   
   @media (min-width:300px) and (max-width:449px){
 	  .cards {
@@ -2610,6 +1613,7 @@ font-weight: 700;
   .checkbox-tools:checked + label{
 	  background-color: transparent;
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
   }
   .checkbox-tools:not(:checked) + label:hover{
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -2674,6 +1678,7 @@ font-weight: 700;
   .checkbox-budget:checked + label{
 	  background-color: transparent;
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      color: #fff;
   }
   .checkbox-budget:not(:checked) + label:hover{
 	  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -2751,8 +1756,8 @@ font-weight: 700;
 	  text-align: center;
 	  border-radius: 4px;
 	  cursor: pointer;
-	  /* color: var(--white);
-	  text-transform: uppercase;
+	  color: var(--white);
+	  /* text-transform: uppercase;
 	  background-color: var(--dark-light);
 	  -webkit-transition: all 300ms linear;
 	  transition: all 300ms linear;  */
@@ -2868,3 +1873,191 @@ font-weight: 700;
   .black{
       color: black;
   }
+
+
+  body{
+    font-family: cursive;
+}
+
+/* nested dropdown start */
+
+.dropdown-submenu {
+    position: relative;
+}
+.unlockBtn {
+    border: none;
+    /* margin: 20px; */
+    padding: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    background-color: #f93939;
+    color: #fff;
+    /* font-weight: bold !important; */
+    /* font-size: 26px; */
+    font-weight: 500;
+    /* line-height: 40px; */
+    border-radius: 14px !important;
+    background-image: linear-gradient(
+75deg
+, #FDC830, #F37335, #f12711, #f5af19);
+    background-size: 300%;
+    background-position: left;
+    transition: 300ms background-position ease-in-out;
+    /* width: 320px !important;
+    margin-left: 20px; */
+}
+
+
+.filter{
+    display: flex;
+}
+ select {
+    display: block;
+    width: 100% !important;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #212529;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    /* background-position: right .75rem center; */
+    /* background-size: 16px 12px; */
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    /* -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;*/
+} 
+
+.grade{
+    margin-left: 12.5%;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+    
+}
+.dropdown a{
+    text-decoration: none !important; 
+    color: #000;
+}
+
+.dropdown li{
+    padding-left: 10px;
+}
+.dropdown .fas{
+    background-color: none !important;
+    color: #000 !important;
+}
+
+.footer{
+    background-color: #222;
+    padding: 2% 12%;
+}
+
+.footer-col{
+    display: flex;
+}
+#selectedClass .subject-card{
+    width: 27rem;
+}
+
+@media (min-width:240px) and (max-width:768px){
+    .courses{
+        text-align: center;
+        margin: 10px 0px;
+    }
+
+    .filter{
+        display: flex;
+        flex-direction: column;
+    }
+   #selectedClass .subject-card{
+        width: 22rem;
+    }
+    #selectedClass .card-font{
+        font-size: 13px;
+    }
+    .grade{
+        margin: 0%;
+    }
+    select {
+        display: block;
+        width: 75% !important;
+        padding: .375rem 2.25rem .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2;
+        color: #212529;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        margin-left: 12.5%;
+        /* background-position: right .75rem center; */
+        /* background-size: 16px 12px; */
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        /* -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;*/
+    } 
+    .footer-col{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-col div{
+        margin: 8% 0%;
+        /* text-align: center !important; */
+    }
+
+    /* .footer-col a{
+        text-align: center !important;
+    }
+
+    .footer-col ul{
+        text-align: center !important;
+    } */
+}

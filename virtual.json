@@ -2,7 +2,7 @@
     {
         "id": 1,
         "fees": 16000,
-        "nClasses": 180,
+        "nClasses": 95,
         "months": 9,
         "subject": "Math",
         "board": "CBSE",
@@ -15,7 +15,7 @@
     {
         "id": 2,
         "fees": 16000,
-        "nClasses": 180,
+        "nClasses": 85,
         "months": 9,
         "subject": "Science",
         "board": "CBSE",
@@ -29,7 +29,7 @@
     {
         "id": 5,
         "fees": 17500,
-        "nClasses": 200,
+        "nClasses": 110,
         "months": 9,
         "subject": "Math",
         "board": "CBSE",
@@ -42,7 +42,7 @@
     {
         "id": 6,
         "fees": 17500,
-        "nClasses": 200,
+        "nClasses": 90,
         "months": 9,
         "subject": "Science",
         "board": "CBSE",
@@ -56,7 +56,7 @@
     {
       "id": 7,
       "fees": 20000,
-      "nClasses": 220,
+      "nClasses": 100,
       "months": 9,
       "subject": "Science",
       "board": "CBSE",
@@ -71,7 +71,7 @@
      {
         "id": 12,
         "fees": 20000,
-        "nClasses": 220,
+        "nClasses": 120,
         "months": 9,
         "subject": "Math",
         "board": "CBSE",
@@ -84,7 +84,7 @@
     {
        "id": 13,
        "fees": 15000,
-       "nClasses": 360,
+       "nClasses": 120,
        "months": 10,
        "subject": "Math",
        "board": "CBSE",
@@ -97,7 +97,7 @@
    {
       "id": 14,
       "fees": 15000,
-      "nClasses": 360,
+      "nClasses": 120,
       "months": 10,
       "subject": "Chemistery",
       "board": "CBSE",
@@ -110,7 +110,7 @@
   {
      "id": 15,
      "fees": 15000,
-     "nClasses": 360,
+     "nClasses": 120,
      "months": 10,
      "subject": "Physics",
      "board": "CBSE",
@@ -123,7 +123,7 @@
  {
     "id": 16,
     "fees": 16000,
-    "nClasses": 360,
+    "nClasses": 120,
     "months": 10,
     "subject": "Math",
     "board": "CBSE",
@@ -136,7 +136,7 @@
 {
    "id": 17,
    "fees": 16000,
-   "nClasses": 360,
+   "nClasses": 120,
    "months": 10,
    "subject": "Physics",
    "board": "CBSE",
@@ -149,7 +149,7 @@
 {
    "id": 18,
    "fees": 16000,
-   "nClasses": 360,
+   "nClasses": 120,
    "months": 10,
    "subject": "Chemistery",
    "board": "CBSE",
@@ -164,7 +164,7 @@
  {
     "id": 21,
     "fees": 17500,
-    "nClasses": 180,
+    "nClasses": 85,
     "months": 9,
     "subject": "Science",
     "board": "ICSE",
@@ -177,7 +177,7 @@
  {
     "id": 22,
     "fees": 17500,
-    "nClasses": 180,
+    "nClasses": 95,
     "months": 9,
     "subject": "Math",
     "board": "ICSE",
@@ -190,7 +190,7 @@
  {
     "id": 23,
     "fees": 20000,
-    "nClasses": 200,
+    "nClasses": 90,
     "months": 9,
     "subject": "Science",
     "board": "ICSE",
@@ -204,7 +204,7 @@
  {
     "id": 26,
     "fees": 20000,
-    "nClasses": 200,
+    "nClasses": 110,
     "months": 9,
     "subject": "Math",
     "board": "ICSE",
@@ -217,7 +217,7 @@
  {
     "id": 27,
     "fees": 15000,
-    "nClasses": 220,
+    "nClasses": 100,
     "months": 9,
     "subject": "Science",
     "board": "ICSE",
@@ -231,7 +231,7 @@
  {
     "id": 30,
     "fees": 15000,
-    "nClasses": 220,
+    "nClasses": 120,
     "months": 9,
     "subject": "Math",
     "board": "ICSE",
@@ -244,7 +244,7 @@
  {
     "id": 31,
     "fees": 17000,
-    "nClasses": 390,
+    "nClasses": 130,
     "months": 10,
     "subject": "Math",
     "board": "ICSE",
@@ -258,7 +258,7 @@
  {
     "id": 33,
     "fees": 17000,
-    "nClasses": 390,
+    "nClasses": 130,
     "months": 10,
     "subject": "Physics",
     "board": "ICSE",
@@ -271,7 +271,7 @@
  {
     "id": 34,
     "fees": 17000,
-    "nClasses": 390,
+    "nClasses": 130,
     "months": 10,
     "subject": "Chemistery",
     "board": "ICSE",
@@ -284,7 +284,7 @@
  {
     "id": 35,
     "fees": 18000,
-    "nClasses": 390,
+    "nClasses": 130,
     "months": 10,
     "subject": "Math",
     "board": "ICSE",
@@ -297,7 +297,7 @@
  {
     "id": 36,
     "fees": 18000,
-    "nClasses": 390,
+    "nClasses": 130,
     "months": 10,
     "subject": "Physics",
     "board": "ICSE",
@@ -310,7 +310,7 @@
  {
     "id": 37,
     "fees": 18000,
-    "nClasses": 390,
+    "nClasses": 130,
     "months": 10,
     "subject": "Chemistery",
     "board": "ICSE",
@@ -323,7 +323,7 @@
  {
     "id": 39,
     "fees": 15000,
-    "nClasses": 160,
+    "nClasses": 75,
     "months": 9,
     "subject": "Science",
     "board": "Others",
@@ -337,7 +337,7 @@
  {
     "id": 41,
     "fees": 15000,
-    "nClasses": 160,
+    "nClasses": 85,
     "months": 9,
     "subject": "Math",
     "board": "Others",
@@ -351,7 +351,7 @@
  {
    "id": 43,
    "fees": 16000,
-   "nClasses": 180,
+   "nClasses": 95,
    "months": 9,
    "subject": "Math",
    "board": "Others",
@@ -364,7 +364,7 @@
 {
   "id": 44,
   "fees": 16000,
-  "nClasses": 180,
+  "nClasses": 85,
   "months": 9,
   "subject": "Science",
   "board": "Others",
@@ -378,7 +378,7 @@
 {
   "id": 47,
   "fees": 19000,
-  "nClasses": 200,
+  "nClasses": 110,
   "months": 9,
   "subject": "Math",
   "board": "Others",
@@ -393,7 +393,7 @@
 {
   "id": 50,
   "fees": 19000,
-  "nClasses": 200,
+  "nClasses": 90,
   "months": 9,
   "subject": "Science",
   "board": "Others",
@@ -406,7 +406,7 @@
 {
   "id": 51,
   "fees": 14000,
-  "nClasses": 360,
+  "nClasses": 120,
   "months": 10,
   "subject": "Math",
   "board": "Others",
@@ -418,9 +418,23 @@
 },
 
 {
+   "id": 60,
+   "fees": 14000,
+   "nClasses": 120,
+   "months": 10,
+   "subject": "Chemistery",
+   "board": "Others",
+   "tag": "All Board",
+   "tag_subject": "All Subject",
+   "star_bullet_detail": "",
+   "dot_bullet_detail": "",
+   "grade": 11
+ },
+
+{
   "id": 53,
   "fees": 14000,
-  "nClasses": 360,
+  "nClasses": 120,
   "months": 10,
   "subject": "Physics",
   "board": "Others",
@@ -433,7 +447,7 @@
 {
   "id": 54,
   "fees": 15000,
-  "nClasses": 360,
+  "nClasses": 120,
   "months": 10,
   "subject": "Math",
   "board": "Others",
@@ -446,7 +460,7 @@
 {
   "id": 55,
   "fees": 15000,
-  "nClasses": 360,
+  "nClasses": 120,
   "months": 10,
   "subject": "Chemistery",
   "board": "Others",
@@ -459,7 +473,7 @@
 {
   "id": 56,
   "fees": 15000,
-  "nClasses": 360,
+  "nClasses": 120,
   "months": 10,
   "subject": "Physics",
   "board": "Others",
