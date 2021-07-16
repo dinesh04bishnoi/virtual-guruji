@@ -119,6 +119,14 @@ body{
     color: #000;
 }
 
+.footer span{
+    font-size: 25px;
+}
+
+.footer .quick-links a{
+   line-height:32px;
+}
+
 
 
 /* nested dropdown start */
