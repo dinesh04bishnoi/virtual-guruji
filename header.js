@@ -15,7 +15,7 @@ $(document).ready(function () {
         $el.next().addClass("show");
         $el
           .next()
-          .css({ top: $el[0].offsetTop, left: $parent.outerWidth() - 4 });
+          .css({ top: $el[1].offsetTop, left: $parent.outerWidth() - 4 });
       }
       e.preventDefault();
       e.stopPropagation();
