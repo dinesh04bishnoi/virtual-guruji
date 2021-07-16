@@ -1,5 +1,5 @@
 
-if (window.location.pathname.includes("virtual-guruji.html")) {
+if (window.location.pathname.includes("home.html")) {
     localStorage.setItem('subject','Science');
     localStorage.setItem('board','ICSE');
     localStorage.setItem('grade','8');
@@ -194,13 +194,14 @@ function setGrade(grade){
 localStorage.setItem('grade',grade);      
 }
 
-// if(window.location.pathname.includes('virtual-guruji2.html')){
-//     document.getElementById('subject').innerHTML = localStorage.getItem('subject');
-//     document.getElementById('board').innerHTML = localStorage.getItem('board');
-// }
+if(window.location.pathname.includes('virtual-guruji2.html')){
+    // document.getElementById('subject').innerHTML = localStorage.getItem('subject');
+    // document.getElementById('board').innerHTML = localStorage.getItem('board');
+
+
 
 document.addEventListener('DOMContentLoaded', init, false);
-
+}
 let board;
 let grade;
 let subject;
