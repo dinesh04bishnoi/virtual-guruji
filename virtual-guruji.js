@@ -4,7 +4,7 @@ if (window.location.pathname.includes("home.html")) {
     localStorage.setItem('board','ICSE');
     localStorage.setItem('grade','8');
   let subHtml = `
-            <div class="cards mb-2 p-3 justify-content-center cursor-pointer my-m" style="box-shadow: 5px 10px 18px #888888" >
+            <div class="cards mb-2 p-3 justify-content-center cursor-pointer my-m" >
                 <div>
                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
                         onclick="setSubject('Science')">
@@ -19,7 +19,7 @@ if (window.location.pathname.includes("home.html")) {
                 </div>
 
             </div>
-              <div class="cards mb-2 p-3 justify-content-center my-m" style="box-shadow: 5px 10px 18px #888888">
+              <div class="cards mb-2 p-3 justify-content-center my-m">
                 <div>
                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
                         onclick="setSubject('Math')">
@@ -239,14 +239,14 @@ function initHtml(data){
   
      subjectDetail.forEach(element => {
          html += `
-         <div class="card  mt-4 mb-4 mr-3 subject-card" style="box-shadow: 5px 10px 18px #888888; ">
-          <div class="card-title pt-4" style="padding-left: 32px">
+         <div class="card  mt-4 mb-4 mr-3 subject-card" >
+          <div class="card-title pt-4" style="padding-left: 32px;color:#000">
              <h4 id="subject" class="font-weight-bold">${element.subject}</h4>
              <small style="background-image: linear-gradient(75deg,#FDC830, #F37335, #f12711, #f5af19);color:white" id="board" class="badge badge-pill mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
           </div>
           <hr>
-          <div class="card-body col-12">
-              <div class="d-flex justify-content-evenly">
+          <div class="card-body col-12" style="color:black">
+              <div class="d-flex justify-content-evenly" >
                   <div>
                       <span class="p-2" style="border-right:1px solid black;">
                           <span class="text-center font-weight-bold">${element.nClasses}</span>  live Classes
@@ -294,18 +294,13 @@ function initHtml(data){
                      <img src="assets/tick.png" width="25" style="padding-right:8px">                         
                      Monthly Report Cards to Parents                  
                   </div>
-                  <div class="p-2 ">
-                     <img src="assets/tick.png" width="25" style="padding-right:8px">                         
-                     3D Visualised Content                 
-                  </div>
+                
 
               </div>
 
               <div class="m-3" >
                   <a data-toggle="modal"
-                  data-target="#exampleModal" style="box-shadow: 5px 10px 18px #888888; background-image: linear-gradient( 
-75deg
- , #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn">Book Demo</a>
+                  data-target="#exampleModal" style=" background-image: linear-gradient( 75deg, #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn">Book Demo</a>
               </div>             
                   
               </div>
@@ -316,6 +311,7 @@ function initHtml(data){
      document.getElementById('selectedClass').innerHTML= html;
 }
 
+// style="box-shadow: 5px 10px 18px #888888; "
 
 function filter(event){
      let initData; 

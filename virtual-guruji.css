@@ -9,7 +9,7 @@
     /* align-content: space-between; */
 }
 .our-clients{
-    background-color: rgba(254,241,209,.8) !important;
+    /* background-color: rgba(254,241,209,.8) !important; */
     padding: 2% 0%;
 }
 .checked {
@@ -29,12 +29,13 @@ overflow-y:hidden
 }
 
 .bg-grey{
-    background-color: #f7f5f5;
+    background-color: #fff;
+    color: #222 !important;
 }
 
 .virtual-app{
     padding: 2% 4%;
-    background-image: linear-gradient(177deg,rgba(247,194,58,.6) 40%,hsla(0,0%,100%,.6) 86%);
+    /* background-image: linear-gradient(177deg,rgba(247,194,58,.6) 40%,hsla(0,0%,100%,.6) 86%); */
 }
 
 .teachers-tab{
@@ -49,9 +50,11 @@ overflow-y:hidden
 body{
     font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
     /* background-image: url(assets/bg-pattern-1.png) !important; */
-    background-color: #fff !important;
+    
     padding: 0;
     margin: 0;
+    background-color: #000 !important;
+    color: #fff !important;
 } 
 
 .rounded-div{
@@ -410,7 +413,7 @@ body{
       font-size: 20px !important;
       line-height: 24px;
       font-weight: 400;
-      color: #333333;
+      /* color: #333333; */
   }
   
   .btn{
@@ -662,7 +665,7 @@ font-weight: 700;
   }
   
   .footer{
-      background-color: #222;
+      /* background-color: #222; */
       padding: 2% 12%;     
   }
   .footer-col{
@@ -698,10 +701,10 @@ font-weight: 700;
 
 
 
- .subject-cards{
+ /* .subject-cards{
     box-shadow: 5px 10px 18px #888888 ;
-    /* margin-right:50px; */
- }
+    /* margin-right:50px; 
+ } */
  .testimonial{
      display: flex;
  }
@@ -2000,10 +2003,7 @@ font-weight: 700;
     color: #000 !important;
 }
 
-.footer{
-    background-color: #222;
-    padding: 2% 12%;
-}
+
 
 .footer-col{
     display: flex;
