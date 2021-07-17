@@ -13,9 +13,10 @@ $(document).ready(function () {
         $parent.parent().find(".show").removeClass("show");
         $parent.addClass("show");
         $el.next().addClass("show");
+        console.log($el);
         $el
           .next()
-          .css({ top: $el[1].offsetTop, left: $parent.outerWidth() - 4 });
+          .css({ top: $el[0].offsetTop, left: $parent.outerWidth() - 4 });
       }
       e.preventDefault();
       e.stopPropagation();

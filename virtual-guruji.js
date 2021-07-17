@@ -103,7 +103,9 @@ function setBoard(board){
 localStorage.setItem('board',board);
 }
 function setSubject(subject){
+  
 localStorage.setItem('subject',subject);  
+window.location.href = "virtual-guruji2.html";
 }
 function setGrade(grade){
     if (grade=='8' || grade=="9" || grade=="10") {
