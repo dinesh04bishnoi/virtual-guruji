@@ -182,17 +182,17 @@
 </div>
 
 
-    <div style="height: 100px;"></div>
+    <!-- <div style="height: 100px;" style="background-color:rgba(254,241,209,.8);"></div> -->
    
-    <section class="homepage">  
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-text">
+    <section class="homepage" style="background-color:  rgba(254,241,209,.8);">  
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-text" style="margin-top: 100px;" >
                 <p class="font-weight-bold heading">India's Learning Won't Stop</p>
                 <p class="subheading">Real Live Learning in small Batches for</p>
                 <span class="badge bg-secondary p-2 gradebtn">Grade 8-12</span> 
                <div class="mt-5"> <a href="#workshop" class="bg-white text-decoration-none join-course-btn p-2 unlockBtn"
                      style="border:none; border-radius: 5px;box-shadow: 3px 3px 3px #888888">Join Courses</a></div>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-image">
+            <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-image" style="margin-top: 100px;">
                 <img  src="assets/banner-img.png" class="img-fluid">
             </div>
        
@@ -509,7 +509,7 @@
             <div class="col-sm-12 col-md-6 col-lg-6 text-center font-weight-bold videoText" style="margin-top: 10%; color: #111;">
                 <h1>Our students love us, <br> and so do their parents</h1>
             </div>
-            <div id="carouselExampleControls" class="carousel slide col-sm-12 col-md-6 col-lg-6" data-bs-ride="carousel">
+            <div id="carouselExampleControls" class="carousel slide col-sm-12 col-md-6 col-lg-6" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" style="border:15px solid #f0eff3; border-radius: 16px;">
                         <video width="100%" height="320" controls>
@@ -519,7 +519,7 @@
                     </div>
                     <div class="carousel-item"  style="border:15px solid #f0eff3; border-radius: 16px;">
                         <video width="100%" height="320" controls>
-                            <source src="assets/video2.mp4" type="video/mp4">                   
+                            <source src="assets/video-3.mp4" type="video/mp4">                   
                           </video>
                     </div>
 
@@ -530,12 +530,12 @@
                     </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                    data-slide="prev">
                     <span class="carousel-control-prev-icon bg-gray" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                    data-slide="next">
                     <span class="carousel-control-next-icon bg-gray" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
@@ -684,8 +684,7 @@
         </p>
     </section>
   
-
-    <form name="myform" method="post" action="http://localhost:3000/sendMail">
+    <form name="myform" method="post" >
         <div class="modal fade" tabindex="-1" id="exampleModal">
             <div class="modal-dialog modal-lg">
 
@@ -693,9 +692,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
 
-                        <h4 class="modal-title font-weight-bold">Enter Your Details</h4>
+                        <h4 class="modal-title fw-bold">Enter Your Details</h4>
 
-                        <button type="button" class="close" data-bs-dismiss="modal" onclick="close();">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal" onclick="close();">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="container">
@@ -710,7 +709,7 @@
                                             <!-- <form class="row justify-content-center pb-5" name="studentForm" method="POST" onsubmit="event.preventDefault();"> -->
                                             <div class="studentsGrade">
                                                 <div class="col-12 pt-5">
-                                                    <h3 class="mb-4 pb-2 black font-weight-bold">Select Students's Grade</h3>
+                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Students's Grade</h3>
                                                 </div>
                                                 <div class="col-12 pb-5" id="grade">
                                                     <input class="checkbox-tools" value="8" type="radio" name="grade"
@@ -719,37 +718,37 @@
                                                         8
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-tools" value="9" type="radio" name="grade"
+                                                --><input class="checkbox-tools" value="9" type="radio" name="grade"
                                                         id="grade-2">
                                                     <label class="for-checkbox-tools" for="grade-2">
                                                         9
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-tools" value="10" type="radio" name="grade"
+                                                --><input class="checkbox-tools" value="10" type="radio" name="grade"
                                                         id="grade-3">
                                                     <label class="for-checkbox-tools" for="grade-3">
                                                         10
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-tools" value="11" type="radio" name="grade"
+                                                --><input class="checkbox-tools" value="11" type="radio" name="grade"
                                                         id="grade-4">
                                                     <label class="for-checkbox-tools" for="grade-4">
                                                         11
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-tools" value="12" type="radio" name="grade"
+                                                --><input class="checkbox-tools" value="12" type="radio" name="grade"
                                                         id="grade-5">
                                                     <label class="for-checkbox-tools" for="grade-5">
                                                         12
                                                     </label>
                                                     <!--
-                                            -->
+                                                -->
                                                 </div>
                                             </div>
 
                                             <div class="subjects">
                                                 <div class="col-12 pt-1">
-                                                    <h3 class="mb-4 pb-2 black font-weight-bold">Select Subject</h3>
+                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Subject</h3>
                                                 </div>
                                                 <div class="col-xl-12 pb-5">
                                                     <input class="checkbox-budget" value="Math" type="radio"
@@ -758,19 +757,19 @@
                                                         <span data-hover="Math">Math</span>
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-budget" value="Science" type="radio"
+                                                --><input class="checkbox-budget" value="Science" type="radio"
                                                         name="subject" id="subject-2">
                                                     <label class="for-checkbox-budget" for="subject-2">
                                                         <span data-hover="Science">Science</span>
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-budget" value="Physics" type="radio"
+                                                --><input class="checkbox-budget" value="Physics" type="radio"
                                                         name="subject" id="subject-3">
                                                     <label class="for-checkbox-budget" for="subject-3">
                                                         <span data-hover="Physics">Physics</span>
                                                     </label>
                                                     <!--
-                                            --><input class="checkbox-budget" value="Chemistery" type="radio"
+                                                --><input class="checkbox-budget" value="Chemistery" type="radio"
                                                         name="subject" id="subject-4">
                                                     <label class="for-checkbox-budget" for="subject-4">
                                                         <span data-hover="Chemistery">Chemistery</span>
@@ -781,7 +780,7 @@
 
                                             <div class="selectDay">
                                                 <div class="col-12 pt-1">
-                                                    <h3 class="mb-4 pb-2 black font-weight-bold">Select Day</h3>
+                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Day</h3>
                                                 </div>
                                                 <div class="col-xl-12 pb-5">
                                                     <input class="checkbox-budget" value="Monday" type="radio"
@@ -790,19 +789,19 @@
                                                         <span data-hover="Monday">Monday</span>
                                                     </label>
                                                     <!--
-                                                --><input class="checkbox-budget" value="Tuesday" type="radio"
+                                                    --><input class="checkbox-budget" value="Tuesday" type="radio"
                                                         name="days" id="day-2">
                                                     <label class="for-checkbox-day" for="day-2">
                                                         <span data-hover="Tuesday">Tuesday</span>
                                                     </label>
                                                     <!--
-                                                --><input class="checkbox-budget" value="Wednesday" type="radio"
+                                                    --><input class="checkbox-budget" value="Wednesday" type="radio"
                                                         name="days" id="day-3">
                                                     <label class="for-checkbox-day" for="day-3">
                                                         <span data-hover="Wednesday">Wednesday</span>
                                                     </label>
                                                     <!--
-                                                --><input class="checkbox-budget" value="Thursday" type="radio"
+                                                    --><input class="checkbox-budget" value="Thursday" type="radio"
                                                         name="days" id="day-4">
                                                     <label class="for-checkbox-day" for="day-4">
                                                         <span data-hover="Thursday">Thursday</span>
@@ -823,7 +822,7 @@
 
                                             <div class="selectTime">
                                                 <div class="col-12 pt-1">
-                                                    <h3 class="mb-4 pb-2 black font-weight-bold">Select Time</h3>
+                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Time</h3>
                                                 </div>
                                                 <div class="col-xl-12 pb-5">
                                                     <input class="checkbox-budget" value="2:00 PM" type="radio"
@@ -832,19 +831,19 @@
                                                         <span data-hover="2:00 PM">2:00 PM</span>
                                                     </label>
                                                     <!--
-                                                --><input class="checkbox-budget" value="3:00 PM" type="radio"
+                                                    --><input class="checkbox-budget" value="3:00 PM" type="radio"
                                                         name="time" id="time-2">
                                                     <label class="for-checkbox-time" for="time-2">
                                                         <span data-hover="3:00 PM">3:00 PM</span>
                                                     </label>
                                                     <!--
-                                                --><input class="checkbox-budget" value="4:00 PM" type="radio"
+                                                    --><input class="checkbox-budget" value="4:00 PM" type="radio"
                                                         name="time" id="time-3">
                                                     <label class="for-checkbox-time" for="time-3">
                                                         <span data-hover="4:00 PM">4:00 PM</span>
                                                     </label>
                                                     <!--
-                                                --><input class="checkbox-budget" value="5:00 PM" type="radio"
+                                                    --><input class="checkbox-budget" value="5:00 PM" type="radio"
                                                         name="time" id="time-4">
                                                     <label class="for-checkbox-time" for="time-4">
                                                         <span data-hover="5:00 PM">5:00 PM</span>
@@ -860,34 +859,46 @@
 
                                             <div class="studentInfo">
                                                 <div class="form-group">
-                                                    <label for="name" style="float: left;">Full Name</label>
+                                                    <label for="name" style="float: left;" class="black fw-bold">Full
+                                                        Name</label>
                                                     <input type="text" placeholder="Enter Student name" name="fullName"
                                                         class="form-control" id="name" pattern="[a-zA-Z ]+"
                                                         minlength="3" maxlength="30" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="phone" style="float: left;">Phone Number</label>
+                                                    <label for="phone" style="float: left;" class="black fw-bold">Phone
+                                                        Number</label>
                                                     <input type="text" placeholder="Enter your phone number"
                                                         name="phone" class="form-control" id="phoneNumber"
                                                         pattern="\d{10}" minlength="10" maxlength="10" required>
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="email" style="float: left;">Email</label>
+                                                    <label for="email" style="float: left;"
+                                                        class="black fw-bold">Email</label>
                                                     <input type="email" placeholder="Enter your email" name="email"
                                                         class="form-control" id="email"
                                                         pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="city" style="float: left;"
+                                                        class="black fw-bold">City</label>
+                                                    <input type="text" placeholder="Enter your city" name="city"
+                                                        class="form-control" id="city">
                                                 </div>
                                             </div>
 
                                             <!-- </form> -->
                                             <button type="button" onclick="onSubmit()" data-toggle="modal"
                                                 data-target="#thanksMessage"
-                                                class="unlockBtn w-100 p-3 rounded mt-0 font-weight-bold mt-3">Book A Free
+                                                class="unlockBtn w-100 p-3 rounded mt-0 fw-bold mt-3">Book A Free
                                                 Trial</button>
                                         </div>
                                     </div>
                                 </div>
-                             </section>
+
+
+
+                            </section>
                         </div>
                     </div>
 
@@ -906,7 +917,7 @@
 
                     <h4 class="modal-title font-weight-bold">Confirm Message</h4>
 
-                    <button type="button" class="close" data-bs-dismiss="modal" onclick="close();">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" onclick="close();">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container">

@@ -302,8 +302,8 @@ function initHtml(data){
               </div>
 
               <div class="m-3" >
-                  <a data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" style="box-shadow: 5px 10px 18px #888888; background-image: linear-gradient( 
+                  <a data-toggle="modal"
+                  data-target="#exampleModal" style="box-shadow: 5px 10px 18px #888888; background-image: linear-gradient( 
 75deg
  , #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn">Book Demo</a>
               </div>             

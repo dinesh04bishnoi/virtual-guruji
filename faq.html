@@ -22,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
             </li>      
           
             <li class="nav-item dropdown">
@@ -183,80 +183,7 @@
 
 
     <div style="height: 100px;"></div>
-        <!-- <div class="container">
-            <h1 class="text-center">
-                FAQs
-            </h1>
-            <div class="accordion my-5" id="accordionExample">
-                <div class="accordion-item my-4">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Are the class Live or Recorded?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            The Lectures and Doubt Removal Sessions gave under this framework will be LIVE and not
-                            recorded. The Recorded Lectures, we feel, miss the component of coaching, discipline and
-                            hand holding which is the embodiment of educating. We have been effective in joining all the
-                            components of homeroom instructing in our framework. This makes the learning experience
-                            comparable as well as we dare say; better; as it makes our able instructors ubiquitous.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item my-4">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            What is the batch Size?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            The maximum teacher to student ratio would be 1:10, i.e. a teacher and a maximum 10
-                            students, to focus on the preparation of each student.
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item my-4">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            What are the system requirements to attend live classes?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            Usually any PC/Laptop purchased in last 8 years would be good enough for attending the
-                            classes. Technically speaking the hardware requirements are equivalent of Pentium IV and RAM
-                            of 1 GB or above. The Operating system should be equivalent of Windows XP/ and above. Any
-                            Smartphone is also good.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item my-4">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            What are the minimum internet speed required to attend live classes?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                        data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            The minimum internet speed required for the classes is 512 kbps. This is the speed which is
-                            provided by most of the Internet Service Providers (ISP) at a nominal cost.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
+    
         <div class="container">
             <h1 class="text-center">
                 FAQs
@@ -364,26 +291,25 @@
             </p>
         </section>
 
-        <form name="myform" method="post" action="http://localhost:3000/sendMail">
+        <form name="myform" method="post" >
             <div class="modal fade" tabindex="-1" id="exampleModal">
                 <div class="modal-dialog modal-lg">
-
+    
                     <!-- Modal content-->
                     <div class="modal-content">
                         <div class="modal-header">
-
+    
                             <h4 class="modal-title fw-bold">Enter Your Details</h4>
-
-                            <button type="button" class="close" data-bs-dismiss="modal"
-                                onclick="close();">&times;</button>
+    
+                            <button type="button" class="close" data-dismiss="modal" onclick="close();">&times;</button>
                         </div>
                         <div class="modal-body">
                             <div class="container">
-
+    
                                 <section>
                                     <div class="section over-hide z-bigger">
-
-
+    
+    
                                         <div class="background-color"></div>
                                         <div class="section over-hide z-bigger">
                                             <div class="container pb-5">
@@ -393,40 +319,40 @@
                                                         <h3 class="mb-4 pb-2 black fw-bold">Select Students's Grade</h3>
                                                     </div>
                                                     <div class="col-12 pb-5" id="grade">
-                                                        <input class="checkbox-tools" value="8" type="radio"
-                                                            name="grade" id="grade-1" checked>
+                                                        <input class="checkbox-tools" value="8" type="radio" name="grade"
+                                                            id="grade-1" checked>
                                                         <label class="for-checkbox-tools" for="grade-1">
                                                             8
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-tools" value="9" type="radio" name="grade"
+                                                    --><input class="checkbox-tools" value="9" type="radio" name="grade"
                                                             id="grade-2">
                                                         <label class="for-checkbox-tools" for="grade-2">
                                                             9
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-tools" value="10" type="radio" name="grade"
+                                                    --><input class="checkbox-tools" value="10" type="radio" name="grade"
                                                             id="grade-3">
                                                         <label class="for-checkbox-tools" for="grade-3">
                                                             10
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-tools" value="11" type="radio" name="grade"
+                                                    --><input class="checkbox-tools" value="11" type="radio" name="grade"
                                                             id="grade-4">
                                                         <label class="for-checkbox-tools" for="grade-4">
                                                             11
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-tools" value="12" type="radio" name="grade"
+                                                    --><input class="checkbox-tools" value="12" type="radio" name="grade"
                                                             id="grade-5">
                                                         <label class="for-checkbox-tools" for="grade-5">
                                                             12
                                                         </label>
                                                         <!--
-                                                -->
+                                                    -->
                                                     </div>
                                                 </div>
-
+    
                                                 <div class="subjects">
                                                     <div class="col-12 pt-1">
                                                         <h3 class="mb-4 pb-2 black fw-bold">Select Subject</h3>
@@ -438,27 +364,27 @@
                                                             <span data-hover="Math">Math</span>
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-budget" value="Science" type="radio"
+                                                    --><input class="checkbox-budget" value="Science" type="radio"
                                                             name="subject" id="subject-2">
                                                         <label class="for-checkbox-budget" for="subject-2">
                                                             <span data-hover="Science">Science</span>
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-budget" value="Physics" type="radio"
+                                                    --><input class="checkbox-budget" value="Physics" type="radio"
                                                             name="subject" id="subject-3">
                                                         <label class="for-checkbox-budget" for="subject-3">
                                                             <span data-hover="Physics">Physics</span>
                                                         </label>
                                                         <!--
-                                                --><input class="checkbox-budget" value="Chemistery" type="radio"
+                                                    --><input class="checkbox-budget" value="Chemistery" type="radio"
                                                             name="subject" id="subject-4">
                                                         <label class="for-checkbox-budget" for="subject-4">
                                                             <span data-hover="Chemistery">Chemistery</span>
                                                         </label>
-
+    
                                                     </div>
                                                 </div>
-
+    
                                                 <div class="selectDay">
                                                     <div class="col-12 pt-1">
                                                         <h3 class="mb-4 pb-2 black fw-bold">Select Day</h3>
@@ -470,19 +396,19 @@
                                                             <span data-hover="Monday">Monday</span>
                                                         </label>
                                                         <!--
-                                                    --><input class="checkbox-budget" value="Tuesday" type="radio"
+                                                        --><input class="checkbox-budget" value="Tuesday" type="radio"
                                                             name="days" id="day-2">
                                                         <label class="for-checkbox-day" for="day-2">
                                                             <span data-hover="Tuesday">Tuesday</span>
                                                         </label>
                                                         <!--
-                                                    --><input class="checkbox-budget" value="Wednesday" type="radio"
+                                                        --><input class="checkbox-budget" value="Wednesday" type="radio"
                                                             name="days" id="day-3">
                                                         <label class="for-checkbox-day" for="day-3">
                                                             <span data-hover="Wednesday">Wednesday</span>
                                                         </label>
                                                         <!--
-                                                    --><input class="checkbox-budget" value="Thursday" type="radio"
+                                                        --><input class="checkbox-budget" value="Thursday" type="radio"
                                                             name="days" id="day-4">
                                                         <label class="for-checkbox-day" for="day-4">
                                                             <span data-hover="Thursday">Thursday</span>
@@ -497,10 +423,10 @@
                                                         <label class="for-checkbox-day" for="day-6">
                                                             <span data-hover="Saturday">Saturday</span>
                                                         </label>
-
+    
                                                     </div>
                                                 </div>
-
+    
                                                 <div class="selectTime">
                                                     <div class="col-12 pt-1">
                                                         <h3 class="mb-4 pb-2 black fw-bold">Select Time</h3>
@@ -512,19 +438,19 @@
                                                             <span data-hover="2:00 PM">2:00 PM</span>
                                                         </label>
                                                         <!--
-                                                    --><input class="checkbox-budget" value="3:00 PM" type="radio"
+                                                        --><input class="checkbox-budget" value="3:00 PM" type="radio"
                                                             name="time" id="time-2">
                                                         <label class="for-checkbox-time" for="time-2">
                                                             <span data-hover="3:00 PM">3:00 PM</span>
                                                         </label>
                                                         <!--
-                                                    --><input class="checkbox-budget" value="4:00 PM" type="radio"
+                                                        --><input class="checkbox-budget" value="4:00 PM" type="radio"
                                                             name="time" id="time-3">
                                                         <label class="for-checkbox-time" for="time-3">
                                                             <span data-hover="4:00 PM">4:00 PM</span>
                                                         </label>
                                                         <!--
-                                                    --><input class="checkbox-budget" value="5:00 PM" type="radio"
+                                                        --><input class="checkbox-budget" value="5:00 PM" type="radio"
                                                             name="time" id="time-4">
                                                         <label class="for-checkbox-time" for="time-4">
                                                             <span data-hover="5:00 PM">5:00 PM</span>
@@ -534,21 +460,21 @@
                                                         <label class="for-checkbox-time" for="time-5">
                                                             <span data-hover="6:00 PM">6:00 PM</span>
                                                         </label>
-
+    
                                                     </div>
                                                 </div>
-
+    
                                                 <div class="studentInfo">
                                                     <div class="form-group">
-                                                        <label for="name" style="float: left;"
-                                                            class="black fw-bold">Full Name</label>
-                                                        <input type="text" placeholder="Enter Student name"
-                                                            name="fullName" class="form-control" id="name"
-                                                            pattern="[a-zA-Z ]+" minlength="3" maxlength="30" required>
+                                                        <label for="name" style="float: left;" class="black fw-bold">Full
+                                                            Name</label>
+                                                        <input type="text" placeholder="Enter Student name" name="fullName"
+                                                            class="form-control" id="name" pattern="[a-zA-Z ]+"
+                                                            minlength="3" maxlength="30" required>
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="phone" style="float: left;"
-                                                            class="black fw-bold">Phone Number</label>
+                                                        <label for="phone" style="float: left;" class="black fw-bold">Phone
+                                                            Number</label>
                                                         <input type="text" placeholder="Enter your phone number"
                                                             name="phone" class="form-control" id="phoneNumber"
                                                             pattern="\d{10}" minlength="10" maxlength="10" required>
@@ -567,24 +493,24 @@
                                                             class="form-control" id="city">
                                                     </div>
                                                 </div>
-
+    
                                                 <!-- </form> -->
-                                                <button type="button" onclick="onSubmit()" data-bs-toggle="modal"
-                                                    data-bs-target="#thanksMessage"
+                                                <button type="button" onclick="onSubmit()" data-toggle="modal"
+                                                    data-target="#thanksMessage"
                                                     class="unlockBtn w-100 p-3 rounded mt-0 fw-bold mt-3">Book A Free
                                                     Trial</button>
                                             </div>
                                         </div>
                                     </div>
-
-
-
+    
+    
+    
                                 </section>
                             </div>
                         </div>
-
+    
                     </div>
-
+    
                 </div>
             </div>
         </form>
@@ -598,7 +524,7 @@
 
                         <h4 class="modal-title fw-bold">Confirm Message</h4>
 
-                        <button type="button" class="close" data-bs-dismiss="modal" onclick="close();">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal" onclick="close();">&times;</button>
                     </div>
                     <div class="modal-body">
                         <div class="container">
