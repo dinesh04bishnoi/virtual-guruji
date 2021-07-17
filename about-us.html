@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,20 +10,11 @@
        <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="header.css">
-    <style>
-        nav {
-            z-index: 999;
-        }
-
-        nav ul li {
-            padding: 0 20px;
-        }
-    </style>
-  
+<!------ Include the above in your HEAD tag ---------->
 </head>
-
-<body style="font-family: cursive;">
-    <div class="navbar navbar-expand-md  bg-grey mb-4" role="navigation">
+<body>
+    
+    <div class="navbar fixed-top navbar-expand-md navbar-light bg-grey mb-4" role="navigation">
         <a class="navbar-brand" href="./virtual-guruji.html"><img src="./assets/logo.jpeg" width="200"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon" ></span>
@@ -44,7 +34,7 @@
                             <li class="dropdown-item dropdown">
                                 <a class="dropdown-toggle" id="cbse-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" onclick="setGrade('8')">Class 8</a>
                                 <ul class="dropdown-menu" aria-labelledby="cbse-8">
-                                    <li class="dropdown-item"  ><a href="virtual-guruji2.html" onclick="setSubject('Math')">Math </a></li>
+                                    <li class="dropdown-item "  href="virtual-guruji2.html"><a  onclick="setSubject('Math')">Math </a></li>
                                     <li class="dropdown-item"  ><a href="./virtual-guruji2.html" onclick="setSubject('Science')">Science</a></li>
                                 </ul>
                             </li>
@@ -191,7 +181,8 @@
     </div>
 </div>
 
-    <div style="height: 50px;">
+
+    <div style="height: 100px;"></div>
 
     </div>
     <div class="container">
@@ -597,10 +588,10 @@
         </div>
     </div>
 
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="header.js"></script>
 <script src="virtual-guruji.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
-
 </html>
