@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./virtual-guruji.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>The Virtual Guruji</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+       <link rel="stylesheet" href="./virtual-guruji.css">
+       <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
 
-    <!-- JavaScript Bundle with Popper -->
+    <link rel="stylesheet" href="header.css">
     <style>
         nav {
             z-index: 999;
@@ -20,430 +20,176 @@
             padding: 0 20px;
         }
     </style>
-
-    <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
+  
 </head>
 
 <body style="font-family: cursive;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light text-uppercase" style="position: fixed; width: 100%;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./virtual-guruji.html"><img src="./assets/logo.jpeg" width="200"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./virtual-guruji.html">Home</a>
-                    </li>
-                    <li class="dropdown nav-item">
-                        <a id="dLabel" role="button" data-bs-toggle="dropdown" class="nav-link" style="color: black;"
-                            data-bs-target="#">
-                            Live Courses <img src="./assets//down-arrow.png" width="15">
-                        </a>
-                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('8')">Course 8 </a>
-                                <ul class="dropdown-menu">
-
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('CBSE')">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('ICSE')">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('Other')">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-
+    <div class="navbar navbar-expand-md  bg-grey mb-4" role="navigation">
+        <a class="navbar-brand" href="./virtual-guruji.html"><img src="./assets/logo.jpeg" width="200"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>      
+          
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="dropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">LIVE COURSES</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown1">                  
+                    <li class="dropdown-item dropdown">
+                        <a class="dropdown-toggle" id="cbse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="setBoard('CBSE')">CBSE</a>
+                        <ul class="dropdown-menu" aria-labelledby="cbse">                          
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="cbse-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" onclick="setGrade('8')">Class 8</a>
+                                <ul class="dropdown-menu" aria-labelledby="cbse-8">
+                                    <li class="dropdown-item"  ><a href="virtual-guruji2.html" onclick="setSubject('Math')">Math </a></li>
+                                    <li class="dropdown-item"  ><a href="./virtual-guruji2.html" onclick="setSubject('Science')">Science</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('9')">Course 9 </a>
-                                <ul class="dropdown-menu">
-
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('CBSE')">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('ICSE')">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('Other')">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="cbse-9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" onmouseover="setGrade('9')">Class 9</a>
+                                <ul class="dropdown-menu" aria-labelledby="cbse-9">
+                                    <li class="dropdown-item" href="./virtual-guruji2.html" onclick="setSubject('Math')"><a>Math </a></li>
+                                    <li class="dropdown-item" href="./virtual-guruji2.html" onclick="setSubject('Science')"><a>Science</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('10')">Course 10 </a>
-                                <ul class="dropdown-menu">
-
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('CBSE')">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('ICSE')">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('Other')">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="cbse-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" onmouseover="setGrade('10')">Class 10</a>
+                                <ul class="dropdown-menu" aria-labelledby="cbse-10">
+                                    <li class="dropdown-item" href="./virtual-guruji2.html" onclick="setSubject('Math')"><a>Math </a></li>
+                                    <li class="dropdown-item" href="./virtual-guruji2.html" onclick="setSubject('Science')"><a>Science</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('11')">Course 11 </a>
-                                <ul class="dropdown-menu">
-
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('CBSE')">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math</a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onclick="setSubject('Math')" onmouseover="setBoard('ICSE')">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math</a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('Other')">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math</a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="cbse-11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" onmouseover="setGrade('11')">Class 11</a>
+                                <ul class="dropdown-menu" aria-labelledby="cbse-11">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Physics</a></li>
+                                    <li class="dropdown-item" href="#"><a>Chemistery</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('12')">Course 12 </a>
-                                <ul class="dropdown-menu">
-
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('CBSE')">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math</a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('ICSE')">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math</a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('Other')">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math</a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="cbse-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" onmouseover="setGrade('12')">Class 12</a>
+                                <ul class="dropdown-menu" aria-labelledby="cbse-12">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Physics</a></li>
+                                    <li class="dropdown-item" href="#"><a>Chemistery</a></li>
                                 </ul>
-
                             </li>
-
-
                         </ul>
                     </li>
 
-                    <!-- <li class="dropdown nav-item">
-                        <a id="dLabel" role="button" data-bs-toggle="dropdown" style="color: black;" class="nav-link "
-                            data-bs-target="#">
-                            Knowledge Center <img src="./assets//down-arrow.png" width="15"> <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('8')">Course 8 </a>
-                                <ul class="dropdown-menu">                           
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('CBSE')">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('ICSE')">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#" onmouseover="setBoard('Other')">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-
+                    <li class="dropdown-item dropdown">
+                        <a class="dropdown-toggle" id="icse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ICSE</a>
+                        <ul class="dropdown-menu" aria-labelledby="icse">                          
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="icse-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 8</a>
+                                <ul class="dropdown-menu" aria-labelledby="icse-8">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Science</a></li>
                                 </ul>
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('9')">Course 9 </a>
-                                <ul class="dropdown-menu">
-                             
-                                    <li class="dropdown-submenu">
-                                        <a href="#">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="icse-9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 9</a>
+                                <ul class="dropdown-menu" aria-labelledby="icse-9">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Science</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('10')">Course 10 </a>
-                                <ul class="dropdown-menu">
-                             
-                                    <li class="dropdown-submenu">
-                                        <a href="#">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Science')">Science</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="icse-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 10</a>
+                                <ul class="dropdown-menu" aria-labelledby="icse-10">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Science</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('11')">Course 11 </a>
-                                <ul class="dropdown-menu">
-                             
-                                    <li class="dropdown-submenu">
-                                        <a href="#">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="icse-11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 11</a>
+                                <ul class="dropdown-menu" aria-labelledby="icse-11">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Physics</a></li>
+                                    <li class="dropdown-item" href="#"><a>Chemistery</a></li>
                                 </ul>
-
                             </li>
-                            <li class="dropdown-submenu"><a href="#" onmouseover="setGrade('12')">Course 12 </a>
-                                <ul class="dropdown-menu">
-                             
-                                    <li class="dropdown-submenu">
-                                        <a href="#">CBSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">ICSE</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a href="#">Other</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Math')">Math </a>
-                                            </li>
-                                            <li><a href="./virtual-guruji2.html" onclick="setSubject('Physics')">Physics
-                                                </a></li>
-                                            <li><a href="./virtual-guruji2.html"
-                                                    onclick="setSubject('Chemistery')">Chemistery</a></li>
-                                        </ul>
-                                    </li>
-
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="icse-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 12</a>
+                                <ul class="dropdown-menu" aria-labelledby="icse-12">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Physics</a></li>
+                                    <li class="dropdown-item" href="#"><a>Chemistery</a></li>
                                 </ul>
-
                             </li>
-
-
                         </ul>
-                    </li> -->
+                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#whyVirtual">Why Choose Us</a>
+                    <li class="dropdown-item dropdown">
+                        <a class="dropdown-toggle" id="others" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OTHERS</a>
+                        <ul class="dropdown-menu" aria-labelledby="others">                          
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="others-8" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 8</a>
+                                <ul class="dropdown-menu" aria-labelledby="others-8">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Science</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="others-9" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 9</a>
+                                <ul class="dropdown-menu" aria-labelledby="others-9">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Science</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="others-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 10</a>
+                                <ul class="dropdown-menu" aria-labelledby="others-10">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Science</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="others-11" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 11</a>
+                                <ul class="dropdown-menu" aria-labelledby="others-11">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Physics</a></li>
+                                    <li class="dropdown-item" href="#"><a>Chemistery</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-item dropdown">
+                                <a class="dropdown-toggle" id="others-12" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Class 12</a>
+                                <ul class="dropdown-menu" aria-labelledby="others-12">
+                                    <li class="dropdown-item" href="#"><a>Math </a></li>
+                                    <li class="dropdown-item" href="#"><a>Physics</a></li>
+                                    <li class="dropdown-item" href="#"><a>Chemistery</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./about-us.html">About Us</a>
-                    </li>
+                   
+                  
                 </ul>
+            </li>
+        
 
-                <div class="float-right">
-                    <button class="unlockBtn py-2 px-3 border-0" data-bs-toggle="modal"
-                        data-bs-target="#exampleModal">Free Trial</button>
-                    <a class="unlockBtn py-2 px-3 hover-white text-decoration-none text-start" href="tel:+9356488281">
-                        Call Us +91 9356488281
-                    </a>
+              <li class="nav-item">
+                <a class="nav-link " href="#whyVirtual">WHY CHOOSE US</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about-us.html">ABOUT US</a>
+            </li>
+        </ul>
+        <div class="float-right">
+                    <button class="unlockBtn py-2 px-3 border-0" data-toggle="modal"
+                    data-target="#exampleModal">Free Trial</button>     
+                    <a class="unlockBtn py-2 px-3 hover-white text-decoration-none text-start"
+                    href="tel:+9356488281">
+                   Call Us  +91 9356488281
+                </a>
                 </div>
-            </div>
-
-        </div>
-    </nav>
+       
+    </div>
+</div>
 
     <div style="height: 50px;">
 
@@ -851,12 +597,10 @@
         </div>
     </div>
 
-    <script src="./virtual-guruji.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-        crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="header.js"></script>
+<script src="virtual-guruji.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
