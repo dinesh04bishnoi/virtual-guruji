@@ -61,8 +61,31 @@ body{
     border-radius: 50%;
     height: 140px;
     width: 140px;
-    background-color: darkgray;
+    /* background-color: darkgray; */
     align-self: center;
+    margin-left: 10px;
+}
+
+.who-we-are{
+    padding: 2% 12%;   
+}
+.who-we-are p{
+    font-size: 25px;
+}
+
+.zoom-icon{
+    transform-origin: 50% 65%;
+  transition: transform 5s, filter 3s ease-in-out;
+  filter: brightness(150%);
+}
+
+.zoom-icon:hover{
+    filter: brightness(100%);
+    transform: scale(1.3);
+}
+
+.our-usp{
+    padding: 2% 12%;    
 }
 
 .homepage{
