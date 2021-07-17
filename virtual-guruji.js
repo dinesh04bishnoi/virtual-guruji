@@ -11,7 +11,7 @@ if (window.location.pathname.includes("home.html")) {
                         <div>
                             <img src="assets/science.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Science
                         </div>
                     </a>
@@ -26,7 +26,7 @@ if (window.location.pathname.includes("home.html")) {
                         <div>
                             <img src="assets/math.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Math
                         </div>
                     </a>
@@ -117,7 +117,7 @@ function setGrade(grade){
                         <div>
                             <img src="assets/science.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Science
                         </div>
                     </a>
@@ -132,7 +132,7 @@ function setGrade(grade){
                         <div>
                             <img src="assets/math.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Math
                         </div>
                     </a>
@@ -151,7 +151,7 @@ function setGrade(grade){
                         <div>
                             <img src="assets/physics.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Physics
                         </div>
                     </a>
@@ -166,7 +166,7 @@ function setGrade(grade){
                         <div>
                             <img src="assets/chemistery.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Chemistery
                         </div>
                     </a>
@@ -181,7 +181,7 @@ function setGrade(grade){
                         <div>
                             <img src="assets/math.png" width="100" alt="">
                         </div>
-                        <div class="text-center m-2 fw-bold">
+                        <div class="text-center m-2 font-weight-bold">
                             Math
                         </div>
                     </a>
@@ -238,43 +238,43 @@ function initHtml(data){
     subjectDetail=data;
   
      subjectDetail.forEach(element => {
-         html+= `
-         <div class="card pl-5 mt-4 mb-4 subject-card" style="box-shadow: 5px 10px 18px #888888; ">
+         html += `
+         <div class="card  mt-4 mb-4 mr-3 subject-card" style="box-shadow: 5px 10px 18px #888888; ">
           <div class="card-title pt-4" style="padding-left: 32px">
-             <span id="subject" class="fs-3 fw-bolder">${element.subject}</span>
-             <small id="board" class="badge rounded-pill bg-primary  mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
+             <h4 id="subject" class="font-weight-bold">${element.subject}</h4>
+             <small style="background-image: linear-gradient(75deg,#FDC830, #F37335, #f12711, #f5af19);color:white" id="board" class="badge badge-pill mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
           </div>
           <hr>
           <div class="card-body col-12">
               <div class="d-flex justify-content-evenly">
                   <div>
                       <span class="p-2" style="border-right:1px solid black;">
-                          <span class="text-center fw-bold">${element.nClasses}</span>  live Classes
+                          <span class="text-center font-weight-bold">${element.nClasses}</span>  live Classes
                       </span>
                       </div>
                       <div>
                           <span class="py-2 px-3" style="border-right:1px solid black;">
-                              <span class="text-center fw-bold">${element.months}</span>  Months
+                              <span class="text-center font-weight-bold">${element.months}</span>  Months
                           </span>
                       </div>
                        
                       <div>
                           <span style="border-left:0;">
-                              <span class="text-center fw-bold">${element.fees}</span>  Fees
+                              <span class="text-center font-weight-bold">${element.fees}</span>  Fees
                           </span>
                       </div>
               </div>
 
               <div class="mt-3 card-font" >                    
-                      <div class="p-2 ml-5 fw-bold">
+                      <div class="p-2 font-weight-bold">
                           <img src="assets/star.png" width="25" style="padding-right:8px">                        
                           Best to Score More in Exams                            
                       </div>
-                      <div class="p-2 fw-bold">
+                      <div class="p-2 font-weight-bold">
                           <img src="assets/star.png" width="25" style="padding-right:8px">                           
                           Covers Complete ${element.board} Syllabus.                            
                       </div> 
-                      <div class="p-2 fw-bold">
+                      <div class="p-2 font-weight-bold">
                           <img src="assets/star.png" width="25" style="padding-right:8px">                          
                           Demands 3 Hours of Practise per Week                 
                       </div>                        
@@ -282,7 +282,7 @@ function initHtml(data){
               <hr>
 
               <div class="card-font">
-                  <div class="p-2 ml-5 ">
+                  <div class="p-2 ">
                      <img src="assets/tick.png" width="25" style="padding-right:8px">                       
                      ${element.nClasses} Live Interactive Classes                            
                   </div>
@@ -303,12 +303,14 @@ function initHtml(data){
 
               <div class="m-3" >
                   <a data-bs-toggle="modal"
-                  data-bs-target="#exampleModal" style="box-shadow: 5px 10px 18px #888888;" class="btn btn-primary">Book Demo</a>
+                  data-bs-target="#exampleModal" style="box-shadow: 5px 10px 18px #888888; background-image: linear-gradient( 
+75deg
+ , #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn">Book Demo</a>
               </div>             
                   
               </div>
           </div>
-         `
+         `;
      });
 
      document.getElementById('selectedClass').innerHTML= html;
