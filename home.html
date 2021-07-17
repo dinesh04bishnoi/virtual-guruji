@@ -10,6 +10,11 @@
        <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="header.css">
+   <!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
 <!------ Include the above in your HEAD tag ---------->
 </head>
 <body >
@@ -202,23 +207,24 @@
         <p class="text-center">We are a bunch of experienced young educators who have come up with the solution of all your problems through our platform:- The Virtual Guruji</p>
     </section>
 
-    <section class="our-usp ">
+    <section class="our-usp">
+        <div class="container">
         <h2 class="text-center mb-5">Our USP</h2>
-        <div class="d-flex">
-            <div class="col-4">
+        <div class="row">
+            <div class="col-4 text-center">
                 <img class="zoom-icon" src="assets/Picture1.png" width="100" alt="">
                 <p>2 way Live interactive class </p>
                 <p>Best Student-teacher ratio (avg. 10:1) </p>
 
             </div>
-            <div class="col-4">
+            <div class="col-4 text-center">
                 <img class="zoom-icon" src="assets/Picture2.png" width="100" alt="">
                 <p>Most economical price
                 </p>
                 <p>Annual charges starting at 35k 
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-4 text-center">
                 <img class="zoom-icon" src="assets/Picture3.png" width="100" alt="">
                 <p>Unlimited support 
                 </p>
@@ -227,10 +233,16 @@
             </div>
         </div>
 
-        <h2 class="text-center my-5">
+      
+</div>
+
+    </section>
+    <section>
+        <div class="container">
+          <h2 class="text-center my-5">
             Our Best and Stable Faculty
         </h2>
-        <div class="d-flex">
+        <div class="row justify-content-center text-center">
                         
             <div class="col-4">
                 <div class="rounded-div">
@@ -283,8 +295,7 @@
                 </div>
             </div>
         </div>
-
-
+        </div>
     </section>
 
     <!-- <section class="tab-section">
@@ -441,34 +452,57 @@
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="20" data-decimals="0" Cr
                         data-duration="0" data-separator="">
-                        <h2>10,000+</h2>
+                        <h2 id="happy-students">10,000+</h2>
                     </div>
                     <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7"> Happy Students</div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="1000" data-decimals="0"
                         data-duration="0" data-separator="">
-                        <h2> 1,12,000+</h2>
+                        <h2 id="hours"> 1,12,000+</h2>
                     </div>
                     <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">Hours of Live Learning</div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="5000" data-decimals="0"
                         data-duration="0" data-separator="">
-                        <h2> 500+</h2>
+                        <h2 id="cities"> 500+</h2>
                     </div>
                     <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">Cities Worldwide</div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="12" data-decimals="0"
                         data-duration="0" data-separator="">
-                        <h2>4.8/5</h2>
+                        <h2 ><span id="rating">4.8</span>/5</h2>
                     </div>
                     <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">Avg Teacher Rating</div>
                 </div>
             </div>
         </div>
     </section>
+
+
+     <section >
+         <div class="container">
+               <p class="text-center font-weight-bold pb-5 heading">Schools we work with</p>
+           <div id="owl-demo" class="owl-carousel owl-theme">
+          
+  <div class="item"><img src="assets/1.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/2.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/3.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/4.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/5.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/6.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/7.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/8.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/9.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/10.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/11.jpeg" alt="" width="100%"></div>
+  <div class="item"><img src="assets/12.jpeg" alt="" width="100%"></div>
+ 
+</div>
+</div>
+         </section>
 
     <section id="workshop" class="workshop ">
         <p class="text-center heading mt-5">
@@ -1021,6 +1055,7 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="header.js"></script>
 <script src="virtual-guruji.js"></script>
+<script src="owl-carousel/owl.carousel.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
 </html>
