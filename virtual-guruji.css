@@ -1560,7 +1560,7 @@ font-weight: 700;
   
  @media (min-width:1101px){
          .my-m{
-             margin: 5%;
+             margin: 2% 5%;
          }
             .homepage .heading{
      font-size: 50px;           
@@ -1988,7 +1988,7 @@ font-weight: 700;
   }
 
   .black{
-      color: black;
+      color: white;
   }
 
 

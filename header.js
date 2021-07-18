@@ -36,6 +36,8 @@ $(document).ready(function () {
     autoPlay:true
   });
 });
+
+function counter(){
  let hstudents=0;
  let interval=1;
 let student_interval= setInterval(() => {
@@ -73,3 +75,19 @@ if (hstudents >= 10000) {
        clearInterval(rating_interval);
      }
    }, interval);
+  }
+  let first=true;
+
+      $(document).on("scroll", function () {
+
+        if ($(this).scrollTop() >= $("#best-faculty").position().top) {
+           if (first) {
+        
+           counter();
+            first = false;
+        }
+      }
+         
+      });
+  
+
