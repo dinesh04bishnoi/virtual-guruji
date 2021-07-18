@@ -260,7 +260,7 @@ function initHtml(data){
                        
                       <div>
                           <span style="border-left:0;">
-                              <span class="text-center font-weight-bold">${element.fees}</span>  Fees
+                              <span class="text-center font-weight-bold">&nbsp;&nbsp; ${element.fees}</span>  Fees
                           </span>
                       </div>
               </div>
