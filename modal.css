@@ -164,5 +164,19 @@ body {
 }
 
 
+@media (min-width:300px) and (max-width:780px){
+	#msform fieldset {
+		background: white;
+		border: 0 none;
+		border-radius: 3px;
+		box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+		padding: 10px;
+		box-sizing: border-box;
+		width: 100%;		
+		/*stacking fieldsets above each other*/
+		position: relative;
+	}
+}
+
 
 
