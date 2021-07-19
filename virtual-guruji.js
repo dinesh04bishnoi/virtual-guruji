@@ -186,9 +186,22 @@ function setGrade(grade){
                         </div>
                     </a>
                 </div>
+            </div>    
+            <div class="cards mb-2 p-3 cursor-pointer subject-cards justify-content-center my-m"  >
+            <div>
+                <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
+                    onclick="setSubject('Biology')">
+                    <div>
+                        <img src="assets/biology.png" width="100" alt="">
+                    </div>
+                    <div class="text-center m-2 font-weight-bold">
+                       Biology
+                    </div>
+                </a>
+
             </div>
 
-            
+        </div>        
             `;
 
              document.getElementById("subHtml").innerHTML = subHtml;
@@ -331,9 +344,7 @@ function filter(event){
                      element.grade == grade &&
                      element.subject == subject
                    );
-                 }); 
-                   
-             
+                 });              
          }
          if(board == "All Board" && subject !="All Subject"){
              initData = data.filter(function (element) {
