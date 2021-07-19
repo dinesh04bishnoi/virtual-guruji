@@ -34,7 +34,7 @@ overflow-y:hidden
 }
 
 .virtual-app{
-    padding: 2% 4%;
+    padding: 2% 8%;
     /* background-image: linear-gradient(177deg,rgba(247,194,58,.6) 40%,hsla(0,0%,100%,.6) 86%); */
 }
 
@@ -392,7 +392,7 @@ body{
   
   .homepage{
        /* background-color: #c8eadf;  */
-      padding:4% 12%;
+      padding:2% 8%;
       /* background-color: #fff; */
       /* background-image: linear-gradient( rgba(255,98,0,1),rgba(255,128,0,0.9) );
       color: #fff; */
@@ -731,11 +731,11 @@ font-weight: 700;
   opacity: 1;
 }
 .tab-section{
-    padding: 4% 12%;
+    padding: 2% 8%;
 }
 
 .video-padding{
-    padding: 5%;
+    padding: 2% 8%;
 }
 
 .bg-gray{
