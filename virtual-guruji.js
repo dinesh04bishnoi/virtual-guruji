@@ -96,7 +96,12 @@ var requestOptions = {
 
 fetch(`https://raiseme.in/api/sendOtherMail/${Body}`, requestOptions)
   .then((response) => response.text())
-  .then((result) => console.log(result));
+  .then((result) =>{
+      var modal = document.getElementById("myModal");
+       modal.style.display = "none";
+      var modal2 = document.getElementById("myModal2");
+       modal2.style.display = "block";
+  });
 }
 
 function setBoard(board){
@@ -311,8 +316,7 @@ function initHtml(data){
               </div>
 
               <div class="m-3" >
-                  <a data-toggle="modal"
-                  data-target="#exampleModal" style=" background-image: linear-gradient( 75deg, #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn">Book Demo</a>
+                  <a style=" background-image: linear-gradient( 75deg, #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn" onclick='demoOpen()'>Book Demo</a>
               </div>             
                   
               </div>

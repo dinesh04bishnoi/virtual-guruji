@@ -96,6 +96,12 @@ $(".submit").click(function () {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal2 = document.getElementById("myModal2-close");
+
+modal2.addEventListener('click',()=>{
+   var modal2_close = document.getElementById("myModal2");
+  modal2_close.style.display = "none";
+})
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -118,6 +124,12 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+function demoOpen(){
+  const demoModalComponent=document.getElementById('myBtn');
+  demoModalComponent.click()
+
 }
 
 
