@@ -2,27 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Virtual Guruji</title>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="./virtual-guruji.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css" />
+    <link rel="stylesheet" href="./virtual-guruji.css" />
     <script src="https://kit.fontawesome.com/b0667fb8b1.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="modal.css" />
     <!-- Important Owl stylesheet -->
-    <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" href="owl-carousel/owl.carousel.css" />
 
     <!-- Default Theme -->
-    <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+    <link rel="stylesheet" href="owl-carousel/owl.theme.css" />
     <!------ Include the above in your HEAD tag ---------->
 </head>
 
 <body>
-
     <div class="navbar fixed-top navbar-expand-md navbar-light bg-grey mb-4" role="navigation">
-        <a class="navbar-brand" href="./home.html"><img src="./assets/logo.jpeg" width="200"></a>
+        <a class="navbar-brand" href="./home.html"><img src="./assets/logo.jpeg" width="200" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,10 +45,12 @@
                                     <a class="dropdown-toggle" id="cbse-8" data-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false" href="#" onclick="setGrade('8')">Class 8</a>
                                     <ul class="dropdown-menu" aria-labelledby="cbse-8">
-                                        <li class="dropdown-item " href="virtual-guruji2.html"><a
-                                                onclick="setSubject('Math')">Math </a></li>
-                                        <li class="dropdown-item"><a href="./virtual-guruji2.html"
-                                                onclick="setSubject('Science')">Science</a></li>
+                                        <li class="dropdown-item" href="virtual-guruji2.html">
+                                            <a onclick="setSubject('Math')">Math </a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="./virtual-guruji2.html" onclick="setSubject('Science')">Science</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-item dropdown">
@@ -56,9 +58,13 @@
                                         aria-expanded="false" href="#" onmouseover="setGrade('9')">Class 9</a>
                                     <ul class="dropdown-menu" aria-labelledby="cbse-9">
                                         <li class="dropdown-item" href="./virtual-guruji2.html"
-                                            onclick="setSubject('Math')"><a>Math </a></li>
+                                            onclick="setSubject('Math')">
+                                            <a>Math </a>
+                                        </li>
                                         <li class="dropdown-item" href="./virtual-guruji2.html"
-                                            onclick="setSubject('Science')"><a>Science</a></li>
+                                            onclick="setSubject('Science')">
+                                            <a>Science</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-item dropdown">
@@ -66,9 +72,13 @@
                                         aria-expanded="false" href="#" onmouseover="setGrade('10')">Class 10</a>
                                     <ul class="dropdown-menu" aria-labelledby="cbse-10">
                                         <li class="dropdown-item" href="./virtual-guruji2.html"
-                                            onclick="setSubject('Math')"><a>Math </a></li>
+                                            onclick="setSubject('Math')">
+                                            <a>Math </a>
+                                        </li>
                                         <li class="dropdown-item" href="./virtual-guruji2.html"
-                                            onclick="setSubject('Science')"><a>Science</a></li>
+                                            onclick="setSubject('Science')">
+                                            <a>Science</a>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li class="dropdown-item dropdown">
@@ -189,8 +199,6 @@
                                 </li>
                             </ul>
                         </li>
-
-
                     </ul>
                 </li>
                 <!-- 
@@ -202,84 +210,77 @@
             </li> -->
             </ul>
             <div class="float-right">
-                <button class="unlockBtn py-2 px-3 border-0" data-toggle="modal" data-target="#exampleModal">Free
-                    Trial</button>
-                <a class="unlockBtn py-2 px-3 hover-white text-decoration-none text-start" href="tel:+9356488281">
+                <button class="unlockBtn py-2 px-3 border-0" data-toggle="modal" data-target="#exampleModal">
+                    Free Trial
+                </button>
+                <a class="
+              unlockBtn
+              py-2
+              px-3
+              hover-white
+              text-decoration-none text-start
+            " href="tel:+9356488281">
                     Call Us +91 9356488281
                 </a>
             </div>
-
         </div>
     </div>
-
 
     <!-- <div style="height: 100px;" style="background-color:rgba(254,241,209,.8);"></div> -->
 
     <section class="homepage">
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-text" style="margin-top: 100px;">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-text" style="margin-top: 100px">
             <p class="font-weight-bold heading">India's Learning Won't Stop</p>
             <p class="subheading">Real Live Learning in small Batches for</p>
             <span class="badge bg-secondary p-2 gradebtn">Grade 8-12</span>
-            <div class="mt-5"> <a href="#workshop" class="bg-white text-decoration-none join-course-btn p-2 unlockBtn"
-                    style="border:none; border-radius: 5px;">Join Courses</a></div>
+            <div class="mt-5">
+                <a href="#workshop" class="bg-white text-decoration-none join-course-btn p-2 unlockBtn"
+                    style="border: none; border-radius: 5px">Join Courses</a>
+            </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-image"
-            style="margin-top: 100px;border:10px solid #f0eff3; border-radius: 16px;">
-            <!-- <img  src="assets/banner-img.png" class="img-fluid"> -->
-            <video width="100%" height="320" controls>
-                <source src="assets/video-4.mp4" type="video/mp4">
-                <!-- <source src="movie.ogg" type="video/ogg"> -->
-            </video>
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6 home-image" style="margin-top: 100px">
+            <img src="assets/banner-img.png" class="img-fluid" />
         </div>
-
     </section>
 
     <section class="who-we-are">
-        <h2 class="text-center font-weight-bold my-3">Who We Are</h2>
-        <p class="text-center">We are a bunch of experienced young educators who have come up with the solution of all
-            your problems through our platform:- The Virtual Guruji</p>
+        <h2 class="text-center my-3">Who We Are</h2>
+        <p class="text-center">
+            We are a bunch of experienced young educators who have come up with the
+            solution of all your problems through our platform:- The Virtual Guruji
+        </p>
     </section>
 
     <section class="our-usp">
         <div class="container">
-            <h1 class="text-center font-weight-bold mb-5">Our USP</h1>
+            <h2 class="text-center mb-5">Our USP</h2>
             <div class="usp">
                 <div class="text-center">
-                    <img class="zoom-icon" src="assets/Picture1.png" width="100" alt="">
-                    <p>2 way Live interactive class </p>
-                    <p>Best Student-teacher ratio (avg. 10:1) </p>
-
+                    <img class="zoom-icon" src="assets/Picture1.png" width="100" alt="" />
+                    <p>2 way Live interactive class</p>
+                    <p>Best Student-teacher ratio (avg. 10:1)</p>
                 </div>
                 <div class="text-center">
-                    <img class="zoom-icon" src="assets/Picture2.png" width="100" alt="">
-                    <p>Most economical price
-                    </p>
-                    <p>Annual charges starting at 35k
-                    </p>
+                    <img class="zoom-icon" src="assets/Picture2.png" width="100" alt="" />
+                    <p>Most economical price</p>
+                    <p>Annual charges starting at 35k</p>
                 </div>
                 <div class="text-center">
-                    <img class="zoom-icon" src="assets/Picture3.png" width="100" alt="">
-                    <p>Unlimited support
-                    </p>
-                    <p>Innovative Methodologies
-                    </p>
+                    <img class="zoom-icon" src="assets/Picture3.png" width="100" alt="" />
+                    <p>Unlimited support</p>
+                    <p>Innovative Methodologies</p>
                 </div>
             </div>
         </div>
-
     </section>
 
-
-    <section class="faculity">
+    <section class="faculity" id="best-faculty">
         <div class="container">
-            <h2 class="text-center font-weight-bold my-5">
-                Our Best and Stable Faculity
-            </h2>
-            <div class="stable-faculty  text-center">
-
+            <h2 class="text-center my-5">Our Best and Stable Faculity</h2>
+            <div class="stable-faculty text-center">
                 <div class="">
                     <div class="rounded-div text-center">
-                        <img class="rounded-div" src="./assets/IMG_6548 copy.JPG" alt="">
+                        <img class="rounded-div" src="./assets/IMG_6548 copy.JPG" alt="" />
                     </div>
                     <div class="card-body">
                         <h4 class="card-title font-weight-bold">Diwakar Sir</h4>
@@ -296,7 +297,7 @@
 
                 <div class="">
                     <div class="rounded-div">
-                        <img class="rounded-div" src="./assets/Pooja Jalmoru_Teacher (2).jpeg" alt="">
+                        <img class="rounded-div" src="./assets/Pooja Jalmoru_Teacher (2).jpeg" alt="" />
                     </div>
                     <div class="card-body">
                         <h4 class="card-title font-weight-bold">Pooja Jalmoru</h4>
@@ -313,11 +314,13 @@
 
                 <div class="">
                     <div class="rounded-div">
-                        <img class="rounded-div" src="./assets/ashish.jpeg" alt="">
+                        <img class="rounded-div" src="./assets/ashish.jpeg" alt="" />
                     </div>
                     <div class="card-body">
                         <h4 class="card-title font-weight-bold">Ashish Awasthi</h4>
-                        <h6 class="card-text font-weight-bold">12+ years of experience</h6>
+                        <h6 class="card-text font-weight-bold">
+                            12+ years of experience
+                        </h6>
                         <div>B.Tech(CUSAT)</div>
                         <div class="fs-6">Ex-NARAYANA</div>
                         <span class="fa fa-star checked"></span>
@@ -480,35 +483,45 @@
 
     <section id="our-clients" class="our-clients pb-5">
         <div class="container">
-            <p class="text-center font-weight-bold pb-5 heading">Our numbers speak for themselves</p>
+            <p class="text-center font-weight-bold pb-5 heading">
+                Our numbers speak for themselves
+            </p>
             <div class="row no-gutters">
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="20" data-decimals="0" Cr
                         data-duration="0" data-separator="">
                         <h2 id="happy-students">10,000+</h2>
                     </div>
-                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7"> Happy Students</div>
+                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">
+                        Happy Students
+                    </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="1000" data-decimals="0"
                         data-duration="0" data-separator="">
-                        <h2 id="hours"> 1,12,000+</h2>
+                        <h2 id="hours">1,12,000+</h2>
                     </div>
-                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">Hours of Live Learning</div>
+                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">
+                        Hours of Live Learning
+                    </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="5000" data-decimals="0"
                         data-duration="0" data-separator="">
-                        <h2 id="cities"> 500+</h2>
+                        <h2 id="cities">500+</h2>
                     </div>
-                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">Cities Worldwide</div>
+                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">
+                        Cities Worldwide
+                    </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 mb-6 mb-sm-0 px-6 text-center">
                     <div class="counterup fs-56 lh-1 mb-3 pt-2" data-start="0" data-end="12" data-decimals="0"
                         data-duration="0" data-separator="">
                         <h2><span id="rating">4.8</span>/5</h2>
                     </div>
-                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">Avg Teacher Rating</div>
+                    <div class="text-uppercase fs-13 lh-184 letter-spacing-163 opacity-7">
+                        Avg Teacher Rating
+                    </div>
                 </div>
             </div>
         </div>
@@ -537,74 +550,72 @@
         </div>
     </section>
 
-    <section id="workshop" class="workshop ">
-        <p class="text-center font-weight-bold heading mt-5">
+    <section id="workshop" class="workshop">
+        <p class="text-center heading mt-5">
             Learning never stops at Virtual Guruji
         </p>
         <p class="subheading">
             Choose your child’s grade to discover our subjects
         </p>
 
-
-        <div class="board d-flex text-center ml-5 justify-content-center">
-            <div class="col-xl-12 pb-2 justify-content-center">
-                <input class="checkbox-budget boards" value="ICSE" type="radio" name="board" id="board-1" checked>
+        <div class="board d-flex text-center  justify-content-center">
+            <div class="col-xl-12  justify-content-center">
+                <input class="checkbox-budget boards" value="ICSE" type="radio" name="board" id="board-1" checked />
                 <label class="for-checkbox-budget" for="board-1" onclick="setBoard('ICSE')">
                     <span data-hover="ICSE">ICSE</span>
                 </label>
-                <input class="checkbox-budget boards" value="CBSE" type="radio" name="board" id="board-2">
+                <input class="checkbox-budget boards" value="CBSE" type="radio" name="board" id="board-2" />
                 <label class="for-checkbox-budget" for="board-2" onclick="setBoard('CBSE')">
                     <span data-hover="CBSE">CBSE</span>
                 </label>
-                <input class="checkbox-budget boards" value="Others" type="radio" name="board" id="board-3">
+                <input class="checkbox-budget boards" value="Others" type="radio" name="board" id="board-3" />
                 <label class="for-checkbox-budget" for="board-3" onclick="setBoard('OTHERS')">
                     <span data-hover="Others">Others</span>
                 </label>
-
             </div>
         </div>
 
         <div class="studentsGrade text-center">
             <div class="col-12 pt-2">
-                <h4 class="my-4 pb-2 black font-weight-bold">Select Students's Grade</h4>
+                <h4 class="pb-2 black font-weight-bold">
+                    Select Students's Grade
+                </h4>
             </div>
-            <div class="col-12 pb-5" id="grade">
-                <input class="checkbox-tools grades" value="8" type="radio" name="grades" id="grades-1" checked>
+            <div class="col-12" id="grade">
+                <input class="checkbox-tools grades" value="8" type="radio" name="grades" id="grades-1" checked />
                 <label class="for-checkbox-tools" for="grades-1" onclick="setGrade('8')">
                     8
                 </label>
-                <input class="checkbox-tools grades" value="9" type="radio" name="grades" id="grades-2">
+                <input class="checkbox-tools grades" value="9" type="radio" name="grades" id="grades-2" />
                 <label class="for-checkbox-tools grades" for="grades-2" onclick="setGrade('9')">
                     9
                 </label>
-                <input class="checkbox-tools grades" value="10" type="radio" name="grades" id="grades-3">
+                <input class="checkbox-tools grades" value="10" type="radio" name="grades" id="grades-3" />
                 <label class="for-checkbox-tools" for="grades-3" onclick="setGrade('10')">
                     10
                 </label>
-                <input class="checkbox-tools grades" value="11" type="radio" name="grades" id="grades-4">
+                <input class="checkbox-tools grades" value="11" type="radio" name="grades" id="grades-4" />
                 <label class="for-checkbox-tools" for="grades-4" onclick="setGrade('11')">
                     11
                 </label>
-                <input class="checkbox-tools grades" value="12" type="radio" name="grades" id="grades-5">
+                <input class="checkbox-tools grades" value="12" type="radio" name="grades" id="grades-5" />
                 <label class="for-checkbox-tools" for="grades-5" onclick="setGrade('12')">
                     12
                 </label>
-
             </div>
         </div>
 
-        <div class="whyVirtual-advantages justify-content-center" id="subHtml">
+        <div class="whyVirtual-advantages justify-content-center" id="subHtml"></div>
 
-        </div>
-        </div>
+        <button id="myBtn" class="btns p-3 rounded mt-5 buttons mt-4">
+            <b>Book A Free Trial!</b>
+        </button>
 
-        <button class="btns  p-3 rounded mt-5 buttons mt-4" data-toggle="modal" data-target="#exampleModal"><b>Book A
-                Free Trial!</b></button>
-
-        <p class="text-center mt-3 register"> Register yourself before <span class="per-title-highlight"
-                id="registerDate1"></span> to unlock amazing discounts on top
-            projects</p>
-
+        <p class="text-center mt-3 register">
+            Register yourself before
+            <span class="per-title-highlight" id="registerDate1"></span> to unlock
+            amazing discounts on top projects
+        </p>
     </section>
 
     <!-- <section class="virtual-guruji-effect">
@@ -659,25 +670,38 @@
         </div>
     </section> -->
 
-    <!-- <section class="video-padding">
+    <section class="video-padding">
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6 text-center font-weight-bold videoText text-white"
-                style="margin-top: 10%; color: #111;">
-                <h1 class="text-center font-weight-bold mb-5">Our students love us, and so do their parents</h1>
+            <div class="
+            col-sm-12 col-md-6 col-lg-6
+            text-center
+            font-weight-bold
+            videoText
+            text-white
+          " style="margin-top: 10%; color: #111">
+                <h2 class="text-center mb-5">
+                    Our students love us, and so do their parents
+                </h2>
             </div>
             <div id="carouselExampleControls" class="carousel slide col-sm-12 col-md-6 col-lg-6" data-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" style="border:10px solid #f0eff3; border-radius: 16px;">
+                    <div class="carousel-item active" style="border: 15px solid #f0eff3; border-radius: 16px">
                         <video width="100%" height="320" controls>
-                            <source src="assets/video1.mp4" type="video/mp4">
+                            <source src="assets/video1.mp4" type="video/mp4" />
+                            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        </video>
+                    </div>
+                    <div class="carousel-item" style="border: 15px solid #f0eff3; border-radius: 16px">
+                        <video width="100%" height="320" controls>
+                            <source src="assets/video2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
 
+                    <!-- <div class="carousel-item" style="border:15px solid #fff; border-radius: 16px;">
+                        <video width="400" height="400" controls>
+                            <source src="assets/1.webm" type="video/webm">
                         </video>
-                    </div>
-                    <div class="carousel-item" style="border:10px solid #f0eff3; border-radius: 16px;">
-                        <video width="100%" height="320" controls>
-                            <source src="assets/video2.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                    </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -689,57 +713,6 @@
                 </a>
             </div>
         </div>
-    </section> -->
-
-    <section class="video-padding">
-        <div class="row">           
-            <div id="carouselExampleControls" class="carousel slide col-sm-12 col-md-12 col-lg-12" data-ride="carousel">
-                <div class="carousel-inner col-6">
-                   <div class="d-flex">
-                    <div class="carousel-item active" style="border:10px solid #f0eff3; border-radius: 16px;">
-                        <video width="100%" height="320" controls>
-                            <source src="assets/video1.mp4" type="video/mp4">
-                                                  
-                          </video>                         
-                    </div>
-                    <div>
-                       <h2 class="text-center ml-5">
-                           Landsape
-                       </h2>
-                        
-                    </div>
-                    <div class="carousel-item"  style="border:10px solid #f0eff3; border-radius: 16px;">
-                     <div>
-                        <video width="100%" height="320" controls>
-                            <source src="assets/video2.mp4" type="video/mp4">                   
-                          </video>
-                     </div>
-                          <div>
-                            <h2 class="text-center ml-5">
-                                waring
-                            </h2>
-                             
-                         </div>
-                    </div>
-                   </div>
-                    
-
-                    
-                </div>
-                
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-            </div>
-            
-        </div>
-
-
     </section>
 
 
@@ -804,19 +777,22 @@
     </section> -->
 
     <section class="virtual-app mb-5">
-        <div class="row ">
+        <div class="row">
             <div class="text-center col-sm-12 col-md-12 col-lg-3">
-                <img class="virtual-app-img" src="assets/virtual-app.png">
+                <img class="virtual-app-img" src="assets/virtual-app.png" />
             </div>
-            <div class="col-sm-12 col-md-12 col-lg-9" style="margin-top: 10%;">
+            <div class="col-sm-12 col-md-12 col-lg-9" style="margin-top: 10%">
                 <div>
-                    <h1 class="text-center font-weight-bold mt-5 lh-base">Get the Virtual GuruJi app & Enjoy Learning
+                    <h1 class="text-center font-weight-bold mt-5 lh-base">
+                        Get the Virtual GuruJi app & Enjoy Learning
                     </h1>
-                    <h3 class="text-center lh-base mb-3">Get access to free Live Classes & Unlimited Practice Tests</h3>
+                    <h3 class="text-center lh-base mb-3">
+                        Get access to free Live Classes & Unlimited Practice Tests
+                    </h3>
                     <div class="text-center">
                         <a href="https://play.google.com/store/apps/details?id=com.thevirtualguruji.schoolmanagementsystem"
                             target="_blank">
-                            <img src="assets/google-play-badge.png" class="text-center" width="150" alt="">
+                            <img src="assets/google-play-badge.png" class="text-center" width="150" alt="" />
                         </a>
                     </div>
                 </div>
@@ -871,275 +847,223 @@
 
 
         </div>
-        <p style="text-align: center; font-size: 15px;">
+
+        </div>
+        <p style="text-align: center; font-size: 15px">
             Copyright@The Virtual Guruji
         </p>
     </section>
 
-    <form name="myform" method="post">
+    <!-- <form name="myform" method="post" >
+
+        
         <div class="modal fade" tabindex="-1" id="exampleModal">
             <div class="modal-dialog modal-lg">
 
-                <!-- Modal content-->
-                <div class="modal-content">
+                  <div class="modal-content">
                     <div class="modal-header">
 
                         <h4 class="modal-title fw-bold">Enter Your Details</h4>
 
                         <button type="button" class="close" data-dismiss="modal" onclick="close();">&times;</button>
                     </div>
-                    <div class="modal-body">
-                        <div class="container">
+                    <div class="modal-body">  
+                        
 
-                            <section>
-                                <div class="section over-hide z-bigger">
-
-
-                                    <div class="background-color"></div>
-                                    <div class="section over-hide z-bigger">
-                                        <div class="container pb-5">
-                                            <!-- <form class="row justify-content-center pb-5" name="studentForm" method="POST" onsubmit="event.preventDefault();"> -->
-                                            <div class="studentsGrade">
-                                                <div class="col-12 pt-5">
-                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Students's Grade</h3>
-                                                </div>
-                                                <div class="col-12 pb-5" id="grade">
-                                                    <input class="checkbox-tools" value="8" type="radio" name="grade"
-                                                        id="grade-1" checked>
-                                                    <label class="for-checkbox-tools" for="grade-1">
-                                                        8
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-tools" value="9" type="radio" name="grade"
-                                                        id="grade-2">
-                                                    <label class="for-checkbox-tools" for="grade-2">
-                                                        9
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-tools" value="10" type="radio" name="grade"
-                                                        id="grade-3">
-                                                    <label class="for-checkbox-tools" for="grade-3">
-                                                        10
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-tools" value="11" type="radio" name="grade"
-                                                        id="grade-4">
-                                                    <label class="for-checkbox-tools" for="grade-4">
-                                                        11
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-tools" value="12" type="radio" name="grade"
-                                                        id="grade-5">
-                                                    <label class="for-checkbox-tools" for="grade-5">
-                                                        12
-                                                    </label>
-                                                    <!--
-                                                -->
-                                                </div>
-                                            </div>
-
-                                            <div class="subjects">
-                                                <div class="col-12 pt-1">
-                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Subject</h3>
-                                                </div>
-                                                <div class="col-xl-12 pb-5">
-                                                    <input class="checkbox-budget" value="Math" type="radio"
-                                                        name="subject" id="subject-1" checked>
-                                                    <label class="for-checkbox-budget" for="subject-1">
-                                                        <span data-hover="Math">Math</span>
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-budget" value="Science" type="radio"
-                                                        name="subject" id="subject-2">
-                                                    <label class="for-checkbox-budget" for="subject-2">
-                                                        <span data-hover="Science">Science</span>
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-budget" value="Physics" type="radio"
-                                                        name="subject" id="subject-3">
-                                                    <label class="for-checkbox-budget" for="subject-3">
-                                                        <span data-hover="Physics">Physics</span>
-                                                    </label>
-                                                    <!--
-                                                --><input class="checkbox-budget" value="Chemistery" type="radio"
-                                                        name="subject" id="subject-4">
-                                                    <label class="for-checkbox-budget" for="subject-4">
-                                                        <span data-hover="Chemistery">Chemistery</span>
-                                                    </label>
-
-                                                    <input class="checkbox-budget" value="Biology" type="radio"
-                                                        name="subject" id="subject-5">
-                                                    <label class="for-checkbox-budget" for="subject-5">
-                                                        <span data-hover="Biology">Biology</span>
-                                                    </label>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="selectDay">
-                                                <div class="col-12 pt-1">
-                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Day</h3>
-                                                </div>
-                                                <div class="col-xl-12 pb-5">
-                                                    <input class="checkbox-budget" value="Monday" type="radio"
-                                                        name="days" id="day-1" checked>
-                                                    <label class="for-checkbox-day" for="day-1">
-                                                        <span data-hover="Monday">Monday</span>
-                                                    </label>
-                                                    <!--
-                                                    --><input class="checkbox-budget" value="Tuesday" type="radio"
-                                                        name="days" id="day-2">
-                                                    <label class="for-checkbox-day" for="day-2">
-                                                        <span data-hover="Tuesday">Tuesday</span>
-                                                    </label>
-                                                    <!--
-                                                    --><input class="checkbox-budget" value="Wednesday" type="radio"
-                                                        name="days" id="day-3">
-                                                    <label class="for-checkbox-day" for="day-3">
-                                                        <span data-hover="Wednesday">Wednesday</span>
-                                                    </label>
-                                                    <!--
-                                                    --><input class="checkbox-budget" value="Thursday" type="radio"
-                                                        name="days" id="day-4">
-                                                    <label class="for-checkbox-day" for="day-4">
-                                                        <span data-hover="Thursday">Thursday</span>
-                                                    </label>
-                                                    <input class="checkbox-budget" value="Friday" type="radio"
-                                                        name="days" id="day-5">
-                                                    <label class="for-checkbox-day" for="day-5">
-                                                        <span data-hover="Friday">Friday</span>
-                                                    </label>
-                                                    <input class="checkbox-budget" value="Saturday" type="radio"
-                                                        name="days" id="day-6">
-                                                    <label class="for-checkbox-day" for="day-6">
-                                                        <span data-hover="Saturday">Saturday</span>
-                                                    </label>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="selectTime">
-                                                <div class="col-12 pt-1">
-                                                    <h3 class="mb-4 pb-2 black fw-bold">Select Time</h3>
-                                                </div>
-                                                <div class="col-xl-12 pb-5">
-                                                    <input class="checkbox-budget" value="2:00 PM" type="radio"
-                                                        name="time" id="time-1" checked>
-                                                    <label class="for-checkbox-time" for="time-1">
-                                                        <span data-hover="2:00 PM">2:00 PM</span>
-                                                    </label>
-                                                    <!--
-                                                    --><input class="checkbox-budget" value="3:00 PM" type="radio"
-                                                        name="time" id="time-2">
-                                                    <label class="for-checkbox-time" for="time-2">
-                                                        <span data-hover="3:00 PM">3:00 PM</span>
-                                                    </label>
-                                                    <!--
-                                                    --><input class="checkbox-budget" value="4:00 PM" type="radio"
-                                                        name="time" id="time-3">
-                                                    <label class="for-checkbox-time" for="time-3">
-                                                        <span data-hover="4:00 PM">4:00 PM</span>
-                                                    </label>
-                                                    <!--
-                                                    --><input class="checkbox-budget" value="5:00 PM" type="radio"
-                                                        name="time" id="time-4">
-                                                    <label class="for-checkbox-time" for="time-4">
-                                                        <span data-hover="5:00 PM">5:00 PM</span>
-                                                    </label>
-                                                    <input class="checkbox-budget" value="6:00 PM" type="radio"
-                                                        name="time" id="time-5">
-                                                    <label class="for-checkbox-time" for="time-5">
-                                                        <span data-hover="6:00 PM">6:00 PM</span>
-                                                    </label>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="studentInfo">
-                                                <div class="form-group">
-                                                    <label for="name" style="float: left;" class="black fw-bold">Full
-                                                        Name</label>
-                                                    <input type="text" placeholder="Enter Student name" name="fullName"
-                                                        class="form-control" id="name" pattern="[a-zA-Z ]+"
-                                                        minlength="3" maxlength="30" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="phone" style="float: left;" class="black fw-bold">Phone
-                                                        Number</label>
-                                                    <input type="text" placeholder="Enter your phone number"
-                                                        name="phone" class="form-control" id="phoneNumber"
-                                                        pattern="\d{10}" minlength="10" maxlength="10" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="email" style="float: left;"
-                                                        class="black fw-bold">Email</label>
-                                                    <input type="email" placeholder="Enter your email" name="email"
-                                                        class="form-control" id="email"
-                                                        pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="city" style="float: left;"
-                                                        class="black fw-bold">City</label>
-                                                    <input type="text" placeholder="Enter your city" name="city"
-                                                        class="form-control" id="city">
-                                                </div>
-                                            </div>
-
-                                            <!-- </form> -->
-                                            <button type="button" onclick="onSubmit()" data-toggle="modal"
-                                                data-target="#thanksMessage"
-                                                class="unlockBtn w-100 p-3 rounded mt-0 fw-bold mt-3">Book A Free
-                                                Trial</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-                            </section>
-                        </div>
                     </div>
 
                 </div>
 
             </div>
         </div>
-    </form>
+    </form> -->
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Select Grade</li>
+                    <li>Select Subject</li>
+                    <li>Select Time</li>
+                    <li>Student Details</li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <div class="studentsGrade">
+                        <div class="col-12 pt-5">
+                            <h3 class="mb-4 pb-2 black fw-bold">Select Students's Grade</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 pb-5" id="grade">
+                                <input class="checkbox-tools" value="8" type="radio" name="grade" id="grade-1"
+                                    checked />
+                                <label class="for-checkbox-tools" for="grade-1"> 8 </label>
+                                <!--
+                                                                    --><input class="checkbox-tools" value="9"
+                                    type="radio" name="grade" id="grade-2" />
+                                <label class="for-checkbox-tools" for="grade-2"> 9 </label>
+                                <!--
+                                                                    --><input class="checkbox-tools" value="10"
+                                    type="radio" name="grade" id="grade-3" />
+                                <label class="for-checkbox-tools" for="grade-3"> 10 </label>
+                                <!--
+                                                                    --><input class="checkbox-tools" value="11"
+                                    type="radio" name="grade" id="grade-4" />
+                                <label class="for-checkbox-tools" for="grade-4"> 11 </label>
+                                <!--
+                                                                    --><input class="checkbox-tools" value="12"
+                                    type="radio" name="grade" id="grade-5" />
+                                <label class="for-checkbox-tools" for="grade-5"> 12 </label>
+                                <!--
+                                                                    -->
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+
+                <fieldset>
+                    <div class="subjects">
+                        <div class="col-12 pt-1">
+                            <h3 class="mb-4 pb-2 black fw-bold">Select Subject</h3>
+                        </div>
+                        <div class="col-xl-12 pb-5">
+                            <input class="checkbox-budget" value="Math" type="radio" name="subject" id="subject-1"
+                                checked />
+                            <label class="for-checkbox-budget" for="subject-1">
+                                <span data-hover="Math">Math</span>
+                            </label>
+                            <!--
+                                                --><input class="checkbox-budget" value="Science" type="radio"
+                                name="subject" id="subject-2" />
+                            <label class="for-checkbox-budget" for="subject-2">
+                                <span data-hover="Science">Science</span>
+                            </label>
+                            <!--
+                                                --><input class="checkbox-budget" value="Physics" type="radio"
+                                name="subject" id="subject-3" />
+                            <label class="for-checkbox-budget" for="subject-3">
+                                <span data-hover="Physics">Physics</span>
+                            </label>
+                            <!--
+                                                --><input class="checkbox-budget" value="Chemistery" type="radio"
+                                name="subject" id="subject-4" />
+                            <label class="for-checkbox-budget" for="subject-4">
+                                <span data-hover="Chemistery">Chemistery</span>
+                            </label>
+
+                            <input class="checkbox-budget" value="Biology" type="radio" name="subject" id="subject-5" />
+                            <label class="for-checkbox-budget" for="subject-5">
+                                <span data-hover="Biology">Biology</span>
+                            </label>
+                        </div>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <div class="selectTime">
+                        <div class="col-12 pt-1">
+                            <h3 class="mb-4 pb-2 black fw-bold">Select Time</h3>
+                        </div>
+                        <div class="col-xl-12 pb-5">
+                            <input class="checkbox-budget" value="2:00 PM" type="radio" name="time" id="time-1"
+                                checked />
+                            <label class="for-checkbox-time" for="time-1">
+                                <span data-hover="2:00 PM">2:00 PM</span>
+                            </label>
+                            <!--
+                                                    --><input class="checkbox-budget" value="3:00 PM" type="radio"
+                                name="time" id="time-2" />
+                            <label class="for-checkbox-time" for="time-2">
+                                <span data-hover="3:00 PM">3:00 PM</span>
+                            </label>
+                            <!--
+                                                    --><input class="checkbox-budget" value="4:00 PM" type="radio"
+                                name="time" id="time-3" />
+                            <label class="for-checkbox-time" for="time-3">
+                                <span data-hover="4:00 PM">4:00 PM</span>
+                            </label>
+                            <!--
+                                                    --><input class="checkbox-budget" value="5:00 PM" type="radio"
+                                name="time" id="time-4" />
+                            <label class="for-checkbox-time" for="time-4">
+                                <span data-hover="5:00 PM">5:00 PM</span>
+                            </label>
+                            <input class="checkbox-budget" value="6:00 PM" type="radio" name="time" id="time-5" />
+                            <label class="for-checkbox-time" for="time-5">
+                                <span data-hover="6:00 PM">6:00 PM</span>
+                            </label>
+                        </div>
+                    </div>
+                    <input type="button" name="next" class="next action-button" value="Next" />
+                </fieldset>
+                <fieldset>
+                    <div class="studentInfo">
+                        <div class="form-group">
+                            <label for="name" style="float: left" class="black fw-bold">Full Name</label>
+                            <input type="text" placeholder="Enter Student name" name="fullName" class="form-control"
+                                id="name" pattern="[a-zA-Z ]+" minlength="3" maxlength="30" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" style="float: left" class="black fw-bold">Phone Number</label>
+                            <input type="text" placeholder="Enter your phone number" name="phone" class="form-control"
+                                id="phoneNumber" pattern="\d{10}" minlength="10" maxlength="10" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email" style="float: left" class="black fw-bold">Email</label>
+                            <input type="email" placeholder="Enter your email" name="email" class="form-control"
+                                id="email" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="city" style="float: left" class="black fw-bold">City</label>
+                            <input type="text" placeholder="Enter your city" name="city" class="form-control"
+                                id="city" />
+                        </div>
+                    </div>
+
+                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                </fieldset>
+            </form>
+        </div>
+    </div>
 
     <div class="modal fade" tabindex="-1" id="thanksMessage">
         <div class="modal-dialog modal-lg">
-
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
-
                     <h4 class="modal-title font-weight-bold">Confirm Message</h4>
 
-                    <button type="button" class="close" data-dismiss="modal" onclick="close();">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal" onclick="close();">
+                        &times;
+                    </button>
                 </div>
                 <div class="modal-body">
                     <div class="container">
-
                         <h1 class="font-weight-700 text-center m-5">Thank you</h1>
 
-                        <h4 class="fs-20 text-justify p-4"> We have received your details, One of our sales expert will
-                            be getting in touch with you soon.</h4>
+                        <h4 class="fs-20 text-justify p-4">
+                            We have received your details, One of our sales expert will be
+                            getting in touch with you soon.
+                        </h4>
                         <div class="fs-25 font-weight-600 text-center">
                             <i class="fas fa-check fa-4x text-success m-5"></i>
                         </div>
                         <!-- <h5 class="text-center"> <a href="https://www.goldenassets.in">Visit Website</a> </h5> -->
                     </div>
                 </div>
-
             </div>
-
         </div>
     </div>
 
-
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="header.js"></script>
     <script src="virtual-guruji.js"></script>
+    <script src="modal.js"></script>
     <script src="owl-carousel/owl.carousel.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 </body>
