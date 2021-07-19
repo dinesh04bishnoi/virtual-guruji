@@ -198,7 +198,6 @@ function setGrade(grade){
                        Biology
                     </div>
                 </a>
-
             </div>
 
         </div>        
