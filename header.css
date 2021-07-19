@@ -14,6 +14,14 @@
     background-color: #f8f9fa;
 }
 
+
+
+#owl-demo-home .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 @media (min-width: 767px) {
     .navbar .dropdown-toggle:not(.nav-link)::after {
         display: inline-block;

@@ -163,6 +163,13 @@ body {
   cursor: pointer;
 }
 
+.my-col-8{
+	width: 64.666667% !important;
+}
+.title-paddingTop{
+	padding-top: 15%;
+}
+
 
 @media (min-width:300px) and (max-width:780px){
 	#msform fieldset {

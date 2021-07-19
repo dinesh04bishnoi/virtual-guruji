@@ -32,8 +32,23 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $("#owl-demo").owlCarousel({
-    navigation: true,
+    navigation: false,
     autoPlay:true
+  });
+});
+
+$(document).ready(function () {
+  $("#owl-demo-home").owlCarousel({
+    navigation: true, // Show next and prev buttons
+
+    slideSpeed: 300,
+    paginationSpeed: 400,
+ autoPlay:true,
+    items: 1,
+    itemsDesktop: false,
+    itemsDesktopSmall: false,
+    itemsTablet: false,
+    itemsMobile: false,
   });
 });
 
