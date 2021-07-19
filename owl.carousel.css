@@ -220,7 +220,7 @@
  
  .owl-carousel .owl-item .owl-lazy,
  .owl-carousel1 .owl-item .owl-lazy {
-   {
+   
      opacity: 0;
      transition: opacity 400ms ease;
    }
