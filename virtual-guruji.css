@@ -95,6 +95,10 @@ body{
     font-size: 20px;
 }
 
+.videos-text{
+    display: flex;
+}
+
 .fas {
     color: #fff !important;
 }
@@ -756,6 +760,14 @@ font-weight: 700;
       .virtual-app-img{
         width: 50%;
     }
+.title-paddingTop{
+    padding-top: 2% !important;
+}
+    
+.videos-text{
+    display: flex;
+    flex-direction: column;
+}
 
     .virtual-app{
         padding: 2%;
