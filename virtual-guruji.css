@@ -49,14 +49,17 @@ overflow-y:hidden
 
 body{
     font-family: Roboto, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
-    /* background-image: url(assets/bg-pattern-1.png) !important; */
-    
+    /* background-image: url(assets/bg-pattern-1.png) !important; */    
     padding: 0;
     margin: 0;
     background-color: #000 !important;
     color: #fff !important;
 } 
-
+.live-course:hover{
+color: #F37335 !important;
+border: 1px solid #F37335;
+border-radius: 16px;
+}
 .rounded-div{
     border-radius: 50%;
     height: 140px;
@@ -395,11 +398,12 @@ body{
   }
   
   .homepage{
-       /* background-color: #c8eadf;  */
+       /* background-color: #background-color: #f2f2f2;;  */
       padding:2% 8%;
       /* background-color: #fff; */
-      /* background-image: linear-gradient( rgba(255,98,0,1),rgba(255,128,0,0.9) );
-      color: #fff; */
+      /* background-image: linear-gradient( rgba(255,98,0,1),rgba(255,128,0,0.9) ); */
+      color: #222;
+      background-color: #f2f2f2 !important;
   }
   
   h5{
