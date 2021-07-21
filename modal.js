@@ -97,19 +97,26 @@ $(".submit").click(function () {
 // Get the modal
 var modal = document.getElementById("myModal");
 var modal2 = document.getElementById("myModal2-close");
+var modal2_video = document.getElementById("mymodel_video_close");
 
 modal2.addEventListener('click',()=>{
    var modal2_close = document.getElementById("myModal2");
   modal2_close.style.display = "none";
+})
+modal2_video.addEventListener('click',()=>{
+   var modal2_video_close = document.getElementById("myModal_video1");
+  modal2_video_close.style.display = "none";
+  document.getElementById('video_modal').pause();
 })
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close");
 
 // When the user clicks on the button, open the modal
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -125,10 +132,26 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+ 
+function demoOpen(id=""){
 
-function demoOpen(){
-  const demoModalComponent=document.getElementById('myBtn');
-  demoModalComponent.click()
+  if (id!="") {
+      const modalid=id.split("|")[0];
+   
+
+    var vid_modal=document.getElementById("video_modal");
+    var source = document.createElement('source');   
+        source.setAttribute("src", "assets/" + id.split("|")[1] + ".mp4");
+        vid_modal.appendChild(source);
+        vid_modal.play();
+     const demoModalComponent_video = document.getElementById(modalid);
+     demoModalComponent_video.style.display = "block";
+
+  }else{
+ const demoModalComponent = document.getElementById("myBtn");
+ demoModalComponent.click();
+  }
+ 
 
 }
 

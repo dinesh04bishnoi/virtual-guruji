@@ -36,13 +36,46 @@ if (window.location.pathname.includes("home.html")) {
   document.getElementById("subHtml").innerHTML = subHtml;
 }
 function onSubmit(){
-    // console.log(studentForm.value)
 
      var name = document.getElementById('name').value;
      var phone = document.getElementById('phoneNumber').value;
      var email = document.getElementById('email').value;
      var city = document.getElementById('city').value;
     //  var grade = document.getElementById('grade').value;
+
+    let error=""
+    let errorflag=false;
+    if(name==""){
+    error="Name is Required"
+    document.getElementById("err-name").classList.replace('d-none','d-block')
+     document.getElementById("err-name").innerText = error;
+        errorflag=true;
+    }
+    if(phone==""){
+    error="Phone is required"
+    document.getElementById("err-phone").classList.replace('d-none','d-block')
+     document.getElementById("err-phone").innerText = error;
+    
+    errorflag = true;
+    }
+    if(email==""){
+    error="Email is required"
+    document.getElementById("err-email").classList.replace('d-none','d-block')
+     document.getElementById("err-email").innerText = error;
+    
+   errorflag = true;
+    }
+    if(city==""){
+    error="City is required"
+     document.getElementById("err-mobile").classList.replace('d-none','d-block')
+     document.getElementById("err-mobile").innerText = error;
+    
+  errorflag = true;
+    }
+    if (errorflag) {
+        return false;
+    }
+   
 
      var grade = document.getElementsByName('grade');              
      for(i = 0; i < grade.length; i++) {
