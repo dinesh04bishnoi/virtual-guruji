@@ -43,7 +43,7 @@ $(document).ready(function () {
 
     slideSpeed: 300,
     paginationSpeed: 400,
- autoPlay:true,
+//  autoPlay:true,
     items: 1,
     itemsDesktop: false,
     itemsDesktopSmall: false,

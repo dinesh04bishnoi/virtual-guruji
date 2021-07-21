@@ -106,14 +106,14 @@ modal2.addEventListener('click',()=>{
 modal2_video.addEventListener('click',()=>{
    var modal2_video_close = document.getElementById("myModal_video1");
   modal2_video_close.style.display = "none";
-  document.getElementById('video_modal').pause();
+  document.getElementById('video_modal').load();
 })
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close");
+var span = document.getElementsByClassName("close-2")[0];
 
 // When the user clicks on the button, open the modal
 
@@ -140,6 +140,7 @@ function demoOpen(id=""){
    
 
     var vid_modal=document.getElementById("video_modal");
+  
     var source = document.createElement('source');   
         source.setAttribute("src", "assets/" + id.split("|")[1] + ".mp4");
         vid_modal.appendChild(source);
