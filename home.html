@@ -281,37 +281,39 @@
     <section class="homepage">
         <div id="owl-demo-home" class="owl-carousel owl-theme">
  
-  <div class="videos-text item" >
+  <div onclick="demoOpen('myModal_video1|video-5')" class="videos-text item" >
       <div class="col-4 title-paddingTop">
         <h1>Current <br> Landscape</h1>
       </div>
-    <div class="my-col-8" style="border: 10px solid #f0eff3; border-radius: 16px">
-        
-      <video class="landing-video" controls>
+    <div class="my-col-8" style="border: 10px solid #f0eff3; border-radius: 16px;position: relative">
+                <div style="position: absolute;bottom:10px;left:10px;text-align:center;width:20%;"><img src="./assets/play_button.png" alt=""></div>
+
+      <video class="landing-video" >
         <source src="assets/video-5.mp4" type="video/mp4" />
         <!-- <source src="movie.ogg" type="video/ogg"> -->
     </video>
     </div>
    </div>
-  <div class="videos-text  item">
+  <div onclick="demoOpen('myModal_video1|video-6')" class="videos-text  item">
      <div class="col-4 title-paddingTop">
          <h1>Current <br> Drawback</h1> 
       </div>
-    <div class="my-col-8" style="border: 10px solid #f0eff3; border-radius: 16px">
-        
-      <video class="landing-video" controls>
+    <div class="my-col-8" style="border: 10px solid #f0eff3; border-radius: 16px;position: relative;">
+        <div  style="position: absolute;bottom:10px;left:10px;text-align:center;width:20%;"><img src="./assets/play_button.png" alt=""></div>
+      <video class="landing-video" >
                             <source src="assets/video-6.mp4" type="video/mp4" />
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                         </video>
     </div>
     </div>
-  <div class="videos-text item">
+  <div onclick="demoOpen('myModal_video1|video-4')" class="videos-text item">
      <div class="col-4 title-paddingTop">
           <h1>Our <br> Offering</h1>
       </div>
-    <div class="my-col-8" style="border: 10px solid #f0eff3; border-radius: 16px">
-        
-      <video class="landing-video" controls>
+    <div  class="my-col-8" style="border: 10px solid #f0eff3; border-radius: 16px;position: relative">
+                <div  style="position: absolute;bottom:10px;left:10px;text-align:center;width:20%;"><img src="./assets/play_button.png" alt=""></div>
+
+      <video class="landing-video" >
                             <source src="assets/video-4.mp4" type="video/mp4" />
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                         </video>
@@ -944,13 +946,22 @@
 
         
        
- 
+  <div id="myModal_video1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" id="mymodel_video_close">&times;</span>
+              <video id="video_modal" width="100%" height="320" controls>
+                            <source  id="video_source" type="video/mp4" />
+                            <!-- <source src="movie.ogg" type="video/ogg"> -->
+                        </video>
+        </div>
+    </div>
 
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
             <span class="close">&times;</span>
-            <form id="msform">
+            <form id="msform"  >
                 <!-- progressbar -->
                 <ul id="progressbar">
                     <li class="active">Select Grade</li>
@@ -1120,25 +1131,29 @@
                             <label for="name" style="float: left" class="black fw-bold">Full Name</label>
                             <input type="text" placeholder="Enter Student name" name="fullName" class="form-control"
                                 id="name" pattern="[a-zA-Z ]+" minlength="3" maxlength="30" required />
-                        </div>
+                        <div class="alert alert-danger d-none" id="err-name"></div>
+                            </div>
                         <div class="form-group">
                             <label for="phone" style="float: left" class="black fw-bold">Phone Number</label>
                             <input type="text" placeholder="Enter your phone number" name="phone" class="form-control"
                                 id="phoneNumber" pattern="\d{10}" minlength="10" maxlength="10" required />
-                        </div>
+                        <div class="alert alert-danger d-none" id="err-phone"></div>
+                            </div>
                         <div class="form-group">
                             <label for="email" style="float: left" class="black fw-bold">Email</label>
                             <input type="email" placeholder="Enter your email" name="email" class="form-control"
                                 id="email" pattern="(\w\.?)+@[\w\.-]+\.\w{2,4}" required />
-                        </div>
+                        <div class="alert alert-danger d-none" id="err-email"></div>
+                            </div>
                         <div class="form-group">
                             <label for="city" style="float: left" class="black fw-bold">City</label>
                             <input type="text" placeholder="Enter your city" name="city" class="form-control"
                                 id="city" required />
-                        </div>
+                        <div class="alert alert-danger d-none" id="err-mobile"></div>
+                            </div>
                     </div>
-
-                    <button type="button" onclick="onSubmit()" class="submit action-button">Submit</button>
+                   
+                    <button type="submit" onclick="onSubmit()" class="submit action-button">Submit</button>
                 </fieldset>
             </form>
         </div>
