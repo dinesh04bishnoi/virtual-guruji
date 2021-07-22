@@ -289,7 +289,7 @@ function initHtml(data){
   
      subjectDetail.forEach(element => {
          html += `
-         <div class="card  mt-4 mb-4 mr-3 subject-card" >
+         <div class="card  mt-4 mb-4 subject-card" >
           <div class="card-title pt-4" style="padding-left: 32px;color:#000">
              <h4 id="subject" class="font-weight-bold">${element.subject}</h4>
              <small style="background-image: linear-gradient(75deg,#FDC830, #F37335, #f12711, #f5af19);color:white" id="board" class="badge badge-pill mt-2 p-2 fs-6" style="float: right; margin-right: 20px;" >${element.board}</small>
