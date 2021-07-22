@@ -96,6 +96,7 @@ $(".submit").click(function () {
 
 // Get the modal
 var modal = document.getElementById("myModal");
+var modal_python = document.getElementById("myModal_python");
 var modal2 = document.getElementById("myModal2-close");
 
 var modal2_video = document.getElementById("mymodel_video_close");
@@ -117,6 +118,7 @@ var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close-2")[0];
+var span_python = document.getElementsByClassName("close-python")[0];
 
 // When the user clicks on the button, open the modal
 
@@ -131,12 +133,17 @@ if (window.location.pathname.includes("home.html")) {
 span.onclick = function() {
   modal.style.display = "none";
 }
+
 }
+span_python.onclick = function () {
+  modal_python.style.display = "none";
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
+  if (event.target == modal || event.target==modal_python) {
     modal.style.display = "none";
+    modal_python.style.display='none';
   }
 }
  let first_source_child=true;
@@ -170,8 +177,10 @@ function demoOpen(id=""){
  const demoModalComponent = document.getElementById("myBtn");
  demoModalComponent.click();
   }
- 
 
 }
+
+
+
 
 
