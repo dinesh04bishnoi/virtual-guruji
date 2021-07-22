@@ -31,13 +31,16 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
+  if (window.location.pathname.includes("home.html")) {
   $("#owl-demo").owlCarousel({
     navigation: false,
     autoPlay:true
   });
+}
 });
 
 $(document).ready(function () {
+  if (window.location.pathname.includes("home.html")) {
   $("#owl-demo-home").owlCarousel({
     navigation: true, // Show next and prev buttons
 
@@ -50,6 +53,7 @@ $(document).ready(function () {
     itemsTablet: false,
     itemsMobile: false,
   });
+  }
 });
 
 function counter(){
@@ -93,6 +97,8 @@ if (hstudents >= 10000) {
   }
   let first=true;
 
+  
+if (window.location.pathname.includes("home.html")) {
       $(document).on("scroll", function () {
 
         if ($(this).scrollTop() >= $("#best-faculty").position().top) {
@@ -104,5 +110,6 @@ if (hstudents >= 10000) {
       }
          
       });
+    }
   
 

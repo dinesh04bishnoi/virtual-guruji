@@ -97,17 +97,20 @@ $(".submit").click(function () {
 // Get the modal
 var modal = document.getElementById("myModal");
 var modal2 = document.getElementById("myModal2-close");
+
 var modal2_video = document.getElementById("mymodel_video_close");
 
 modal2.addEventListener('click',()=>{
    var modal2_close = document.getElementById("myModal2");
   modal2_close.style.display = "none";
 })
+if (window.location.pathname.includes("home.html")) {
 modal2_video.addEventListener('click',()=>{
    var modal2_video_close = document.getElementById("myModal_video1");
   modal2_video_close.style.display = "none";
   document.getElementById('video_modal').load();
 })
+}
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
@@ -118,12 +121,16 @@ var span = document.getElementsByClassName("close-2")[0];
 // When the user clicks on the button, open the modal
 
 btn.onclick = function() {
+
+  
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
+if (window.location.pathname.includes("home.html")) {
 span.onclick = function() {
   modal.style.display = "none";
+}
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -132,7 +139,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
- 
+ let first_source_child=true;
 function demoOpen(id=""){
 
   if (id!="") {
@@ -140,15 +147,26 @@ function demoOpen(id=""){
    
 
     var vid_modal=document.getElementById("video_modal");
-  
+   const oldchild = vid_modal.lastChild;
+
     var source = document.createElement('source');   
         source.setAttribute("src", "assets/" + id.split("|")[1] + ".mp4");
-        vid_modal.appendChild(source);
-        vid_modal.play();
+       if (!first_source_child) {
+         vid_modal.removeChild(oldchild); 
+       }
+     
+       
+        vid_modal.appendChild(source)
+          first_source_child = false;
+      
      const demoModalComponent_video = document.getElementById(modalid);
      demoModalComponent_video.style.display = "block";
+   
+       vid_modal.load();
+       vid_modal.play();
 
   }else{
+  
  const demoModalComponent = document.getElementById("myBtn");
  demoModalComponent.click();
   }
