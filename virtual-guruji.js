@@ -35,6 +35,7 @@ if (window.location.pathname.includes("home.html")) {
             `;
   document.getElementById("subHtml").innerHTML = subHtml;
 }
+
 function onSubmit(){
 
      var name = document.getElementById('name').value;
@@ -135,6 +136,71 @@ fetch(`https://raiseme.in/api/sendOtherMail/${Body}`, requestOptions)
       var modal2 = document.getElementById("myModal2");
        modal2.style.display = "block";
   });
+}
+
+
+function onPythonSubmit() {
+  var name = document.getElementById("namep").value;
+  var phone = document.getElementById("phoneNumberp").value;
+  var email = document.getElementById("emailp").value;
+  var city = document.getElementById("cityp").value;
+  //  var grade = document.getElementById('grade').value;
+
+  let error = "";
+  let errorflag = false;
+  if (name == "") {
+    error = "Name is Required";
+    document.getElementById("err-pname").classList.replace("d-none", "d-block");
+    document.getElementById("err-pname").innerText = error;
+    errorflag = true;
+  }
+  if (phone == "") {
+    error = "Phone is required";
+    document.getElementById("err-pphone").classList.replace("d-none", "d-block");
+    document.getElementById("err-pphone").innerText = error;
+
+    errorflag = true;
+  }
+  if (email == "") {
+    error = "Email is required";
+    document.getElementById("err-pemail").classList.replace("d-none", "d-block");
+    document.getElementById("err-pemail").innerText = error;
+
+    errorflag = true;
+  }
+  if (city == "") {
+    error = "City is required";
+    document
+      .getElementById("err-pmobile")
+      .classList.replace("d-none", "d-block");
+    document.getElementById("err-pmobile").innerText = error;
+
+    errorflag = true;
+  }
+  if (errorflag) {
+    return false;
+  }
+
+
+  let Body = `Name: ${name} <br>  Phone Number: ${phone} <br> Email:  ${email} <br> City: ${city} `;
+  console.log(Body);
+
+  var myHeaders = new Headers();
+  myHeaders.append("Content-Type", "application/json");
+  var requestOptions = {
+    method: "GET",
+    mode: "no-cors",
+    headers: {},
+  };
+
+  fetch(`https://raiseme.in/api/sendOtherMail/${Body}`, requestOptions)
+    .then((response) => response.text())
+    .then((result) => {
+      var modal = document.getElementById("myModal_python");
+      modal.style.display = "none";
+      var modal2 = document.getElementById("myModal2");
+      modal2.style.display = "block";
+    });
 }
 
 function setBoard(board){
@@ -411,6 +477,11 @@ function filter(event){
           } 
           console.log(initData);
           initHtml(initData);
+    }
+
+
+    function openPythonForm(){
+        document.getElementById("myModal_python").style.display='block'
     }
 
     
