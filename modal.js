@@ -105,7 +105,7 @@ modal2.addEventListener('click',()=>{
    var modal2_close = document.getElementById("myModal2");
   modal2_close.style.display = "none";
 })
-if (window.location.pathname.includes("home.html")) {
+if (window.location.pathname.includes("index.html")) {
 modal2_video.addEventListener('click',()=>{
    var modal2_video_close = document.getElementById("myModal_video1");
   modal2_video_close.style.display = "none";
@@ -129,7 +129,7 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-if (window.location.pathname.includes("home.html")) {
+if (window.location.pathname.includes("index.html")) {
 span.onclick = function() {
   modal.style.display = "none";
 }

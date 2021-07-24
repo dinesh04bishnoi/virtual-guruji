@@ -1,5 +1,5 @@
 
-if (window.location.pathname.includes("home.html")) {
+if (window.location.pathname.includes("index.html")) {
     localStorage.setItem('subject','Science');
     localStorage.setItem('board','ICSE');
     localStorage.setItem('grade','8');
