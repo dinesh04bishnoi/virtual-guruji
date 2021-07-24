@@ -1,5 +1,6 @@
 
-if (window.location.pathname.includes("index.html")) {
+if ( window.location.pathname.includes("index.html") ||
+    window.location.href == "https://thevirtualguruji.com/") {
     localStorage.setItem('subject','Science');
     localStorage.setItem('board','ICSE');
     localStorage.setItem('grade','8');

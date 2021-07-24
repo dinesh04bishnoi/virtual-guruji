@@ -31,16 +31,21 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-  if (window.location.pathname.includes("index.html")) {
-  $("#owl-demo").owlCarousel({
-    navigation: false,
-    autoPlay:true
-  });
-}
+  if (
+     window.location.pathname.includes("index.html") ||
+    window.location.href == "https://thevirtualguruji.com/"
+   
+  ) {
+    $("#owl-demo").owlCarousel({
+      navigation: false,
+      autoPlay: true,
+    });
+  }
 });
 
 $(document).ready(function () {
-  if (window.location.pathname.includes("index.html")) {
+  if ( window.location.pathname.includes("index.html") ||
+    window.location.href == "https://thevirtualguruji.com/") {
   $("#owl-demo-home").owlCarousel({
     navigation: true, // Show next and prev buttons
 
@@ -98,7 +103,8 @@ if (hstudents >= 10000) {
   let first=true;
 
   
-if (window.location.pathname.includes("index.html")) {
+if ( window.location.pathname.includes("index.html") ||
+    window.location.href == "https://thevirtualguruji.com/") {
       $(document).on("scroll", function () {
 
         if ($(this).scrollTop() >= $("#best-faculty").position().top) {
