@@ -149,8 +149,14 @@ window.onclick = function(event) {
  let first_source_child=true;
 
 
-function demoOpen(id=""){
+ function closeNav(){
+   const navbar = document.getElementById("navbarCollapse");
+   navbar.classList.remove("show");
+ }
 
+function demoOpen(id=""){
+const navbar = document.getElementById("navbarCollapse");
+navbar.classList.remove('show');
   if (id!="") {
       const modalid=id.split("|")[0];
    

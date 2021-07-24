@@ -22,7 +22,7 @@
 
 <body>
     <div class="navbar fixed-top navbar-expand-md navbar-light bg-grey mb-4" role="navigation">
-        <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" width="200" /></a>
+        <a class="navbar-brand" href="./index.html"><img src="./assets/logo.png" width="100" /></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -245,30 +245,34 @@
                         <li class="nav-item">
                             <a class="" onclick="demoOpen()">One to One</a>            
                         </li>
+                          <li class="nav-item">
+                            <a onclick="openPythonForm()">Masterclass in Python & ML</a>
+                        </li>
+                       
+                                        
+                   
 
                     
                     </ul>
                 </li>
                 
-              <li class="nav-item">
-                <a class="nav-link" onclick="openPythonForm()">Python</a>
-            </li>
+            
             <!-- 
               <li class="nav-item">
                 <a class="nav-link " href="about-us.html">ABOUT US</a>
             </li> -->
             </ul>
-            <div class="float-right">
-                <button  onclick="demoOpen()" class="unlockBtn py-2 px-3 border-0" >
+            <div class="navbutton">
+                <button  onclick="demoOpen()" class=" navbtnfree unlockBtn py-2 px-3 mx-1 border-0" >
                     Free Trial
                 </button>
-                <a class="
+                <a onclick="closeNav()" class="
               unlockBtn
+              navbtnfree
               py-2
               px-3
-              hover-white
-              text-decoration-none text-start
-            " href="tel:9356488281">
+            
+            " style="color: white !important; text-decoration: none;" href="tel:9356488281">
                     Call Us +91 9356488281
                 </a>
             </div>
@@ -772,13 +776,13 @@
             <div id="carouselExampleControls" class="carousel slide col-sm-12 col-md-6 col-lg-6" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" style="border: 15px solid #f0eff3; border-radius: 16px">
-                        <video width="100%" height="320" controls>
+                        <video id="firstVid" width="100%" height="320" controls>
                             <source src="assets/video1.mp4" type="video/mp4" />
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
                         </video>
                     </div>
                     <div class="carousel-item" style="border: 15px solid #f0eff3; border-radius: 16px">
-                        <video width="100%" height="320" controls>
+                        <video id="secondVid" width="100%" height="320" controls>
                             <source src="assets/video-7.mp4" type="video/mp4" />
                         </video>
                     </div>
@@ -892,7 +896,7 @@
                 <p class="mb-0"><i class="fas fa-map-marker-alt"></i> &nbsp; Pune</p>
                 <a href="mailto:thevirtualguruji@gmail.com"
                     class="d-block black hover-white text-decoration-none text-start" alt=""><i
-                        class="fas fa-envelope"></i> &nbsp; thevirtualguruji@gmail.com</a>
+                        class="fas fa-envelope"></i>thevirtualguruji@gmail.com</a>
                 <a class="d-block black font-weight-bold fs-15 hover-white text-decoration-none text-start  lh-lg"
                     href="tel:9356488281"><i class="fas fa-phone-square-alt"></i> &nbsp;
                     +91 9356488281
@@ -917,6 +921,7 @@
                 <a href="./index.html" class="d-block text-decoration-none black">Home</a>
                 <a href="./about-us.html" class="d-block text-decoration-none black">About US</a>
                 <a href="./faq.html" class="d-block text-decoration-none black">FAQ</a>
+                <a href="https://www.youtube.com/channel/UCiQcFWXY96J1pGZ8pUvIjBQ" class="d-block text-decoration-none black">Youtube</a>
             </div>
             <div class=" col-lg-3 col-md-12 col-xs-12 col-sm-12 black ">
                 <span class="fs-3 font-weight-bold my-5 lh-lg">Our Offline Classes</span>

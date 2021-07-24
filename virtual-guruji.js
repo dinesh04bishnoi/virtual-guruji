@@ -244,7 +244,11 @@ function setGrade(grade){
                 </div>
             </div>
             `;
+
+            if ( window.location.pathname.includes("index.html") ||
+    window.location.href == "https://thevirtualguruji.com/") {
             document.getElementById("subHtml").innerHTML=subHtml;
+    }
         
     }
 
@@ -307,8 +311,10 @@ function setGrade(grade){
 
         </div>        
             `;
-
+if ( window.location.pathname.includes("index.html") ||
+    window.location.href == "https://thevirtualguruji.com/") {
              document.getElementById("subHtml").innerHTML = subHtml;
+    }
     }
 localStorage.setItem('grade',grade);      
 }
@@ -415,7 +421,7 @@ function initHtml(data){
 
               </div>
 
-              <div class="m-3" >
+              <div class="d-flex justify-content-center m-3 " >
                   <a style=" background-image: linear-gradient( 75deg, #FDC830, #F37335, #f12711, #f5af19);color:white" class="btn" onclick='demoOpen()'>Book Demo</a>
               </div>             
                   

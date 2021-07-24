@@ -72,6 +72,18 @@ background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
     background-size:100% 700%;
     background-repeat: no-repeat;
 } 
+
+.navbar a{
+   color: #F37335 !important; 
+}
+
+.navbutton{
+    display: flex;
+    flex-direction: row;
+}
+.navbtnfree{
+     width: fit-content;
+}
 .live-course:hover{
 color: #F37335 !important;
 border: 1px solid #F37335;
@@ -2223,6 +2235,15 @@ font-weight: 700;
         display: flex;
         flex-direction: column;
     }
+    .navbutton{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbtnfree{
+       
+    margin-bottom: 2px;
+}
 
     #selectedClass .card-font{
         font-size: 13px;

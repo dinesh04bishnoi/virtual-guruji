@@ -119,3 +119,9 @@ if ( window.location.pathname.includes("index.html") ||
     }
   
 
+$("#carouselExampleControls").on("slide.bs.carousel", function () {
+ const firstVid = document.getElementById("firstVid");
+ const secondVid = document.getElementById("secondVid");
+ firstVid.pause();
+ secondVid.pause();
+});
