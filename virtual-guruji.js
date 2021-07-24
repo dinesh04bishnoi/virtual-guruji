@@ -488,6 +488,8 @@ function filter(event){
 
 
     function openPythonForm(){
+        const navbar = document.getElementById("navbarCollapse");
+        navbar.classList.remove("show");
         document.getElementById("myModal_python").style.display='block'
     }
 
