@@ -97,16 +97,15 @@ $(".submit").click(function () {
 // Get the modal
 var modal = document.getElementById("myModal");
 var modal_python = document.getElementById("myModal_python");
-var modal2 = document.getElementById("myModal2-close");
+// var modal2 = document.getElementById("myModal2-close");
 
 var modal2_video = document.getElementById("mymodel_video_close");
 
-modal2.addEventListener('click',()=>{
-   var modal2_close = document.getElementById("myModal2");
-  modal2_close.style.display = "none";
-})
-if ( window.location.pathname.includes("index.html") ||
-    window.location.href == "https://thevirtualguruji.com/") {
+// modal2.addEventListener('click',()=>{
+//    var modal2_close = document.getElementById("myModal2");
+//   modal2_close.style.display = "none";
+// })
+if (window.location.pathname.includes("index.html")) {
 modal2_video.addEventListener('click',()=>{
    var modal2_video_close = document.getElementById("myModal_video1");
   modal2_video_close.style.display = "none";
@@ -118,8 +117,8 @@ modal2_video.addEventListener('click',()=>{
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close-2")[0];
-var span_python = document.getElementsByClassName("close-python")[0];
+// var span = document.getElementsByClassName("close-2")[0];
+// var span_python = document.getElementsByClassName("close-python")[0];
 
 // When the user clicks on the button, open the modal
 
@@ -130,16 +129,15 @@ btn.onclick = function() {
 }
 
 // When the user clicks on <span> (x), close the modal
-if ( window.location.pathname.includes("index.html") ||
-    window.location.href == "https://thevirtualguruji.com/") {
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// if (window.location.pathname.includes("index.html")) {
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
 
-}
-span_python.onclick = function () {
-  modal_python.style.display = "none";
-};
+// }
+// span_python.onclick = function () {
+//   modal_python.style.display = "none";
+// };
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
@@ -149,6 +147,8 @@ window.onclick = function(event) {
   }
 }
  let first_source_child=true;
+
+
 function demoOpen(id=""){
 
   if (id!="") {
@@ -179,8 +179,18 @@ function demoOpen(id=""){
  const demoModalComponent = document.getElementById("myBtn");
  demoModalComponent.click();
   }
+  
 
 }
+
+
+
+function modalClose(id) {
+  document.getElementById(id).style.display = "none";
+}
+
+
+
 
 
 

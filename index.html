@@ -690,7 +690,7 @@
             </div>
         </div>
 
-        <div class="whyVirtual-advantages justify-content-center" id="subHtml"></div>
+        <div class="whyVirtual-advantages justify-content-center text-center" id="subHtml"></div>
 
         <div class="d-flex justify-content-center">
             <button id="myBtn" class="btns p-3 rounded mt-5 buttons">
@@ -942,7 +942,7 @@
   <div id="myModal_video1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" id="mymodel_video_close">&times;</span>
+            <span class="close"  onclick="modalClose('myModal_video1')" id="mymodel_video_close">&times;</span>
               <video id="video_modal" width="100%" height="320" controls>
                             <source  id="video_source" type="video/mp4" />
                             <!-- <source src="movie.ogg" type="video/ogg"> -->
@@ -953,7 +953,7 @@
     <div id="myModal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close-2 black">&times;</span>
+            <span  onclick="modalClose('myModal')" class="close-2 black">&times;</span>
             <form id="msform"  >
                 <!-- progressbar -->
                 <ul id="progressbar">
@@ -1157,7 +1157,7 @@
     <div id="myModal_python" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close-python black">&times;</span>
+            <span  onclick="modalClose('myModal_python')" class="close-python black">&times;</span>
             <form id="msformp"  >
             
                 <!-- fieldsets -->
@@ -1200,7 +1200,7 @@
     <div id="myModal2" class="modal bg-grey">
         <!-- Modal content -->
         <div class="modal-content">
-            <span class="close" id="myModal2-close">&times;</span>
+            <span  onclick="modalClose('myModal2')" class="close" id="myModal2-close">&times;</span>
              <div class="container">
                         <h1 class="font-weight-700 text-center m-5">Thank you</h1>
 

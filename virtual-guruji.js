@@ -5,7 +5,7 @@ if ( window.location.pathname.includes("index.html") ||
     localStorage.setItem('board','ICSE');
     localStorage.setItem('grade','8');
   let subHtml = `
-            <div class="cards mb-2 p-3 justify-content-center cursor-pointer my-m" >
+            <div class="cards mb-2 p-3 justify-content-center subject-cards cursor-pointer my-m" >
                 <div>
                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
                         onclick="setSubject('Science')">
@@ -20,7 +20,7 @@ if ( window.location.pathname.includes("index.html") ||
                 </div>
 
             </div>
-              <div class="cards mb-2 p-3 justify-content-center my-m">
+              <div class="cards mb-2 p-3 justify-content-center subject-cards my-m">
                 <div>
                     <a href="./virtual-guruji2.html" style="color: #0c141b; text-decoration: none; "
                         onclick="setSubject('Math')">
