@@ -118,10 +118,39 @@ if ( window.location.pathname.includes("index.html") ||
       });
     }
   
-
+    let slideInterval = 8000;
+    let firstVid = document.getElementById("firstVid");
+    let secondVid = document.getElementById("secondVid");
 $("#carouselExampleControls").on("slide.bs.carousel", function () {
- const firstVid = document.getElementById("firstVid");
- const secondVid = document.getElementById("secondVid");
  firstVid.pause();
  secondVid.pause();
 });
+firstVid.onplaying=function(prop) {
+ 
+  slideInterval=false;
+  stopPlayCarousel();
+}
+secondVid.onplaying=function(prop) {
+
+  slideInterval=false;
+  stopPlayCarousel();
+}
+
+firstVid.onended=function(prop) {
+slideInterval=true;
+stopPlayCarousel()
+}
+secondVid.onended=function(prop) {
+slideInterval=true;
+stopPlayCarousel()
+}
+
+
+
+function stopPlayCarousel(){
+  //Event for pushed the video
+  $("#carouselExampleControls").carousel({
+    pause: true,
+    interval: slideInterval,
+  });
+}
