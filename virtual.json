@@ -242,7 +242,7 @@
  },
  {
     "id": 27,
-    "fees": 15000,
+    "fees": 22500,
     "nClasses": 100,
     "months": 9,
     "subject": "Science",
@@ -256,7 +256,7 @@
 
  {
     "id": 30,
-    "fees": 15000,
+    "fees": 22500,
     "nClasses": 120,
     "months": 9,
     "subject": "Math",
