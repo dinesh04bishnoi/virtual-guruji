@@ -276,7 +276,7 @@ function setGrade(grade){
                             <img src="assets/chemistery.png" width="100" alt="">
                         </div>
                         <div class="text-center m-2 font-weight-bold">
-                            Chemistery
+                            Chemistry
                         </div>
                     </a>
 
