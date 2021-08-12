@@ -46,20 +46,33 @@ $(document).ready(function () {
 $(document).ready(function () {
   if ( window.location.pathname.includes("index.html") ||
     window.location.href == "https://thevirtualguruji.com/") {
+ 
   $("#owl-demo-home").owlCarousel({
+     onDrag: callback,
     navigation: true, // Show next and prev buttons
 
     slideSpeed: 300,
     paginationSpeed: 400,
-//  autoPlay:true,
+    //  autoPlay:true,
     items: 1,
+// loop:true,
+    // onTranslate:onDraggedCallback,
     itemsDesktop: false,
     itemsDesktopSmall: false,
     itemsTablet: false,
     itemsMobile: false,
   });
+
   }
+
+
 });
+
+
+  function callback(event) {
+    event.preventDefault()
+    alert(0);
+  }
 
 function counter(){
  let hstudents=0;
