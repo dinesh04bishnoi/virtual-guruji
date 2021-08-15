@@ -43,36 +43,55 @@ $(document).ready(function () {
   }
 });
 
+
+
 $(document).ready(function () {
   if ( window.location.pathname.includes("index.html") ||
     window.location.href == "https://thevirtualguruji.com/") {
- 
+        
   $("#owl-demo-home").owlCarousel({
-     onDrag: callback,
-    navigation: true, // Show next and prev buttons
-
-    slideSpeed: 300,
-    paginationSpeed: 400,
-    //  autoPlay:true,
+    autoPlay:true,
     items: 1,
-// loop:true,
-    // onTranslate:onDraggedCallback,
     itemsDesktop: false,
     itemsDesktopSmall: false,
     itemsTablet: false,
     itemsMobile: false,
+    afterAction:callback
   });
-
   }
-
-
 });
-
+  let landscape = document.getElementById("landscape");
+  let offer = document.getElementById("offer");
+  let drawback = document.getElementById("drawback");
 
   function callback(event) {
-    event.preventDefault()
-    alert(0);
+    landscape.pause();
+    offer.pause();
+    drawback.pause();
+    landscape.onplaying = function (prop) {
+
+   $("#owl-demo-home").trigger("stop.owl.autoplay");
+    };
+    offer.onplaying = function (prop) {
+        $("#owl-demo-home").trigger("stop.owl.autoplay");
+    };
+    drawback.onplaying = function (prop) {
+        $("#owl-demo-home").trigger("stop.owl.autoplay");
+    };
+    landscape.onended = function (prop) {
+       
+   $("#owl-demo-home").trigger("play.owl.autoplay");
+    };
+    offer.onended = function (prop) {
+    $("#owl-demo-home").trigger("play.owl.autoplay");
+    };
+    drawback.onended = function (prop) {
+    $("#owl-demo-home").trigger("play.owl.autoplay");
+    };
+   
   }
+
+
 
 function counter(){
  let hstudents=0;
@@ -167,3 +186,5 @@ function stopPlayCarousel(){
     interval: slideInterval,
   });
 }
+
+
