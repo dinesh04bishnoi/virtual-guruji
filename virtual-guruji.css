@@ -707,7 +707,7 @@ font-weight: 700;
 
 
   .workshop .cards{
-      background-color: #fff;
+      background-color: #ecedf3;
       /* max-height: 150px;
       min-height: 150px; */
       border-radius: 10px;
@@ -1048,7 +1048,7 @@ font-weight: 700;
       }
   
       .workshop .cards{
-          background-color: #fff;
+          background-color: #ecedf3;
           /* max-height: 200px;
           min-height: 200px; */
           border-radius: 10px;
@@ -1640,7 +1640,7 @@ font-weight: 700;
              }
       
        .workshop .cards {
-          background-color: #fff;
+          background-color: #ecedf3;
         
           border-radius: 10px;
       }
